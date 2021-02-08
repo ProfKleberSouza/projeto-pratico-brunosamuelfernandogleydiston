@@ -12,7 +12,7 @@ Os membros do grupo são:
 - Bruno Kelsen
 - Samuel Chiodi
 - Fernando Luiz
-- Greydiston Braganca
+- Gleydiston Braganca
 
 > Inclua a lista dos membros da equipe com seus nomes completos.
 
