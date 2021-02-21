@@ -1,32 +1,34 @@
 # Introdução
 
 ## Problema
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+> No primeiro semestre de 2020 medidas como o auxílio emergencial permitiu que a parte mais 
+> frágil da população se protegesse em parte dos impactos da pandemia, mas com fim do auxílio 
+> emergencial e uma taxa de desemprego de 14,6% da população, estima-se que 63 milhões de 
+> brasileiros fiquem abaixo da linha da pobreza em 2021. 
+> O principal uso do auxílio foi para custear a compra de alimentos básicos e fundamentais, 
+> no entanto esta rede de ajuda foi diminuindo ao longo do ano, sendo que hoje, no início de 2021 
+> diversas ONGs, projetos sociais, hospitais e até a Cruz Vermelha relatam as dificuldades para 
+> manter a corrente de solidariedade que foi iniciada no começo de 2020, outros efeitos colaterais 
+> das mudanças impostas pela pandemia se tornaram acomulativos para milhões de pessoas, como 
+> resultado esta também é uma pandemia psicológica.
+> São nessas lacunas do poder público, com a ausência de políticas públicas abrangentes, que as 
+> organizações da sociedade civil se articulam para amenizar os impactos não só da pandemia mas de 
+> outras calamidades e do descaso público sobre a população. O principal problema é que o número de 
+> pessoas atingidas é muito maior do que o amparado pelas iniciativas de solidariedade, e qual a 
+> contribuição que a tecnologia mobile tem a oferecer.
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
+> Dentro do problema apresentado, o objetivo principal propõe desenvolver de uma aplicação 
+> mobile para a plataforma Android que permita usufruir do poder de conectividade móvel entre 
+> as pessoas como meio de mobilizar, se tornar acessível e ampliar uma rede de solidariedade de 
+> enfrentamento dos impactos da pandemia e de outros eventos de calamitosos. Por meio de um 
+> aplicativo que permita o cadastro, a geolocalização e a comunicação entre quem precisa de 
+> ajuda a quem pode estar contribuindo com doações e/ou oferecer apoio psicoespiritual.
 > 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+> Portanto, a aplicação tem como objetivo oferecer fomentar uma rede de apoio em dois pontos 
+> em específico: 1) doações - alimentos básicos e fundamentais, medicamentos e outros insumos 
+> e bens; 2) oferecer um canal para atendimento psicológico ou religioso.
 
 ## Justificativa
 
