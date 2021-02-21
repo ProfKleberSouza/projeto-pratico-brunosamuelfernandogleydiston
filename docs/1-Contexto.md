@@ -32,17 +32,10 @@
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+> A motivação do desenvolvimento deste projeto é puramente social, se concentra no contexto de 
+> mitigar impactos da pandemia decorrentes do empobrecimento da população para que as pessoas que 
+> foram e que estão mais fragilizadas consigam uma ajuda mínima para viver com certa dignidade e 
+> subsistência durante esse período de pandemia até a recuperação econômica social.
 
 ## Público-Alvo
 
