@@ -1,10 +1,10 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+Curso de Engenharia de Computação
 
-`DISCIPLINA`
+Disciplina de Laborário de Desenvolvimento Mobile
 
-`SEMESTRE`
+Primeiro semestre de 2021
 
 ## Participantes
 
