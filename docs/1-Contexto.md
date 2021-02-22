@@ -27,7 +27,6 @@
 > enfrentamento dos impactos da pandemia e de outros eventos de calamitosos. Por meio de um 
 > aplicativo que permita o cadastro, a geolocalização e a comunicação entre quem precisa de 
 > ajuda a quem pode estar contribuindo com doações e/ou oferecer apoio psicoespiritual.
-> 
 > Portanto, a aplicação tem como objetivo oferecer fomentar uma rede de apoio em dois pontos 
 > em específico: 1) doações - alimentos básicos e fundamentais, medicamentos e outros insumos 
 > e bens; 2) oferecer um canal para atendimento psicológico ou religioso.
