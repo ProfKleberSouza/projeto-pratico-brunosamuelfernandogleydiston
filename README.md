@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# AINDA A DEFINIR
 
 Curso de Engenharia de Computação
 
