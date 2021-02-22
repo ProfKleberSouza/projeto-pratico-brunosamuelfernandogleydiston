@@ -54,14 +54,14 @@
 >                                          |
 >                     [ quem é (dados) e histórico/relato de vida ] 
 >                     /                                           \
->	              quem ajuda ---> [ chat e geolocalização ] <--- quem precisa
+>	               quem ajuda ---> [ chat e geolocalização ] <--- quem precisa
 >                /        \                                         |	          
->           doação      orientação                         qual tipo de apoio a 
->               |          |                              pessoal/entidade precisa?
->               |          |                                   /        \  	
->               |          |                               doação      orientação   
->               |          |                                   |         |
->               |-------------> [ agendamento ] <------------------------| 
+>           doação    apoio psicossocial                   qual tipo de apoio a 
+>               |          |                             pessoal/entidade precisa?
+>               |          |                                   /          \  	
+>               |          |                               doação   apoio psicossocial
+>               |          |                                  |            |
+>               |-------------> [ agendamento ] <--------------------------| 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
 > por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
