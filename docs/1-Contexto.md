@@ -14,8 +14,10 @@
 > São nessas lacunas do poder público, com a ausência de políticas públicas abrangentes, que as 
 > organizações da sociedade civil se articulam para amenizar os impactos não só da pandemia mas de 
 > outras calamidades e do descaso público sobre a população. O principal problema é que o número de 
-> pessoas atingidas é muito maior do que o amparado pelas iniciativas de solidariedade, e qual a 
-> contribuição que a tecnologia mobile tem a oferecer.
+> pessoas atingidas é muito maior do que o amparado pelas iniciativas de solidariedade, portanto é 
+> a partir daí que a tecnologia e a crescente área de desenvolvimento de aplicativos móveis pode 
+> entrar em ação.
+
 
 ## Objetivos
 
@@ -39,18 +41,18 @@
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
+> Destinado para ajudar pessoas em situação de vulnerabilidade social e afetados pela pandemia e 
+> seus efeitos que estão vivenciando um momento de dificuldade e que necessitam serem identificadas 
+> para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando quem 
+> precisa. Sabe-se que muitas dessas pessoas não têm acesso a tecnologia, portanto o aplicativo 
+> visa permitir que essas possam ser inseridas nessa rede por familiares, amigos, vizinhos e 
+> entidades sociais.
+> O aplicativo possibilitará a criação de dois tipos de perfis: 1) o de quem ajuda com doações de 
+> alimentos básicos e fundamentais, medicamentos, outros insumos e oferecer apoio; 2) de quem precisa 
+> da ajuda. Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
+> Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
+> por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
+> o doador no chat do próprio aplicativo e combina o local e o horário de retirada. Depois de combinado, 
+> o interessado vai retirar pessoalmente a doação. O chat também tem como finalidade atuar como um canal 
+> de comunicação para voluntários que querem oferecer apoio psicoespiritual, uma vez que, muitas pessoas 
+> precisam de outras formas de apoio para além de donativos para enfrentar momentos de dificuldade.
