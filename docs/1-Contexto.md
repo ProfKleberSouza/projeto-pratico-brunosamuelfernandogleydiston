@@ -49,6 +49,20 @@
 > O aplicativo possibilitará a criação de dois tipos de perfis: 1) o de quem ajuda com doações de 
 > alimentos básicos e fundamentais, medicamentos, outros insumos e oferecer apoio; 2) de quem precisa 
 > da ajuda. Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
+> 
+>                                               perfil
+>                                                 |
+>                            [ quem é (dados) e histórico/relato de vida ] 
+>                              / 			                                 \
+>	                      quem ajuda --> [ chat e geolocalização ] <-- quem precisa
+>                       /        \                                        |	          
+>                   doação      orientação                        qual tipo de apoio a 
+>                      \         /                              pessoal/entidade precisa?
+>                       \       /                                     /        \  	
+>                        \     /                                  doação      orientação   
+>                         \   /                                        \      /
+>                           |-------------> [ agendamento ] <-------------| 
+>
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
 > por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
 > o doador no chat do próprio aplicativo e combina o local e o horário de retirada. Depois de combinado, 
