@@ -26,15 +26,16 @@
 
 ## Objetivos
 
-> Dentro do problema apresentado, o objetivo principal propõe desenvolver de uma aplicação 
-> mobile para a plataforma Android que permita usufruir do poder de conectividade móvel entre 
-> as pessoas como meio de mobilizar, se tornar acessível e ampliar uma rede de solidariedade de 
-> enfrentamento dos impactos da pandemia e de outros eventos de calamitosos. Por meio de um 
-> aplicativo que permita o cadastro, a geolocalização e a comunicação entre quem precisa de 
-> ajuda a quem pode estar contribuindo com doações e/ou oferecer apoio psicoespiritual.
-> Portanto, a aplicação tem como objetivo oferecer fomentar uma rede de apoio em dois pontos 
-> em específico: 1) doações - alimentos básicos e fundamentais, medicamentos e outros insumos 
-> e bens; 2) oferecer um canal para atendimento psicológico ou religioso.
+> Dentro do problema apresentado, o objetivo principal propõe desenvolver de uma aplicação mobile 
+> para a plataforma Android que usufruir do poder de conectividade móvel entre as pessoas como meio 
+> de mobilizar, se tornar acessível e ampliar uma rede de solidariedade de enfrentamento dos impactos 
+> da pandemia do COVID-19 e também de outros eventos de calamitosos. 
+> 
+> Esse aplicativo deve permitir o cadastro, a geolocalização e a comunicação entre quem precisa de 
+> ajuda a quem pode estar contribuindo com doações e/ou oferecer apoio psicoespiritual. Portanto, a 
+> aplicação tem como objetivo oferecer fomentar uma rede de apoio em dois pontos em específico: 
+> 1) doações - alimentos básicos e fundamentais, medicamentos e outros insumos e bens; 2) oferecer 
+> um canal para atendimento psicológico ou religioso a quem precisa.
 
 ## Justificativa
 
