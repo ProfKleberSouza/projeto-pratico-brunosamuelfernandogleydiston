@@ -65,18 +65,18 @@
 >                             perfil do usuário/instituição
 >                                          |
 >                  [quem é (dados de cadastro) e histórico/relato de vida]
->                    /                                                 \
->	             quem ajuda                                          quem precisa
->              /    \    \                                          /    |	       
->             /      \    \_______ [chat e geolocalização] _______/      | 
->            /        \                                                  |                                                         
->        doação    apoio psicossocial                          qual tipo de apoio a 
->             \         \                                     pessoal/entidade precisa?
->              \         \                                         /          \  	
->               \         \                                  doação   apoio psicossocial
->                \         \                                     /           /
->                 \         \                                   /           /
->                  \_________\________ [agendamento] __________/___________/ 
+>                 /                                                       \
+>	           quem ajuda                                              quem precisa
+>            /    \    \                                             /    |	       
+>           /      \    \________ [chat e geolocalização] _________/      | 
+>          /        \                                                     |                                                         
+>      doação    apoio psicossocial                              qual tipo de apoio a 
+>           \         \                                       pessoal/entidade precisa?
+>            \         \                                           /          \  	
+>             \         \                                     doação    apoio psicossocial
+>              \         \                                      /           /
+>               \         \                                    /           /
+>                \_________\________ [agendamento] ___________/___________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
 > por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
