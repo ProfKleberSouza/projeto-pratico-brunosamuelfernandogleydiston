@@ -62,8 +62,8 @@
 >
 > Estrutura da teórica do aplicativo:
 >   
->                             perfil do usuário/instituição
->                                          |
+>                              perfil do usuário/instituição
+>                                           |
 >                  [quem é (dados de cadastro) e histórico/relato de vida]
 >                 /                                                       \
 >	           quem ajuda                                              quem precisa
