@@ -1,7 +1,7 @@
 # Introdução
 
 ## Problema
-> No primeiro semestre de 2020 medidas como o auxílio emergencial, permitiram que a parte mais 
+> No primeiro semestre de 2020 medidas como o auxílio emergencial, permitiu que a parte mais 
 > frágil da população se protegesse em parte dos impactos da pandemia do COVID-19, mas com fim 
 > do auxílio emergencial e uma taxa de desemprego de 14,6% da população, leva à estimar que 
 > 63 milhões de brasileiros fiquem abaixo da linha da pobreza em 2021, e diante dessa realidade 
