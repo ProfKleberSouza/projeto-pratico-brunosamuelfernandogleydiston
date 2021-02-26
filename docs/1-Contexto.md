@@ -72,11 +72,11 @@
 >          /        \                                                      |
 >      doação    apoio psicossocial                               qual tipo de apoio a
 >           \         \                                        pessoal/entidade precisa?
->            \         \                                             /       \
+>            \         \                                               /       \
 >             \         \                                     doação    apoio psicossocial
->              \         \                                      /          /
->               \         \                                    /          /
->                \_________\________ [agendamento] ___________/__________/ 
+>              \         \                                      /         /
+>               \         \                                    /         /
+>                \_________\________ [agendamento] ___________/________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
 > por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
