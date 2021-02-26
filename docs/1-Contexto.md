@@ -6,9 +6,11 @@
 > emergencial e uma taxa de desemprego de 14,6% da população, leva à estimar que 63 milhões de 
 > brasileiros fiquem abaixo da linha da pobreza em 2021, e diante dessa realidade aprofunde 
 > ainda mais o abismo da desigualdade no Brasil.
+> 
 > São nessas lacunas do poder público, com a ausência de políticas públicas abrangentes, que 
 > as organizações da sociedade civil se articulam para amenizar os impactos não só da pandemia, 
 > mas de outras calamidades e do descaso público sobre a população.
+> 
 > O principal uso do auxílio foi para custear a compra de alimentos básicos e fundamentais, 
 > no entanto, também houve movimentos para que uma rede de ajuda foi estabelecida em locais de 
 > maior vulnerabilidade social, o problema é que esta rede foi diminuindo ao longo do ano, sendo 
@@ -17,6 +19,7 @@
 > Mas, os outros efeitos decorrentes das medidas de controle, também despertam a atenção, 
 > são os efeitos psicológicos da quarentena, do intenso noticiamento da doença e das dificuldades 
 > socioeconômicas sobre as pessoas.
+> 
 > O principal problema é que o número de pessoas atingidas é muito maior do que o amparado pelas 
 > iniciativas de solidariedade, portanto é a partir daí que a tecnologia e a crescente área de 
 > desenvolvimento de aplicativos móveis pode entrar em ação.
