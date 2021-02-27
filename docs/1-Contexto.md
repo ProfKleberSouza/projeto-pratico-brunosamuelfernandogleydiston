@@ -67,7 +67,7 @@
 >                  [quem é (dados de cadastro) e histórico/relato de vida]
 >                 /                                                       \
 >	           quem ajuda                                              quem precisa
->           /      \   \_________ [chat e geolocalização] __________/      |
+>           /      \   \_________ [chat e geolocalização] ____________/    |
 >          /        \                                                      |
 >      doação    apoio psicossocial                               qual tipo de apoio a
 >           \         \                                        pessoal/entidade precisa?
