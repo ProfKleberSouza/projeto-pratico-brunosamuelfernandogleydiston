@@ -67,8 +67,7 @@
 >                  [quem é (dados de cadastro) e histórico/relato de vida]
 >                 /                                                       \
 >	           quem ajuda                                              quem precisa
->            /    \    \                                              /    |
->           /      \    \_________ [chat e geolocalização] __________/     |
+>           /      \   \_________ [chat e geolocalização] __________/      |
 >          /        \                                                      |
 >      doação    apoio psicossocial                               qual tipo de apoio a
 >           \         \                                        pessoal/entidade precisa?
@@ -76,7 +75,7 @@
 >             \         \                                         doação     apoio psicossocial
 >              \         \                                         /            /
 >               \         \                                       /            /
->                \_________\___________ [agendamento] ___________/____________/ 
+>                \_________\__________ [agendamento] ____________/____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
 > por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
