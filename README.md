@@ -4,8 +4,6 @@ Curso de Engenharia de Computação
 
 Disciplina de Laborário de Desenvolvimento Mobile
 
-O tema do projeto prático é: Aplicativos Móveis para Agendamento de Serviços.
-
 Primeiro semestre de 2021
 
 ## Participantes
