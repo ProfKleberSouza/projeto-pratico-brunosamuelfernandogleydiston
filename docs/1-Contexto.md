@@ -27,37 +27,31 @@
 
 ## Justificativa
 
-> A motivação do desenvolvimento deste projeto é puramente pautada no social e se concentra no contexto
-> de mitigar os impactos da pandemia decorrentes do empobrecimento da população que, consequentemente, 
-> passou a necessitar de ajuda humanitária para manter a sua dignidade enquanto o país não se recuperar 
-> das crises econômicas e sociais.
+> A motivação do desenvolvimento deste projeto é puramente pautada no social e se concentra no contexto de mitigar os impactos da pandemia 
+> decorrentes do empobrecimento da população que, consequentemente, passou a necessitar de ajuda humanitária para manter a sua dignidade 
+> enquanto o país não se recuperar das crises econômicas e sociais.
 > 
-> Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos garantidos e que o governo 
-> por si só não possui força e atitudes suficientes para lidar com as carências de uma população necessitada 
-> durante, não só a pandemia do COVID19, mas, também, ao longo de outras tragédias. Tendo isso em vista, 
-> nós cremos que garantir aqueles em necessidade direitos humanos básicos não é responsabilidade somente do 
-> governo, mas da população como um todo. Para atingir tamanho objetivo de adesão e solidarismo entre as 
-> pessoas, utilizaremos do poder da tecnologia não só para conectá-las virtualmente, mas, também, humanamente 
-> por meio de um aplicativo que conscientize e une as pessoas em torno de um sentimento em comum de solidariedade.
-
-
-> A motivação do desenvolvimento deste projeto é puramente pautada no social, se concentra no 
-> contexto de mitigar os impactos da pandemia, decorrentes do empobrecimento da população, que 
-> consequentemente, passa a necessitar de solidariedade, para que as pessoas que foram e que estão 
-> mais fragilizadas consigam uma ajuda mínima para viver com certa dignidade, apoio e manter sua 
-> subsistência durante esse período até a recuperação econômica e social.
+> Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos garantidos e que o governo por si só não possui força e atitudes 
+> suficientes para lidar com as carências de uma população necessitada durante, não só a pandemia do COVID19, mas, também, ao longo de outras 
+> tragédias. Tendo isso em vista, nós cremos que garantir aqueles em necessidade direitos humanos básicos não é responsabilidade somente do governo, 
+> mas da população como um todo. Para atingir tamanho objetivo de adesão e solidarismo entre as pessoas, utilizaremos do poder da tecnologia não 
+> só para conectá-las virtualmente, mas, também, humanamente por meio de um aplicativo que conscientize e une as pessoas em torno de um sentimento 
+> em comum de solidariedade.
 
 ## Público-Alvo
 
-> Todos. Dentro do contexto social de projeto já mencionado há apenas dois grupos os quais as 
-> pessoas na sociedade podem pertencer, sendo estes: grupo de pessoas carentes e grupo de doação (para aqueles que estão dispostos a ajudar quem necessita). Dito isto, o aplicativo a 
-> ser desenvolvido não está destinado a algum público alvo em específico, mas sim a população 
-> em geral. Em resumo, o aplicativo é para todos aqueles que desejam ajudar ou ser ajudado em meio a situações de vulnerabilidade social causadas por pandemias ou qualquer outra situação calamitosa que precisa ser identificada para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando quem precisa. Sabe-se que muitas dessas pessoas não têm acesso a smartphones, portanto o aplicativo visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades sociais.
-Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
-1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
-2) de quem precisa de ajuda. 
-Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
-
+> Público-Alvo são todos. Dentro do contexto social de projeto já mencionado há apenas dois grupos os quais as pessoas na sociedade podem pertencer, 
+> sendo estes: grupo de pessoas carentes e grupo de doação (para aqueles que estão dispostos a ajudar quem necessita). Dito isto, o aplicativo a ser 
+> desenvolvido não está destinado a algum público alvo em específico, mas sim a população em geral. Em resumo, o aplicativo é para todos aqueles que 
+> desejam ajudar ou ser ajudado em meio a situações de vulnerabilidade social causadas por pandemias ou qualquer outra situação calamitosa que precisa 
+> ser identificada para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando quem precisa. Sabe-se que muitas dessas 
+> pessoas não têm acesso smartphones, portanto o aplicativo visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, 
+> vizinhos e por membros de entidades sociais.
+> 
+> Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
+> 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
+> 2) de quem precisa de ajuda. 
+> Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
 >
 > Estrutura da teórica do aplicativo:
 >   
@@ -76,12 +70,10 @@ Além disso, permitirá que as pessoas possam falar um pouco da história pessoa
 >               \         \                                      /            /
 >                \_________\___________ [agendamento] __________/____________/ 
 >
-> Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja 
-> por perto, a pessoa ou a instituição interessada em receber ajuda solidária manda mensagens para 
-> o doador no chat do próprio aplicativo e combina o local e o horário de retirada. Depois de combinado, 
+> Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa ou a instituição interessada em 
+> receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e combina o local e o horário de retirada. Depois de combinado, 
 > o interessado vai retirar pessoalmente a doação. 
 > 
-> O chat também tem como finalidade atuar como um canal de comunicação para voluntários que querem 
-> oferecer apoio psicoespiritual, uma vez que, muitas pessoas precisam de outras formas de apoio para 
-> além de donativos para enfrentar momentos de dificuldade.
+> O chat também tem como finalidade atuar como um canal de comunicação para voluntários que querem oferecer apoio psicoespiritual, uma vez que, muitas 
+> pessoas precisam de outras formas de apoio para além de donativos para enfrentar momentos de dificuldade.
 >
