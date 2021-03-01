@@ -51,6 +51,7 @@
 > Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
 > 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
 > 2) de quem precisa de ajuda.
+> 
 > Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
 >
 > Estrutura da teórica do aplicativo:
