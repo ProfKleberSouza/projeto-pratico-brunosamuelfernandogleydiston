@@ -40,13 +40,13 @@
 
 ## Público-Alvo
 
-> Público-Alvo são todos. Dentro do contexto social de projeto já mencionado há apenas dois grupos os quais as pessoas na sociedade podem pertencer, 
-> sendo estes: grupo de pessoas carentes e grupo de doação (para aqueles que estão dispostos a ajudar quem necessita). Dito isto, o aplicativo a ser 
-> desenvolvido não está destinado a algum público alvo em específico, mas sim a população em geral. Em resumo, o aplicativo é para todos aqueles que 
-> desejam ajudar ou ser ajudado em meio a situações de vulnerabilidade social causadas por pandemias ou qualquer outra situação calamitosa que precisa 
-> ser identificada para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando quem precisa. Sabe-se que muitas dessas 
-> pessoas não têm acesso smartphones, portanto o aplicativo visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, 
-> vizinhos e por membros de entidades sociais.
+> Dentro do contexto social já mencionado, o público-alvo inclui dois grupos sociais, sendo estes: grupo de pessoas carentes e grupo de doação (para 
+> aqueles que estão dispostos a ajudar quem necessita). Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, 
+> mas sim para a população em geral. Em resumo, o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade social, cujas 
+> causas podem advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica ou calamitosa. Essas pessoas que foram 
+> afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando quem precisa. 
+> Sabe-se que muitas dessas pessoas não têm acesso a smartphones, portanto o aplicativo visa permitir que essas pessoas possam ser inseridas nessa rede 
+> por familiares, amigos, vizinhos e por membros de entidades sociais.
 > 
 > Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
 > 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
