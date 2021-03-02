@@ -54,15 +54,16 @@
 >             
 >                             perfil do usuário/instituição
 >                                           |
->                [quem é (dados de cadastro) e histórico/relato de vida]
->                      /                                         \
->                     /                                           \
+>                              [quem é (dados de cadastro) 
+>                              e histórico/relato de vida]
+>                          /                                 \
+>                         /                                   \
 >	               quem ajuda ____ [chat e geolocalização] ____ quem precisa
->                    |                                             |
+>                     |                                           |
 >             o que pode doar?                          o que a pessoa/entidade 
->                     \                                        precisa? 
->                      \                                        /
->                       \___________ [agendamento] ____________/ 
+>                      \                                        precisa? 
+>                       \                                        /
+>                        \___________ [agendamento] ____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização e dentro das necessidades descritas pelos perfis 
 > de quem precisa de ajuda. Desde que esteja por perto, a pessoa ou a instituição interessada em receber esta ajuda solidária pode 
