@@ -32,7 +32,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     |Descrição do Requisito	  |Prioridade|
 |-------|-------------------------|----------|
 |RF-001|Permitir a criação de Lista de Doações, com descrições bem detalhadas sobre qual o fim da lista.|Alta|
-|RF-002|Permitir cadastro de usuários com dois tipos de perfis(Doador, Ajudado)|Alta|
+|RF-002|Permitir cadastro de usuários com dois tipos de perfis(Doador, Necessitado )|Alta|
 |RF-003|Cadastrar Locais para entrega de Doações|Alta|
 |RF-004|Permitir doadores acessarem lista de Doações|Alta|
 |RF-006|Permitir usuário criar sua História|Alta|
@@ -44,7 +44,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|-----------|
 |RNF-001|Visar segurança de doadores|Alta|
-|RNF-002|Permitir cadastro de Doadores|Alta|
+
 
 
 ## Restrições
