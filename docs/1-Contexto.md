@@ -58,7 +58,7 @@
 >                              e histórico/relato de vida]
 >                          /                                 \
 >                         /                                   \
->	               quem ajuda ____ [chat e geolocalização] ____ quem precisa
+>	               quem ajuda ___ [chat e geolocalização] ___ quem precisa
 >                     |                                           |
 >             o que pode doar?                          o que a pessoa/entidade 
 >                      \                                        precisa? 
