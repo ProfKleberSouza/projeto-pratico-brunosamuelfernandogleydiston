@@ -1,4 +1,4 @@
-# AINDA A DEFINIR
+# APP DE DOAÇÕES
 
 Curso de Engenharia de Computação
 
