@@ -53,19 +53,15 @@
 >   
 >                              perfil do usuário/instituição
 >                                           |
->                               [quem é (dados de cadastro) 
+>                              [quem é (dados de cadastro) 
 >                                e histórico/relato de vida]
->                             /                              \
+>                          /                                    \
 >	                 quem ajuda ___ [chat e geolocalização] ___ quem precisa
->                      |                                          |
+>                       |                                         |
 >               o que pode doar?                         o que a pessoa/entidade 
->                       \                                       precisa? 
->                        \__________ [agendamento] _____________/ 
+>                        \                                      precisa? 
+>                         \___________ [agendamento] ____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa 
 > ou a instituição interessada em receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e 
-> combina o local e o horário de retirada. Depois de combinado, o interessado vai retirar pessoalmente a doação. 
-> 
-> O chat também tem como finalidade atuar como um canal de comunicação para voluntários que querem oferecer apoio 
-> psicoespiritual, uma vez que, muitas pessoas precisam de outras formas de apoio para além de donativos para enfrentar 
-> momentos de dificuldade.
+> combina o local e o horário de retirada. Depois de combinado, o interessado vai retirar pessoalmente a doação.
