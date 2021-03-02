@@ -1,36 +1,35 @@
 # Introdução
 
 ## Problema
-> No primeiro semestre de 2020 o auxílio emergencial permitiu que a parte mais frágil da população se protegesse em parte 
-> dos impactos da pandemia, entretanto com o fim do auxílio emergencial e uma taxa de desemprego de 14,6% da população, 
-> estima-se que 63 milhões de brasileiros fiquem abaixo da linha da pobreza em 2021. 
+> No primeiro semestre de 2020 o auxílio emergencial permitiu que a parte mais frágil da população se protegesse em parte dos 
+> impactos da pandemia, entretanto com o fim do auxílio emergencial e uma taxa de desemprego de 14,6% da população, estima-se 
+> que 63 milhões de brasileiros fiquem abaixo da linha da pobreza em 2021. 
 >  
-> O principal uso do auxílio foi para custear a compra de alimentos básicos e fundamentais, no entanto esta rede de ajuda 
-> foi diminuindo ao longo do ano, sendo que hoje, no início de 2021 diversas ONGs, projetos sociais, hospitais e até a 
-> Cruz Vermelha relatam as dificuldades para manter a corrente de solidariedade que foi iniciada no começo de 2020. Outros 
-> efeitos colaterais das mudanças impostas pela pandemia se tornaram acomulativos para milhões de pessoas, como resultado 
-> esta também é uma pandemia psicológica.
+> O principal uso do auxílio foi para custear a compra de alimentos básicos e fundamentais, no entanto esta rede de ajuda foi 
+> diminuindo ao longo do ano, sendo que hoje, no início de 2021 diversas ONGs, projetos sociais, hospitais e até a Cruz Vermelha 
+> relatam as dificuldades para manter a corrente de solidariedade que foi iniciada no começo de 2020.
 >
-> São nessas lacunas do poder público, com a ausência de políticas públicas abrangentes, que as organizações da sociedade 
-> civil se articulam para amenizar os impactos não só da pandemia mas de outras calamidades e do descaso público sobre a 
-> população. O principal problema é que o número de pessoas atingidas é muito maior do que o amparado pelas iniciativas de 
-> solidariedade e é a partir daí que a tecnologia e a crescente área de desenvolvimento de aplicativos móveis pode entrar 
-> em ação.
+> São nessas lacunas do poder público, com a ausência de políticas públicas abrangentes, que as organizações da sociedade civil 
+> se articulam para amenizar os impactos não só da pandemia mas de outras calamidades e do descaso público sobre a população. 
+> O principal problema é que o número de pessoas atingidas é muito maior do que o amparado pelas iniciativas de solidariedade e 
+> é a partir daí que a tecnologia e a crescente área de desenvolvimento de aplicativos móveis pode entrar em ação.
 
 ## Objetivos
 
-> Dentro do problema apresentado, o objetivo principal propõe desenvolver uma aplicação mobile para a plataforma Android 
-> que permita usufruir do poder de conectividade móvel entre as pessoas como meio de mobilizar, se tornar acessível e 
-> ampliar uma rede de solidariedade de enfrentamento dos impactos da pandemia e de outros eventos de calamitosos.
+> Dentro do problema apresentado, o objetivo principal propõe desenvolver uma aplicação mobile para a plataforma Android que 
+> permita usufruir do poder de conectividade móvel entre as pessoas como meio de mobilizar, se tornar acessível e ampliar uma 
+> rede de solidariedade de enfrentamento dos impactos da pandemia e de outros eventos de calamitosos. A estrutura da aplicação 
+> tem que permitir o cadastro, a geolocalização e a comunicação entre quem precisa de ajuda a quem pode estar contribuindo 
+> com doações.
 > 
 > Portanto, a aplicação tem como objetivo oferecer e fomentar uma rede de apoio em dois pontos em específico: 
-> 1) doações - alimentos básicos e fundamentais, medicamentos e outros insumos e bens; 
-> 2) oferecer um canal para atendimento psicológico ou religioso.
+> 1) unir quem podem doar à quem precisam de doação;
+> 2) doações - alimentos básicos e fundamentais, medicamentos e outros insumos e bens.
 
 ## Justificativa
 
-> A motivação do desenvolvimento deste projeto é puramente pautada no social e se concentra no contexto de mitigar os 
-> impactos da pandemia decorrentes do empobrecimento da população que, consequentemente, passou a necessitar de ajuda 
+> A motivação do desenvolvimento deste projeto é puramente pautada na questão social e se concentra no contexto de mitigar 
+> os impactos da pandemia decorrentes do empobrecimento da população que, consequentemente, passou a necessitar de ajuda 
 > humanitária para manter a sua dignidade enquanto o país não se recuperar das crises econômicas e sociais.
 > 
 > Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos garantidos e que o governo por si só
@@ -66,15 +65,14 @@
 >                  [quem é (dados de cadastro) e histórico/relato de vida]
 >                 /                                                       \
 >	          quem ajuda                                              quem precisa
->           /     \    \__________ [chat e geolocalização] __________/     |
->          /       \                                                       |
->      doação    apoio psicossocial                              qual tipo de apoio a
->           \         \                                       pessoal/entidade precisa?
->            \         \                                             /         \
->             \         \                                        doação     apoio psicossocial
->              \         \                                        /            /
->               \         \                                      /            /
->                \_________\___________ [agendamento] __________/____________/ 
+>               |    \___________ [chat e geolocalização] __________/     |
+>               |                                                         |
+>             doação                                            o que a pessoa/entidade 
+>                \                                                    precisa?
+>                 \                                                       |
+>                  \                                                   doação   
+>                   \                                                    /
+>                    \_______________ [agendamento] ____________________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa 
 > ou a instituição interessada em receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e 
