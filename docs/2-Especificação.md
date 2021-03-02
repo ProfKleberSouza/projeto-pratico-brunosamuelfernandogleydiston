@@ -10,7 +10,7 @@
 
 |PERSONA|SOBRE                        |
 |-------|-----------------------------|
-|Lúcio|Um professor de cálculo de 33 anos, é casado e voluntário na assistência social da igreja. Além de sempre ajudar, ele se move para conscientizar as pessoas da necessidade de ajudar pessoas vulneráveis, e que mesmo pequenas contribuições fazem grandes diferenças. Na assistência social ele desempenha o papel de  encontrar doadores, organizar doações e encontrar pessoas que necessitam de ajuda, com sua equipe de voluntários. |
+| Lúcio | Um professor de cálculo de 33 anos, é casado e voluntário na assistência social da igreja. Além de sempre ajudar, ele se move para conscientizar as pessoas da necessidade de ajudar pessoas vulneráveis, e que mesmo pequenas contribuições fazem grandes diferenças. Na assistência social ele desempenha o papel de  encontrar doadores, organizar doações e encontrar pessoas que necessitam de ajuda, com sua equipe de voluntários. |
 
 
 ## Histórias de Usuários
@@ -19,7 +19,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... PERSONA|QUERO/PRECISO ... FUNCIONALIDADE	|PARA ... MOTIVO/VALOR|
 |-----------|-------------------------|----------|
-|Lúcio|Criar uma lista, onde diversas pessoas possam contribuir com determinado item até determinada data limite para doações, e definir locais para receber as doações.|Possibilitar diversas pessoas contribuírem de maneira organizada.|
+| Lúcio | Criar uma lista, onde diversas pessoas possam contribuir com determinado item até determinada data limite para doações, e definir locais para receber as doações. | Possibilitar diversas pessoas contribuírem de maneira organizada. |
 
 
 
