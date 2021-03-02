@@ -1,4 +1,4 @@
-# APP DE DOAÇÕES
+# APP DE DOAÇÕES (NOME A DEFINIR)
 
 Curso de Engenharia de Computação
 
