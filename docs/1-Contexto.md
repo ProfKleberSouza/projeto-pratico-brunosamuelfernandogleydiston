@@ -56,13 +56,12 @@
 >                                           |
 >                              [quem é (dados de cadastro) 
 >                              e histórico/relato de vida]
+>                           /                               \
 >                          /                                 \
->                         /                                   \
->	               quem ajuda ___ [chat e geolocalização] ___ quem precisa
+>	                quem ajuda ___ [chat e geolocalização] ___ quem precisa
 >                     |                                           |
 >             o que pode doar?                          o que a pessoa/entidade 
->                      \                                        precisa? 
->                       \                                        /
+>                       \                                     precisa? 
 >                        \___________ [agendamento] ____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização e dentro das necessidades descritas pelos perfis 
