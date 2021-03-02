@@ -11,6 +11,9 @@
 |PERSONA|SOBRE                        |
 |-------|-----------------------------|
 | Lúcio | Um professor de cálculo de 33 anos, é casado e voluntário na assistência social da igreja. Além de sempre ajudar, ele se move para conscientizar as pessoas da necessidade de ajudar pessoas vulneráveis, e que mesmo pequenas contribuições fazem grandes diferenças. Na assistência social ele desempenha o papel de  encontrar doadores, organizar doações e encontrar pessoas que necessitam de ajuda, com sua equipe de voluntários. |
+|Mário|Um vendedor de salgados de 35 anos que mora num suburbio de Vespasiano, casado e com 3 filhos que perdeu clientes devido a pandemia foi despejado da sua casa e precisou buscar auxílio de ONGs e doações para manter sua família. Foi recebido pelo grupo de apoio de Minas Gerais que o acolheu e disponibilizou Abrigo e alimento. |
+
+
 
 
 ## Histórias de Usuários
@@ -20,6 +23,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... PERSONA|QUERO/PRECISO ... FUNCIONALIDADE	|PARA ... MOTIVO/VALOR|
 |-----------|-------------------------|----------|
 | Lúcio | Criar uma lista, onde diversas pessoas possam contribuir com determinado item até determinada data limite para doações, e definir locais para receber as doações. | Possibilitar diversas pessoas contribuírem de maneira organizada. |
+|Mário|Criar uma forma de ajudar pessoas que buscam abrigo e alimento para manter não apenas a sua pessoa, mas sim toda a sua família.|Permitir que os usuários busquem auxílio de 1 ou mais modalidade de suporte de forma mais simples.|
+
 
 
 
@@ -43,6 +48,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007|Permitir usuário cria um perfil onde pode relatar história pessoal|Alta|
 |RF-008|Permitir usuário doador sinalizar disponibilidade para doações|Alta|
 |RF-009|Permitir compartilhamento de listas de doaçoes em ferramentas de mídias sociais|Baixa|
+|RF-010|Permitir que o usuário doador converse com o usuário receptor através de um chat|Baixa|
 
 
 ### Requisitos não Funcionais
