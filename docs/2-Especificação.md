@@ -10,7 +10,7 @@
 
 |PERSONA|SOBRE                        |
 |-------|-----------------------------|
-| Lúcio | Um professor de cálculo de 33 anos, é casado e voluntário na assistência social da igreja. Além de sempre ajudar, ele se move para conscientizar as pessoas da necessidade de ajudar pessoas vulneráveis, e que mesmo pequenas contribuições fazem grandes diferenças. Na assistência social ele desempenha o papel de  encontrar doadores, organizar doações e encontrar pessoas que necessitam de ajuda, com sua equipe de voluntários. |
+| Lúcio | Um professor de cálculo de 33 anos, é casado e voluntário na assistência social da igreja. Além de sempre ajudar, ele se move para conscientizar as pessoas da necessidade de ajudar pessoas vulneráveis, e que mesmo pequenas contribuições fazem grandes diferenças. Na assistência social ele desempenha o papel de  capitar doadores, organizar doações e encontrar pessoas que necessitam de ajuda com sua equipe de voluntários.|
 |Mário|Um vendedor de salgados de 35 anos que mora num suburbio de Vespasiano, casado e com 3 filhos que perdeu clientes devido a pandemia foi despejado da sua casa e precisou buscar auxílio de ONGs e doações para manter sua família. Foi recebido pelo grupo de apoio de Minas Gerais que o acolheu e disponibilizou Abrigo e alimento. |
 
 
