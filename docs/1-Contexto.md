@@ -36,31 +36,31 @@
 ## Público-Alvo
 
 > Dentro do contexto social já mencionado, o público-alvo inclui dois grupos sociais, sendo estes: grupo de pessoas carentes 
-> e grupo de doadores. Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, mas sim para 
-> a população em geral. Em resumo, o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade social, 
-> cujas causas podem advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica ou calamitosa. 
-> Essas pessoas afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam 
-> estar ajudando quem precisa. Sabe-se que muitas dessas pessoas não têm acesso a smartphones. Portanto, o aplicativo visa permitir 
-> que essas pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades sociais.
+> e grupo de doadores. Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, mas sim 
+> para a população em geral. Em resumo, o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade 
+> social, cujas causas podem advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica 
+> ou calamitosa. Essas pessoas afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais e 
+> outras pessoas possam estar ajudando. Sabe-se que muitas dessas pessoas não têm acesso a smartphones. Portanto, o aplicativo 
+> visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades 
+> sociais.
 > 
 > Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
-> 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
+> 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outras coisas; 
 > 2) de quem precisa de ajuda.
 > 
-> Além disso, permitirá que as pessoas possam falar um pouco da história pessoal.
+> Além disso, permitirá que as pessoas possam falar um pouco de sua história pessoal.
 >
 > Estrutura da teórica do aplicativo:
->   
->                              perfil do usuário/instituição
+>             
+>                             perfil do usuário/instituição
 >                                           |
->                              [quem é (dados de cadastro) 
->                                e histórico/relato de vida]
->                          /                                    \
->	                 quem ajuda ___ [chat e geolocalização] ___ quem precisa
->                       |                                         |
->               o que pode doar?                         o que a pessoa/entidade 
->                        \                                      precisa? 
->                         \___________ [agendamento] ____________/ 
+>                 [quem é (dados de cadastro) e histórico/relato de vida]
+>                     /                                           \
+>	               quem ajuda ____ [chat e geolocalização] ____ quem precisa
+>                    |                                             |
+>               o que pode doar?                        o que a pessoa/entidade 
+>                     \                                        precisa? 
+>                      \_____________ [agendamento] ____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa 
 > ou a instituição interessada em receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e 
