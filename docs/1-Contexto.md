@@ -28,29 +28,20 @@
 
 ## Justificativa
 
-> A motivação do desenvolvimento deste projeto é puramente pautada na questão social e se concentra no contexto de mitigar 
-> os impactos da pandemia decorrentes do empobrecimento da população que, consequentemente, passou a necessitar de ajuda 
-> humanitária para manter a sua dignidade enquanto o país não se recuperar das crises econômicas e sociais.
-> 
-> Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos garantidos e que o governo por si só
-> não possui força e atitudes suficientes para lidar com as carências de uma população necessitada durante, não só a 
-> pandemia do COVID19, mas, também, ao longo de outras tragédias. Tendo isso em vista, nós cremos que garantir aqueles 
-> em necessidade direitos humanos básicos não é responsabilidade somente do governo, mas da população como um todo. 
-> Para atingir tamanho objetivo de adesão e solidarismo entre as pessoas, utilizaremos do poder da tecnologia não só 
-> para conectá-las virtualmente, mas, também, humanamente por meio de um aplicativo que conscientize e une as pessoas 
-> em torno de um sentimento em comum de solidariedade.
+> A motivação do desenvolvimento deste projeto é puramente pautada no social, se concentra no contexto de mitigar os impactos 
+> da pandemia, decorrentes do empobrecimento da população, que consequentemente, passa a necessitar de solidariedade, para que 
+> as pessoas que foram e que estão mais fragilizadas consigam uma ajuda mínima para viver com certa dignidade, apoio e manter 
+> sua subsistência durante esse período até a recuperação econômica e social.
 
 ## Público-Alvo
 
-> Dentro do contexto social já mencionado, o público-alvo inclui dois grupos sociais, sendo estes: grupo de pessoas 
-> carentes e grupo de doação (para aqueles que estão dispostos a ajudar quem necessita). Dito isto, o aplicativo 
-> desenvolvido não está destinado a algum público alvo em específico, mas sim para a população em geral. Em resumo, 
-> o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade social, cujas causas podem 
-> advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica ou calamitosa. 
-> Essas pessoas que foram afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais 
-> e outras pessoas possam estar ajudando quem precisa. Sabe-se que muitas dessas pessoas não têm acesso a smartphones, 
-> portanto o aplicativo visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, 
-> vizinhos e por membros de entidades sociais.
+> Dentro do contexto social já mencionado, o público-alvo inclui dois grupos sociais, sendo estes: grupo de pessoas carentes 
+> e grupo de doadores. Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, mas sim para 
+> a população em geral. Em resumo, o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade social, 
+> cujas causas podem advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica ou calamitosa. 
+> Essas pessoas afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam 
+> estar ajudando quem precisa. Sabe-se que muitas dessas pessoas não têm acesso a smartphones. Portanto, o aplicativo visa permitir 
+> que essas pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades sociais.
 > 
 > Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
 > 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outros insumos; 
@@ -62,17 +53,14 @@
 >   
 >                              perfil do usuário/instituição
 >                                           |
->                  [quem é (dados de cadastro) e histórico/relato de vida]
->                 /                                                       \
->	          quem ajuda                                              quem precisa
->               |    \___________ [chat e geolocalização] __________/     |
->               |                                                         |
->             doação                                            o que a pessoa/entidade 
->                \                                                    precisa?
->                 \                                                       |
->                  \                                                   doação   
->                   \                                                    /
->                    \_______________ [agendamento] ____________________/ 
+>                               [quem é (dados de cadastro) 
+>                                e histórico/relato de vida]
+>                             /                              \
+>	                 quem ajuda ___ [chat e geolocalização] ___ quem precisa
+>                      |                                          |
+>               o que pode doar?                         o que a pessoa/entidade 
+>                       \                                       precisa? 
+>                        \__________ [agendamento] _____________/ 
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa 
 > ou a instituição interessada em receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e 
