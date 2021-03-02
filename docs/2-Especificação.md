@@ -2,9 +2,6 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Contexto.md"> Documentação de Contexto</a></span>
 
-
-# Estamos revisando e ajustando as histórias a partir dos feedbacks obtidos no dia 01-03-2021
-
 ## Personas
 
 
