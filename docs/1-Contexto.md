@@ -36,13 +36,12 @@
 ## Público-Alvo
 
 > Dentro do contexto social já mencionado, o público-alvo inclui dois grupos sociais, sendo estes: grupo de pessoas carentes 
-> e grupo de doadores. Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, mas sim 
-> para a população em geral. Em resumo, o aplicativo é destinado a ajudar pessoas e comunidades em situação de vulnerabilidade 
-> social, cujas causas podem advir dos impactos da pandemia de COVID-19 ou de qualquer outra situação de dificuldade econômica 
-> ou calamitosa. Essas pessoas afetadas necessitam ser identificadas para que entidades, ONGs, projetos sociais, hospitais e 
-> outras pessoas possam estar ajudando. Sabe-se que muitas dessas pessoas não têm acesso a smartphones. Portanto, o aplicativo 
-> visa permitir que essas pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades 
-> sociais.
+> e grupo de doadores. Dito isto, o aplicativo desenvolvido não está destinado a algum público alvo em específico, mas sim para 
+> a população em geral. Em resumo, o aplicativo é ferramenta destinada a ajudar a localizar pessoas e comunidades em situação 
+> de vulnerabilidade social, cujas causas podem advir tanto dos impactos da pandemia de COVID-19, como situações de dificuldade 
+> econômica e outras calamidades, para que entidades, ONGs, projetos sociais, hospitais e outras pessoas possam estar ajudando. 
+> Sabe-se que muitas dessas pessoas não têm acesso a smartphones ou a internet. Portanto, o aplicativo visa permitir que essas 
+> pessoas possam ser inseridas nessa rede por familiares, amigos, vizinhos e por membros de entidades sociais.
 > 
 > Uma das funcionalidade do aplicativo possibilitará a criação de dois tipos de perfis: 
 > 1) o de quem ajuda com doações de alimentos básicos e fundamentais, medicamentos, entre outras coisas; 
