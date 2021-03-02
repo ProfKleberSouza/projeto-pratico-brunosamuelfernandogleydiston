@@ -18,7 +18,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |-----------|-------------------------|----------|
 | Lúcio | Criar uma lista, onde diversas pessoas possam contribuir com determinado item até determinada data limite para doações, e definir locais para receber as doações. | Possibilitar diversas pessoas contribuírem de maneira organizada. |
 |Mário|Criar uma forma de ajudar pessoas que buscam abrigo e alimento para manter não apenas a sua pessoa, mas sim toda a sua família.| Permitir que os usuários busquem auxílio de um ou mais modalidade de suporte de forma mais simples. |
-| Bruno | Busca propor e desenvolver idéias de cunho social que possam de certa forma ajudar as pessoas e comunidades a partir dos conhecimentos e das experiências adquiridas. | Criar mecanismos de proteção para amenizar as desigualdades sociais. |
+| Bruno | Busca propor e desenvolver idéias de cunho social que possam de certa forma ajudar as pessoas e comunidades. | Criar mecanismos de proteção para amenizar as desigualdades sociais. |
 
 
 ## Requisitos
