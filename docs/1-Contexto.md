@@ -62,6 +62,7 @@
 >                     \                                        precisa? 
 >                      \_____________ [agendamento] ____________/ 
 >
-> Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização. Desde que esteja por perto, a pessoa 
-> ou a instituição interessada em receber ajuda solidária manda mensagens para o doador no chat do próprio aplicativo e 
-> combina o local e o horário de retirada. Depois de combinado, o interessado vai retirar pessoalmente a doação.
+> Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização e dentro das necessidades descritas pelos perfis 
+> de quem precisa de ajuda. Desde que esteja por perto, a pessoa ou a instituição interessada em receber esta ajuda solidária pode 
+> enviar mensagens para o doador no chat do próprio aplicativo e combina o local e o horário de retirada. Depois de combinado, o 
+> interessado vai retirar pessoalmente a doação.
