@@ -1,4 +1,4 @@
-# APP DE DOAÇÕES (NOME A DEFINIR)
+# CARITAS
 
 Curso de Engenharia de Computação
 
