@@ -5,31 +5,28 @@
 
 ## Divisão de Papéis
 
-> Product Owner - Bruno Kelsen
-> Time Scrum - Bruno Kelsen, Fernando Luiz, Gleydiston Bragança, Samuel Vieira.
-> Scrum Master - Fernando Luiz
+- Product Owner - Bruno Kelsen
+- Time Scrum - Bruno Kelsen, Fernando Luiz, Gleydiston Bragança, Samuel Vieira.
+- Scrum Master - Fernando Luiz
 
 
 ## Processo
-
-> Coloque  informações sobre detalhes da implementação do Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
->Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
->Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
->wekend alignmet - São reuniões semanais que nos permitem atualizar os status da sprint atual.
->Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
+ 
+> - Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
+> - Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
+> - Wekend alignment  - São reuniões semanais que nos permitem atualizar os status da sprint atual.
+> - Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
 
 
 ## Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de diagramação
+- Android Studio.
+- Whatsapp
+- Microssoft Teams
+- Draw.io
+- Visual Studio Code
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
