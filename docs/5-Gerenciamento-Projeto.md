@@ -1,16 +1,14 @@
 # Gerenciamento de Projeto
 
-> Descreva aqui a metodologia de trabalho do grupo para atacar o
-> problema.
+> A metodologia utilizada para gerenciamento e organização das tarefas do processo é a 
+> metodologia Scrum.
 
 ## Divisão de Papéis
 
-> Apresente a divisão de papéis entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+> Product Owner - Bruno Kelsen
+> Time Scrum - Bruno Kelsen, Fernando Luiz, Gleydiston Bragança, Samuel Vieira.
+> Scrum Master - Fernando Luiz
+
 
 ## Processo
 
@@ -19,11 +17,11 @@
 > o andamento do projeto, a execução das tarefas e o status de desenvolvimento
 > da solução.
 > 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+>Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
+>Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
+>wekend alignmet - São reuniões semanais que nos permitem atualizar os status da sprint atual.
+>Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
+
 
 ## Ferramentas
 
