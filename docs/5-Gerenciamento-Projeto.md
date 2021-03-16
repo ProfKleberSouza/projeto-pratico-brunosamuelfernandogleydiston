@@ -36,10 +36,3 @@ necessidades da nossa solução.
 
 > Liste quais ferramentas foram empregadas no desenvolvimento do
 > projeto, justificando a escolha delas, sempre que possível.
-> 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [![Slack](img/slack.jpg)](https://slack.com/)
-> - [![Trello](img/trello.png)](https://trello.com/)
-> 
-> - [![Microsof Project](img/project.png)](https://products.office.com/pt-br/project/project-and-portfolio-management-software)
-> - [![Redbooth](img/redbooth.png)](https://redbooth.com/)
