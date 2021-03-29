@@ -14,6 +14,8 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 
 ## User Flow
 
+![image](https://user-images.githubusercontent.com/67794085/112912783-c0f6e200-90ce-11eb-8f6f-c366fe532303.png)
+
 ![Exemplo de UserFlow](img/userflow.jpg)
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
