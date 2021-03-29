@@ -1,4 +1,4 @@
-# CARITAS
+# DOAR
 
 Curso de Engenharia de Computação
 
