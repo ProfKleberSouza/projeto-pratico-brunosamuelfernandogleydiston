@@ -16,8 +16,8 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/ae8a7db8766aa794f278426b1cd5dd4aa8578ea9/docs/img/newinterfece.png)
 
-Link do protótipo da interface no Moqups
-https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
+> **Link do protótipo da interface**:
+> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
 > mapear todo fluxo de telas do site ou app. Essa técnica funciona
