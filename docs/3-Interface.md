@@ -29,7 +29,7 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 > usuário cadastra a doação e ao clicar em uma doação disponível o usuário pode visualizar a descrição da 
 > doação, data, localização e se tiver interesse o usuário pode inicializar um chat de conversa com o doador. 
 
-## User Flow
+## Projeto gráfico do User Flow
 
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
 
