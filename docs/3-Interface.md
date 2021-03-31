@@ -14,7 +14,7 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 
 ## User Flow
 
-![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/ae8a7db8766aa794f278426b1cd5dd4aa8578ea9/docs/img/newinterfece.png)
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
 
 > **Link do protótipo da interface**:
 > - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
