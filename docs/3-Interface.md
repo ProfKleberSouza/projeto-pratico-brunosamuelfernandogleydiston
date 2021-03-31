@@ -12,6 +12,21 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 > funcionais e histórias de usuário abordados nas [Especificações do
 > Projeto](2-Especificação.md).
 
+## Descrição do User Flow
+
+As principais interfaces da plataforma da aplicação Doar é composta de 6 telas principais, 
+a primeira tela apresenta a logo e nome da aplicação e os campos de entrada (login - e-mail\senha) 
+da aplicação. Apresenta os meios para realizar uma nova conta, de forma rápida utilizando a conta 
+Google e do Facebook, ou inscrevendo-se com um endereço de e-mail.
+Na tela de criação da nova conta, o usuário entra com o e-mail e com a senha e posteriormente tem 
+acesso ao perfil onde o usuário preenche os dados visíveis como: nome, texto biográfico e inserção de 
+até 6 fotos. Outros dados são requeridos no background do perfil como localidade, número telefônico, 
+data de nascimento. Ainda na tela de perfil existe um botão que permite o usuário fazer/buscar uma doação.
+Na tela de doações é possível visualizar as doações disponibilizadas, o tipo e data em que foi adicionada. 
+No parte superior tem os botões de voltar e de adicionar um nova doação, ao realizar um nova doação o 
+usuário cadastra a doação e ao clicar em uma doação disponível o usuário pode visualizar a descrição da 
+doação, data, localização e se tiver interesse o usuário pode inicializar um chat de conversa com o doador. 
+
 ## User Flow
 
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
