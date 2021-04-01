@@ -14,8 +14,6 @@ Os membros do grupo são:
 - Gleydiston Braganca
 - Samuel Chiodi
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
-
 # Documentação
 
 1. [Contexto](docs/1-Contexto.md)
