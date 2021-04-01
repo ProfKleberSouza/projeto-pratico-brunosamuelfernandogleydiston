@@ -1,6 +1,36 @@
 
 # Projeto de Interface
 
+## Descrição do User Flow
+
+> A interface da aplicação Doar é composta de 6 telas principais, a ideia é ter uma usabilidade 
+> simples e dinâmica. A primeira tela apresenta a logo e nome da aplicação e os campos de entrada 
+> (login - e-mail\senha) da aplicação. Apresenta os meios para realizar uma nova conta, de forma 
+> rápida utilizando a conta Google e do Facebook, ou inscrevendo-se com um endereço de e-mail.
+> 
+> Na tela de criação da nova conta, o usuário entra com o e-mail e com a senha e posteriormente 
+> tem acesso ao perfil onde o usuário preenche os dados visíveis como: nome, texto biográfico e 
+> inserção de até 6 fotos. Outros dados são requeridos no background do perfil como localidade, 
+> número telefônico, data de nascimento. Ainda na tela de perfil existe um botão que permite o 
+> usuário fazer/buscar uma doação.
+> 
+> Na tela de doações é possível visualizar as doações disponibilizadas, o tipo e data em que foi 
+> adicionada. No parte superior tem os botões de voltar e de adicionar um nova doação, ao realizar 
+> um nova doação o usuário cadastrar a doação e ao clicar em uma doação disponível o usuário pode 
+> visualizar a descrição da doação e data, se houver interesse, o usuário pode inicializar um chat 
+> de conversa com o doador. 
+> 
+> Na tela de chat os usuários podem conversar e acordar como será realizada a doação. O doador então 
+> pode disponibilizar um botão com o link da doação, isso permite que o outro usuário tenha acesso à 
+> próxima tela que disponibiliza a geolocalização, endereço, data e horário e o número de contato.
+
+## Projeto gráfico do User Flow
+
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
+
+> **Link do protótipo da interface**:
+> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
+
 Link do desenvolvimento Moqups
 
 https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
@@ -11,30 +41,6 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 > foi elaborada de forma a atender os requisitos funcionais, não
 > funcionais e histórias de usuário abordados nas [Especificações do
 > Projeto](2-Especificação.md).
-
-## Descrição do User Flow
-
-> As principais interfaces da plataforma da aplicação Doar é composta de 6 telas principais, a primeira 
-> tela apresenta a logo e nome da aplicação e os campos de entrada (login - e-mail\senha) da aplicação. 
-> Apresenta os meios para realizar uma nova conta, de forma rápida utilizando a conta Google e do Facebook, 
-> ou inscrevendo-se com um endereço de e-mail.
-> 
-> Na tela de criação da nova conta, o usuário entra com o e-mail e com a senha e posteriormente tem 
-> acesso ao perfil onde o usuário preenche os dados visíveis como: nome, texto biográfico e inserção de 
-> até 6 fotos. Outros dados são requeridos no background do perfil como localidade, número telefônico, 
-> data de nascimento. Ainda na tela de perfil existe um botão que permite o usuário fazer/buscar uma doação.
-> 
-> Na tela de doações é possível visualizar as doações disponibilizadas, o tipo e data em que foi adicionada. 
-> Na parte superior tem os botões de voltar e de adicionar um nova doação, ao realizar um nova doação o 
-> usuário cadastra a doação e ao clicar em uma doação disponível o usuário pode visualizar a descrição da 
-> doação, data, localização e se tiver interesse o usuário pode inicializar um chat de conversa com o doador. 
-
-## Projeto gráfico do User Flow
-
-![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
-
-> **Link do protótipo da interface**:
-> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
 > mapear todo fluxo de telas do site ou app. Essa técnica funciona
