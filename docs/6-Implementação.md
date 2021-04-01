@@ -19,31 +19,27 @@
 
 ## Arquitetura da solução
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
+> A interface da aplicação Doar é composta de 6 telas principais, a ideia é ter uma usabilidade 
+> simples e dinâmica. A primeira tela apresenta a logo e nome da aplicação e os campos de entrada 
+> (login - e-mail\senha) da aplicação. Apresenta os meios para realizar uma nova conta, de forma 
+> rápida utilizando a conta Google e do Facebook, ou inscrevendo-se com um endereço de e-mail.
+> 
+> Na tela de criação da nova conta, o usuário entra com o e-mail e com a senha e posteriormente 
+> tem acesso ao perfil onde o usuário preenche os dados visíveis como: nome, texto biográfico e 
+> inserção de até 6 fotos. Outros dados são requeridos no background do perfil como localidade, 
+> número telefônico, data de nascimento. Ainda na tela de perfil existe um botão que permite o 
+> usuário fazer/buscar uma doação.
+> 
+> Na tela de doações é possível visualizar as doações disponibilizadas, o tipo e data em que foi 
+> adicionada. No parte superior tem os botões de voltar e de adicionar um nova doação, ao realizar 
+> um nova doação o usuário cadastrar a doação e ao clicar em uma doação disponível o usuário pode 
+> visualizar a descrição da doação e data, se houver interesse, o usuário pode inicializar um chat 
+> de conversa com o doador. 
+> 
+> Na tela de chat os usuários podem conversar e acordar como será realizada a doação. O doador então 
+> pode disponibilizar um botão com o link da doação, isso permite que o outro usuário tenha acesso à 
+> próxima tela que disponibiliza a geolocalização, endereço, data e horário e o número de contato.
 
-A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
-que o usuário entra na plataforma, ele é apresentado à tela inicial
-(Tela 1) onde ele é confrontado com as opões de editar seu perfil ou
-então visualizar sua galeria.
+## Projeto gráfico do User Flow
 
-Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
-redirecionado para a tela de edição de perfil (Tela 2), onde pode
-atualizar seus dados cadastrais. Nessa tela, o usuário também pode
-escolher para editar sua foto de perfil. Ao selecionar essa opção, ele é
-redirecionado para a Tela 3, onde ele a imagem expandida do perfil do
-usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma
-nova janela abre pedindo para o usuário fazer o upload da nova foto.
-Assim que o processo termina um pop-up exibe o status para o usuário
-(Tela 4) e o usuário é redirecionado para a Tela 2.
-
-Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele
-é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O
-usuário pode clicar em um post qualquer para visualizar os detalhes do
-post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo
-redirecionado para a Tela 7. Ao editar as informações, o usuário pode
-escolher salvar ou deletar o post. Em ambos os casos o status é
-notificado para o usuário (Tela 8) e em seguida ele é redirecionado
-para a Tela 2.
-
-![Exemplo de UserFlow](img/userflow.jpg)
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
