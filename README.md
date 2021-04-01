@@ -1,4 +1,4 @@
-# DOAR
+# App "DOAR"
 
 Curso de Engenharia de Computação
 
