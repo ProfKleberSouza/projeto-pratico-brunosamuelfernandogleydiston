@@ -1,11 +1,3 @@
-
-## Projeto gráfico da interface
-
-![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
-
-> **Link do protótipo da interface**:
-> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
-
 Link do desenvolvimento Moqups
 
 https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
@@ -27,15 +19,18 @@ https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
 > - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
 
 
+## User Flow
+
+
+
+
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+> Protótipos do layout de elementos fundamentais do design de interface usados na estrutura do aplicativo e seu relacionamentos entre suas telas.
+ 
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
 
-> São protótipos usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante do
-> layout de elementos fundamentais na interface.
+> **Link do protótipo**:
 > 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
+> 
