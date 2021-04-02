@@ -17,7 +17,7 @@ O projeto segue a seguinte convenção para o nome de branchs:
    <p> Quanto as tags escolhidas para gerência de issues, devem ser usados no projeto a seguinte convenção para etiquetas: </p>
 
 - `bugfix`: uma funcionalidade encontra-se com problemas
-- `hot-bugfix`: uma funcionalidade encontra-se com problemas e necessidade de uma ação rápida para resolução
+- `hot-bugfix`: uma funcionalidade encontra-se com problemas e ação rápida para resolução
 - `feature`: uma nova funcionalidade precisa ser introduzida
 - `melhoria`: uma funcionalidade precisa ser melhorada
 - `analise`: uma analise de uma funcionalidade a ser criada
