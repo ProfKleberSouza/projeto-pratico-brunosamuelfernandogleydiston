@@ -4,31 +4,25 @@
 
 ## Tecnologias Utilizadas
 
->   Para o desenvolvimento do aplicativo em questão definimos que a melhor 
+> Para o desenvolvimento do aplicativo em questão definimos que a melhor 
 > opção é utilizar o flutter, uma ferramenta de desenvolivmento da Google que 
 > permite a criação de aplicativos compilados nativamente, tornando o aplicativo 
 > mais rapido e o seu desenvolvimento mais simples.
->   O Flutter permite a utilização de várias APIs, no entanto para o projeto
+> O Flutter permite a utilização de várias APIs, no entanto para o projeto
 > é necessário apenas algumas funcionalidades do celular, entre elas:
 >   - Maps
 >   - Contatos
 >   - Câmera e mídia 
 >   - Microfone  
-> 
 
-> O projeto do aplicativo será feito através do ambiente de desenvolvimento 
-> mobile [Android Studio](https://developer.android.com/studio) devido a sua facilidade de 
+> O projeto do aplicativo será feito através do ambiente de desenvolvimento [Android Studio](https://developer.android.com/studio)
+> mobile devido a sua facilidade de 
 > interação com os dispositivos, além de ter um excelente arsenal para emulação android.
 > O Android Studio cria todos os arquivos necessários para o desenvolvemtno além de os 
 > organiza-los com as melhores praticas para o desenvolvimento mobile. No entanto para fazer 
-> a edição do codigo a melhor opção e é a que iremos utilizar é o [Visial Studio Code](https://code.visualstudio.com/). 
+> a edição do codigo a melhor opção e é a que iremos utilizar é o [Visial Studio Code](https://code.visualstudio.com/).
 > O visual Studio disponibiliza extensões que auxiliam o criação de código.
 > Algumas extensões que utilizamos para a criação do projeto:
->   -
->   -
->   -
->     
-> 
 
 ## Arquitetura da solução
 
