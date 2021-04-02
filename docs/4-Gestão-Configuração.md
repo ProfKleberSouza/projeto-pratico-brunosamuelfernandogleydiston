@@ -11,7 +11,7 @@ O projeto segue a seguinte convenção para o nome de branchs:
 
 - `master`: versão estável já testada do software
 - `homologação`: versão de homologação do software, todo desenvolvimento deve passar pela branch para testes, antes de ir para homologação, para executar de testes antes de ir para homologação.
-- `H-xx`: A equipe de desenvolvimento deve clonar a ultima versão da brach de homologação e criar uma branch com o H-`número da história(xx)`
+- `H-xx`: A equipe de desenvolvimento deve clonar a ultima versão da branch de homologação e criar uma branch com o H-`número da história(xx)`
 
 #### Tags
    <p> Quanto as tags escolhidas para gerência de issues, devem ser usados no projeto a seguinte convenção para etiquetas: </p>
