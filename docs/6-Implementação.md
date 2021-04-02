@@ -23,6 +23,10 @@
 > a edição do codigo a melhor opção e é a que iremos utilizar é o [Visial Studio Code](https://code.visualstudio.com/).
 > O visual Studio disponibiliza extensões que auxiliam o criação de código.
 > Algumas extensões que utilizamos para a criação do projeto:
+>  - Flutter v3.21.0
+>  - Dart v3.21.1
+>  - Code spell checker
+>  - Git e suas extensões
 
 ## Arquitetura da solução
 
