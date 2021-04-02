@@ -6,37 +6,47 @@ A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório `master`.
 
+#### Branchs
 O projeto segue a seguinte convenção para o nome de branchs:
 
 - `master`: versão estável já testada do software
-- `homologação`: versão de homologação do software
-- `testes`: todo desenvolvimento deve passar pela branch de testes, antes de ir para homologação
-- `dev`: versão da equipe de desenvolvimento
+- `homologação`: versão de homologação do software, todo desenvolvimento deve passar pela branch para testes, antes de ir para homologação, para executar de testes antes de ir para homologação.
+- `H-xx`: A equipe de desenvolvimento deve clonar a ultima versão da brach de homologação e criar uma branch com o H-`número da história(xx)`
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+#### Tags
+   <p> Quanto as tags escolhidas para gerência de issues, devem ser usados no projeto a seguinte convenção para etiquetas: </p>
 
 - `bugfix`: uma funcionalidade encontra-se com problemas
+- `hot-bugfix`: uma funcionalidade encontra-se com problemas e necessidade de uma ação rápida para resolução
 - `feature`: uma nova funcionalidade precisa ser introduzida
-- `Melhoria`: uma funcionalidade precisa ser melhorada
+- `melhoria`: uma funcionalidade precisa ser melhorada
+- `analise`: uma analise de uma funcionalidade a ser criada
+- `reuniões`: para agendamento reuniões
 
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
->
+#### Commits e Merges
+
+Os commits e mergers deverão seguir a convenção de  [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/#resumo)
+exemplo da estrutura:
+```
+<tipo>[escopo opcional]: <descrição>
+
+[corpo opcional]
+
+[rodapé opcional]
+
+```
+
+
+
 > **Links Úteis**:
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
 > - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+> - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4)
 
 ## Hospedagem
 
-> Explique como a hospedagem e o lançamento da plataforma foi feita.
+> Será descrita após a execução da mesma, escolhemos a utilização a priori do Firebase.
 >
 > **Links Úteis**:
 >
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o
->   HostGator](https://www.hostgator.> com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+> - [Firebase](https://firebase.google.com/docs)
