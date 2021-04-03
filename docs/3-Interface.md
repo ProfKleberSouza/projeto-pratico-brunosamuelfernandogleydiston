@@ -1,25 +1,8 @@
 ## User Flow
 
-Link do desenvolvimento Moqups
+> Fluxo de usuário (User Flow) mapeando todo fluxo de telas da aplicação e alinhando os caminhos e as possíveis ações que o usuário pode fazer.
 
-https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação.md"> Documentação de Especificação</a></span>
-
-> Apresente as principais a interface da plataforma. Discuta como ela
-> foi elaborada de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](2-Especificação.md).
-
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/9b0c592166978c2d4f8983333827c0139aa0a1b6/docs/img/userflow_13.png)
 
 ## Wireframes
 
