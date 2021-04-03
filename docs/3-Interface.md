@@ -2,7 +2,7 @@
 
 > Fluxo de usuário (User Flow) mapeando todo fluxo de telas da aplicação e alinhando os caminhos e as possíveis ações que o usuário pode fazer.
 
-![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/a7c62a7c0743d536135ac5dd16a30cf47f3622dd/docs/img/userflow_new.png)
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/dc844980e3e066f454de32c4a6b5b0a3bc19b1fe/docs/img/userflow_13.png)
 
 ## Wireframes
 
