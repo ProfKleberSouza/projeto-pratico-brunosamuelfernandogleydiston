@@ -1,7 +1,7 @@
-# Gerenciamento de Projeto
+## Gerenciamento de Projeto
 
-> A metodologia utilizada para gerenciamento e organização das tarefas do processo é a 
-> metodologia Scrum.
+> As metodologias utilizadas para gerenciamento e organização das tarefas são os processos Kanban e Scrum.
+
 
 ## Divisão de Papéis
 
@@ -12,10 +12,10 @@
 
 ## Processo
  
-> - Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
-> - Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
-> - Wekend alignment  - São reuniões semanais que nos permitem atualizar os status da sprint atual.
-> - Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
+- Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
+- Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
+- Wekend alignment  - São reuniões semanais que nos permitem atualizar os status da sprint atual.
+- Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
 
 
 ## Ambiente e Ferramentas de Trabalho
