@@ -55,3 +55,8 @@
 ## Projeto gráfico da aplicação
 
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
+
+> **Link do protótipo**:
+> 
+> - [Moqups](https://app.moqups.com/gYUqzI17lq/view/page/ae8fe8eb0)
+> 
