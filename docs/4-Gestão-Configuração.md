@@ -42,6 +42,8 @@
 
 - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
 - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
+- [Git Tutorial](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)
 - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4)
 
 ## Hospedagem
