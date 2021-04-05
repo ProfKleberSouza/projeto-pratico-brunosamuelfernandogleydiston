@@ -33,6 +33,15 @@
 > da pandemia, decorrentes do empobrecimento da população, que consequentemente, passa a necessitar de solidariedade, para que 
 > as pessoas que foram e que estão mais fragilizadas consigam uma ajuda mínima para viver com certa dignidade, apoio e manter 
 > sua subsistência durante esse período até a recuperação econômica e social.
+> Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos
+> garantidos e que o governo por si só não possui força e atitudes suficientes para lidar com as 
+> carências de uma população necessitada durante, não só a pandemia do COVID19,mas,
+> também, ao longo de tragédias naturais e aquelas causadas pelo próprio homem.Tendo isso em 
+> vista, nós cremos que garantir aqueles em necessidade direitos humanos básicos não é
+> responsabilidade somente do governo, mas da população como um todo.Para atingir tamanho 
+> objetivo de adesão e solidarismo entre as pessoas, utilizaremos do poder da tecnologia não só para 
+> conectá-las virtualmente, mas, também, humanamente por meio de um aplicativo que 
+> conscientize e une as pessoas em torno de um sentimento em comum de solidariedade.
 
 ## Público-Alvo
 
