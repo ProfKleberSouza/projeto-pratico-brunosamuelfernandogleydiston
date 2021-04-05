@@ -52,17 +52,17 @@
 >
 > Estrutura da teórica do aplicativo:
 >             
->                             perfil do usuário/instituição
->                                           |
->                              [quem é (dados de cadastro) 
->                              e histórico/relato de vida]
->                           /                               \
->                          /                                 \
->	                quem ajuda ___ [chat e geolocalização] ___ quem precisa
->                     |                                           |
->             o que pode doar?                          o que a pessoa/entidade 
->                       \                                     precisa? 
->                        \___________ [agendamento] ____________/ 
+>                            perfil do 
+>                  ____ usuário/instituição ____
+>                /                               \
+>               /                                 \
+>	     quem ajuda ___ [dashboard das doações] ___ quem precisa
+>           |                                           |
+>  o que pode doar? ___ [chat e geolocalização] ___ o que a pessoa/entidade precisa?  
+>               \                                    /  
+>                \____ agenda o local e horário ____/ 
+>                         para deixar/retirar 
+>                             a doação
 >
 > Os perfis doadores anunciam o que pretendem doar baseado na sua geolocalização e dentro das necessidades descritas pelos perfis 
 > de quem precisa de ajuda. Desde que esteja por perto, a pessoa ou a instituição interessada em receber esta ajuda solidária pode 
