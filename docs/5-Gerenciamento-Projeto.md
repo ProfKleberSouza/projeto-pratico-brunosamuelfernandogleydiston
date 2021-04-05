@@ -1,7 +1,4 @@
-## Gerenciamento de Projeto
-
-> As metodologias utilizadas para gerenciamento e organização das tarefas são os processos Kanban e Scrum.
-
+# Gerenciamento de Projeto
 
 ## Divisão de Papéis
 
@@ -11,6 +8,8 @@
 
 
 ## Processo
+ 
+> As metodologias utilizadas para gerenciamento e organização das tarefas são os processos Kanban e Scrum.
  
 - Product backlog - São as histórias das personas que se tornam objetivos ou tarefas a serem cumpridas.
 - Sprint Planning Meeting - São reuniões que tem de definir quais os produtos backlog, periodo da sprint e prioridades.
