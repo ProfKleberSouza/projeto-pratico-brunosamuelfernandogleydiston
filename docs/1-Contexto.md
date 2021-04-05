@@ -58,7 +58,7 @@
 >                   /                                        \
 >	          quem ajuda ______ [dashboard das doações] ______ quem precisa
 >                  |                                           |
->     o que pode doar? _______________ [chat] ______________ o que a pessoa/entidade precisa?  
+>     o que pode doar? ______________ [chat] ______________ o que a pessoa/entidade precisa?  
 >                  \                                           /  
 >                   \                                         / 
 >                    \____ agenda o local e horário para ____/
