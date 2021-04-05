@@ -28,7 +28,8 @@ As ferramentas empregadas no projeto são:
 - Moqups (design)
 - Android Studio (desenvolvimento)
 - Visual Studio Code (desenvolvimento)
-- Git (versionamento)
+- Git (versionamento de código)
+- Github (controle de versionamento)
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
