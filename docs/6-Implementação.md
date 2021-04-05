@@ -1,32 +1,33 @@
 # Projeto da Solução
 
-<span style="color:red">Pré-requisitos: <a href="4-Gestão-Configuração.md"> Ambiente e Ferramentas de Trabalho</a></span>
+> <span style="color:red">Pré-requisitos: <a href="4-Gestão-Configuração.md"> Ambiente e 
+> Ferramentas de Trabalho</a></span>
 
 ## Tecnologias Utilizadas
 
-> Para o desenvolvimento do aplicativo em questão definimos que a melhor 
-> opção é utilizar o flutter, uma ferramenta de desenvolivmento da Google que 
-> permite a criação de aplicativos compilados nativamente, tornando o aplicativo 
-> mais rapido e o seu desenvolvimento mais simples.
-> O Flutter permite a utilização de várias APIs, no entanto para o projeto
-> é necessário apenas algumas funcionalidades do celular, entre elas:
->   - Maps
->   - Contatos
->   - Câmera e mídia 
->   - Microfone  
+> Para o desenvolvimento do aplicativo em questão definimos que a melhor opção é utilizar o flutter, 
+> uma ferramenta de desenvolivmento da Google que permite a criação de aplicativos compilados nativamente, 
+> tornando o aplicativo mais rapido e o seu desenvolvimento mais simples. O Flutter permite a utilização de 
+> várias APIs, no entanto para o projeto é necessário apenas algumas funcionalidades do celular, entre elas:
+
+- Contatos
+- Câmera e mídia
+- Microfone
+- GPS
+- Maps (geolocalização)
 
 > O projeto do aplicativo será feito através do ambiente de desenvolvimento [Android Studio](https://developer.android.com/studio)
-> mobile devido a sua facilidade de 
-> interação com os dispositivos, além de ter um excelente arsenal para emulação android.
-> O Android Studio cria todos os arquivos necessários para o desenvolvemtno além de os 
-> organiza-los com as melhores praticas para o desenvolvimento mobile. No entanto para fazer 
-> a edição do codigo a melhor opção e é a que iremos utilizar é o [Visial Studio Code](https://code.visualstudio.com/).
+> mobile devido a sua facilidade de interação com os dispositivos, além de ter um excelente arsenal para 
+> emulação android. O Android Studio cria todos os arquivos necessários para o desenvolvemtno além de os 
+> organiza-los com as melhores praticas para o desenvolvimento mobile. No entanto para fazer a edição do 
+> codigo a melhor opção e é a que iremos utilizar é o [Visial Studio Code](https://code.visualstudio.com/).
 > O visual Studio disponibiliza extensões que auxiliam o criação de código.
 > Algumas extensões que utilizamos para a criação do projeto:
->  - Flutter v3.21.0
->  - Dart v3.21.1
->  - Code spell checker
->  - Git e suas extensões
+
+- Dart v3.21.1
+- Flutter v3.21.0
+- Code spell checker
+- Git v2.30.0.2
 
 ## Arquitetura da solução
 
@@ -51,6 +52,6 @@
 > pode disponibilizar um botão com o link da doação, isso permite que o outro usuário tenha acesso à 
 > próxima tela que disponibiliza a geolocalização, endereço, data e horário e o número de contato.
 
-## Projeto gráfico do User Flow
+## Projeto gráfico da aplicação
 
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/0d35e6b3bb9b4044ab0d7622a01a701433480858/docs/img/newinterfece_v1.png)
