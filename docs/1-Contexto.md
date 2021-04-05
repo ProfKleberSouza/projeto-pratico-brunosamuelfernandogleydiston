@@ -33,6 +33,7 @@
 > da pandemia, decorrentes do empobrecimento da população, que consequentemente, passa a necessitar de solidariedade, para que 
 > as pessoas que foram e que estão mais fragilizadas consigam uma ajuda mínima para viver com certa dignidade, apoio e manter 
 > sua subsistência durante esse período até a recuperação econômica e social.
+> 
 > Nós acreditamos que todos os seres humanos devem ter os seus direitos básicos
 > garantidos e que o governo por si só não possui força e atitudes suficientes para lidar com as 
 > carências de uma população necessitada durante, não só a pandemia do COVID19,mas,
