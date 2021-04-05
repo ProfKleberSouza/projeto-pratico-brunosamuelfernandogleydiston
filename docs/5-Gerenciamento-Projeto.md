@@ -29,11 +29,9 @@ As ferramentas empregadas no projeto são:
 - Android Studio (desenvolvimento)
 - Visual Studio Code (desenvolvimento)
 - Git (versionamento de código)
-- Github (controle de versionamento)
+- Github (administração da produção e controle de versionamento)
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
+O editor de código/ambiente de desenvolvimento foi escolhido porque ele possui uma integração com o sistema de versão. 
+As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas e para criar os
+diagramas da interface e funcionalidades da aplicação utilizamos ferramenta que melhor captam as necessidades da solução. 
+Por fim, o sistema de controle de versões distribuído utilizado são os software Git e a plataforma Github para administração da produção e armazemamento o projeto.
