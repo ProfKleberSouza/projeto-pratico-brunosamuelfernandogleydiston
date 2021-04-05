@@ -22,11 +22,13 @@
 
 As ferramentas empregadas no projeto são:
 
-- Android Studio.
-- Whatsapp
-- Microssoft Teams
-- Draw.io
-- Visual Studio Code
+- Microssoft Teams (comunicação)
+- Whatsapp (comunicação)
+- Draw.io (design)
+- Moqups (design)
+- Android Studio (desenvolvimento)
+- Visual Studio Code (desenvolvimento)
+- Git (versionamento)
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
