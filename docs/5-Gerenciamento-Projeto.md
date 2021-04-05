@@ -18,7 +18,7 @@
 > - Review meeting - É a ultima reunião da sprint para revisar todos as tarefas. É importante definir a porcetagem das tarefas realizadas para posterior ajuste de objetivos.
 
 
-## Ferramentas
+## Ambiente e Ferramentas de Trabalho
 
 As ferramentas empregadas no projeto são:
 
