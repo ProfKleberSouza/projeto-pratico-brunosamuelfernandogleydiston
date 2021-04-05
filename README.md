@@ -1,4 +1,4 @@
-# "DOAR"
+# "Doar"
 
 Curso de Engenharia de Computação
 
