@@ -1,6 +1,7 @@
 import 'package:doar_app/widgets/profile_page.dart';
 import 'package:doar_app/widgets/signin_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -19,6 +20,9 @@ class _LoginState extends State<Login> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(
+                height: 30.0,
+              ),
               Text(
                 'Entrar',
                 style: TextStyle(
@@ -27,6 +31,21 @@ class _LoginState extends State<Login> {
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
+              ),
+              SizedBox(
+                height: 15.0,
+              ),
+              Text(
+                'Olá! Prazer em ver você de novo.',
+                style: TextStyle(
+                  color: Colors.black87, 
+                  fontSize: 16.0, 
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.left,
+              ),
+              SizedBox(
+                height: 15.0,
               ),
               // Entrada do e-mail de usúario
               TextField(
@@ -41,7 +60,7 @@ class _LoginState extends State<Login> {
               ),
               // Entrada da senha de usúario
               Divider(
-                height: 10.0, // Separar os campos
+                height: 15.0, // Separar os campos
               ),
               TextField(
                 autofocus: true,
@@ -53,8 +72,8 @@ class _LoginState extends State<Login> {
                     labelStyle: TextStyle(color: Colors.cyanAccent)),
               ),
               // Botão de entrada
-              Divider(
-                height: 10.0 // Separar os campos
+              SizedBox(
+                height: 15.0 // Separar os campos
               ),
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 300, height: 100),
@@ -89,6 +108,30 @@ class _LoginState extends State<Login> {
               ),
               SizedBox(
                 height: 20.0,
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: SignInButton(
+                      Buttons.GoogleDark,
+                      text: "Inscreva-se com Google",
+                      onPressed: () {},
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Expanded(
+                    child: SignInButton(
+                      Buttons.FacebookNew,
+                      text: "Inscreva-se com Facebook",
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 15.0,
               ),
               Row(
                 children: <Widget>[

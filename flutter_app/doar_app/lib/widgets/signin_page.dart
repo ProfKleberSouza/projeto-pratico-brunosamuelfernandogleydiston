@@ -24,6 +24,9 @@ class _SignInState extends State<SignIn> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
+              SizedBox(
+                height: 15.0,
+              ),
               Text(
                 'Inscreva-se',
                 style: TextStyle(
@@ -32,6 +35,9 @@ class _SignInState extends State<SignIn> {
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
+              ),
+              SizedBox(
+                height: 15.0,
               ),
               // Entrada do e-mail de usúario
               TextField(
@@ -46,7 +52,7 @@ class _SignInState extends State<SignIn> {
               ),
               // Entrada da senha de usúario
               Divider(
-                height: 10.0, // Separar os campos
+                height: 15.0, // Separar os campos
               ),
               TextField(
                 autofocus: true,
@@ -59,7 +65,7 @@ class _SignInState extends State<SignIn> {
                 ),
               ),
               // Botão de entrada
-              Divider(
+              SizedBox(
                 height: 10.0 // Separar os campos
               ),
               Row(
@@ -85,9 +91,8 @@ class _SignInState extends State<SignIn> {
                             style: TextStyle(color: Colors.cyanAccent, fontSize: 16.0),
                             recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // Bloco aberto
                                   // Colocar o link para lançar os termos de serviço aqui
-                                  // launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html');
+                                  // launch('https://');
                                 }
                           ),
                           TextSpan(
@@ -99,23 +104,22 @@ class _SignInState extends State<SignIn> {
                             style: TextStyle(color: Colors.cyanAccent, fontSize: 16.0),
                             recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // Bloco aberto
                                   // Colocar o link para lançar a política de privacidade aqui
-                                  // launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html');
+                                  // launch('https://');
                                 }
                           ),
                         ],
                       ),
-                      overflow: TextOverflow.ellipsis,
+                      overflow: TextOverflow.ellipsis, // possivel bug
                     ),
                   ),
                 ],
               ),
-              Divider(
-                height: 10.0 // Separar os campos
+              SizedBox(
+                height: 30.0 // Separar os campos
               ),
               ConstrainedBox(
-                  constraints: BoxConstraints.tightFor(width: 300, height: 100),
+                constraints: BoxConstraints.tightFor(width: 300, height: 100),
                   child: ElevatedButton(
                     onPressed: agree ? gotoProfile : null,
                     style: ButtonStyle(
@@ -137,7 +141,7 @@ class _SignInState extends State<SignIn> {
                   ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 15.0,
               ),
               Row(
                 children: <Widget>[
@@ -151,6 +155,9 @@ class _SignInState extends State<SignIn> {
                       ),
                       textAlign: TextAlign.center,
                     ),
+                  ),
+                  SizedBox(
+                    width: 5.0,
                   ),
                   Expanded(
                     child: ElevatedButton(
