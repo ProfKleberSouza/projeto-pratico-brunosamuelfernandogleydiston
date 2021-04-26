@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:doar_app/widgets/login_page.dart';
 import 'package:doar_app/database/persistdata_core.dart';
-//import 'package:doar_app/widgets/profile_page.dart';
 
 void main() => runApp(MyApp());
 
+// Chrome emulate: flutter run -d chrome 
 class MyApp extends StatelessWidget {
   // Dados persistidos (Persitent Data) com SQLite
   final dbUser = MyDatabase.instance;
@@ -32,8 +32,6 @@ class MyApp extends StatelessWidget {
       // especificada dentro desse atributo. Telas flutuantes são 
       // distribuídas em rotas, neste caso home representa "/". 
       // Rotas podem ser configuradas usando o atributo routes;
-      
     );
-    
   }
 }

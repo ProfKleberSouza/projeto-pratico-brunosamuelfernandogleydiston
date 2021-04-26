@@ -21,6 +21,22 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
+                height: 10.0,
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.zero,
+                child: Container(
+                  alignment: Alignment.center,
+                  height: 50.0,
+                  width: 50.0,
+                  color: Colors.white,
+                  child: Image.asset(
+                    'image/logo.png',
+                    alignment: Alignment.center,
+                  ),
+                ),
+              ),
+              SizedBox(
                 height: 30.0,
               ),
               Text(
