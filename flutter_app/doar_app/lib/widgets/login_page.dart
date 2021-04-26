@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
                   width: 50.0,
                   color: Colors.white,
                   child: Image.asset(
-                    'image/logo.png',
+                    'images/logo.png',
                     alignment: Alignment.center,
                   ),
                 ),
