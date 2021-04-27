@@ -21,28 +21,28 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 10.0,
+                height: 30.0,
               ),
               ClipRRect(
                 borderRadius: BorderRadius.zero,
                 child: Container(
                   alignment: Alignment.center,
-                  height: 50.0,
-                  width: 50.0,
+                  height: 180.0,
+                  width: 180.0,
                   color: Colors.white,
                   child: Image.asset(
-                    'images/logo.png',
+                    'assets/images/logo.png',
                     alignment: Alignment.center,
                   ),
                 ),
               ),
               SizedBox(
-                height: 30.0,
+                height: 15.0,
               ),
               Text(
                 'Entrar',
                 style: TextStyle(
-                  color: Colors.black, 
+                  color: Colors.black87, 
                   fontSize: 28.0, 
                   fontWeight: FontWeight.bold,
                 ),
@@ -54,45 +54,42 @@ class _LoginState extends State<Login> {
               Text(
                 'Olá! Prazer em ver você de novo.',
                 style: TextStyle(
-                  color: Colors.black87, 
-                  fontSize: 16.0, 
+                  color: Colors.black54, 
+                  fontSize: 18.0, 
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
               ),
               SizedBox(
-                height: 15.0,
+                height: 30.0,
               ),
-              // Entrada do e-mail de usúario
               TextField(
-                autofocus: true, // Define o autofoco no campo
-                keyboardType: TextInputType
-                    .emailAddress, // Permite escolher o tipo de teclado
-                style: TextStyle(color: Colors.black, fontSize: 16.0),
+                autofocus: true,
+                keyboardType: TextInputType.emailAddress, 
+                style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
                   labelText: 'E-mail',
-                  labelStyle: TextStyle(color: Colors.cyanAccent),
+                  labelStyle: TextStyle(color: const Color(0xff63dadb)),
                 ),
               ),
-              // Entrada da senha de usúario
-              Divider(
-                height: 15.0, // Separar os campos
+              SizedBox(
+                height: 15.0,
               ),
               TextField(
                 autofocus: true,
                 obscureText: true,
                 keyboardType: TextInputType.text,
-                style: TextStyle(color: Colors.black, fontSize: 16.0),
+                style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
                     labelText: 'Senha',
-                    labelStyle: TextStyle(color: Colors.cyanAccent)),
+                    labelStyle: TextStyle(color: const Color(0xff63dadb)),
+                ),
               ),
-              // Botão de entrada
               SizedBox(
-                height: 15.0 // Separar os campos
+                height: 15.0
               ),
               ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 300, height: 100),
+                constraints: BoxConstraints.tightFor(width: 180, height: 80),
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -102,24 +99,25 @@ class _LoginState extends State<Login> {
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.cyanAccent),
+                        MaterialStateProperty.all<Color>(const Color(0xff63dadb)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
-                          side: BorderSide(color: Colors.cyanAccent)),
+                          side: BorderSide(color: const Color(0xff63dadb)),
+                      ),
                     ),
                   ),
                   child: Text('Entrar',
-                      style: TextStyle(color: Colors.white, fontSize: 20.0)
+                      style: TextStyle(color: Colors.white, fontSize: 22.0)
                   ),
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 30.0,
               ),
               Text(
                 'ou use um de seus perfis sociais',
-                style: TextStyle(color: Colors.black, fontSize: 14.0),
+                style: TextStyle(color: Colors.black87, fontSize: 16.0),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
@@ -129,7 +127,7 @@ class _LoginState extends State<Login> {
                 children: <Widget>[
                   Expanded(
                     child: SignInButton(
-                      Buttons.GoogleDark,
+                      Buttons.Google,
                       text: "Inscreva-se com Google",
                       onPressed: () {},
                     ),
@@ -139,7 +137,7 @@ class _LoginState extends State<Login> {
                   ),
                   Expanded(
                     child: SignInButton(
-                      Buttons.FacebookNew,
+                      Buttons.Facebook,
                       text: "Inscreva-se com Facebook",
                       onPressed: () {},
                     ),
@@ -156,25 +154,29 @@ class _LoginState extends State<Login> {
                       'Esqueceu a senha?',
                       style: TextStyle(
                         color: Colors.black87, 
-                        fontSize: 16.0,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.bold,
                       ),
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.center,
                     ),
                   ),
+                  SizedBox(
+                    width: 5.0,
+                  ),
                   Expanded(
-                    child: ElevatedButton(
+                    child: TextButton(
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => SignIn()));
                       },
-                      child: Text('Inscreva-se',
+                      child: Text(
+                        'Inscreva-se',
                         style: TextStyle(
-                          color: Colors.cyanAccent, 
-                          fontSize: 16.0,
+                          color: const Color(0xff63dadb), 
+                          fontSize: 18.0,
                           fontWeight: FontWeight.bold,
                         ),
-                        textAlign: TextAlign.right,
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),

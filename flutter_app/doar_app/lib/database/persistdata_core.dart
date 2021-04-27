@@ -3,7 +3,7 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:async';
-
+/*
 class MyDatabase {  
   static final databaseName = "DoarDB.db";
   static final databaseVersion = 1;
@@ -75,4 +75,4 @@ class MyDatabase {
     Database db = await instance.database;
     return await db.delete(table, where: '$columnId = ?', whereArgs: [id]);
   }
-}
+}*/
