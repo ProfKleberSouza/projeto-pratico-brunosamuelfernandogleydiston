@@ -13,9 +13,8 @@ class _LoginState extends State<Login> {
   // final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-
   bool isLoading = false;
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -200,14 +199,15 @@ class _LoginState extends State<Login> {
     FirebaseAuth.instance
         .signInWithEmailAndPassword(
             email: emailController.text, password: passwordController.text)
-        .then((result) {
-          isLoading = false;
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => Profile()),
-          );
-        },
-      ).catchError(
+        .then(
+      (result) {
+        isLoading = false;
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Profile()),
+        );
+      },
+    ).catchError(
       (error) {
         print(error.message);
         showDialog(
