@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:doar_app/widgets/profile_page.dart';
 import 'package:doar_app/widgets/signin_page.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,12 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  // final _formKey = GlobalKey<FormState>();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
+  bool isLoading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +23,7 @@ class _LoginState extends State<Login> {
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Center(
+          //      key: _formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -42,8 +50,8 @@ class _LoginState extends State<Login> {
               Text(
                 'Entrar',
                 style: TextStyle(
-                  color: Colors.black, 
-                  fontSize: 28.0, 
+                  color: Colors.black,
+                  fontSize: 28.0,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
@@ -54,8 +62,8 @@ class _LoginState extends State<Login> {
               Text(
                 'Olá! Prazer em ver você de novo.',
                 style: TextStyle(
-                  color: Colors.black87, 
-                  fontSize: 16.0, 
+                  color: Colors.black87,
+                  fontSize: 16.0,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
@@ -66,8 +74,8 @@ class _LoginState extends State<Login> {
               // Entrada do e-mail de usúario
               TextField(
                 autofocus: true, // Define o autofoco no campo
-                keyboardType: TextInputType
-                    .emailAddress, // Permite escolher o tipo de teclado
+                controller: emailController,
+                keyboardType: TextInputType.emailAddress, // Permite escolher o tipo de teclado
                 style: TextStyle(color: Colors.black, fontSize: 16.0),
                 decoration: InputDecoration(
                   labelText: 'E-mail',
@@ -81,37 +89,29 @@ class _LoginState extends State<Login> {
               TextField(
                 autofocus: true,
                 obscureText: true,
+                controller: passwordController,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black, fontSize: 16.0),
-                decoration: InputDecoration(
-                    labelText: 'Senha',
-                    labelStyle: TextStyle(color: Colors.cyanAccent)),
+                decoration: InputDecoration(labelText: 'Senha', labelStyle: TextStyle(color: Colors.cyanAccent)),
               ),
               // Botão de entrada
-              SizedBox(
-                height: 15.0 // Separar os campos
-              ),
+              SizedBox(height: 15.0 // Separar os campos
+                  ),
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 300, height: 100),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Profile()));
+                    logInToFb();
                   },
                   style: ButtonStyle(
-                    foregroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.cyanAccent),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.cyanAccent),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
-                          side: BorderSide(color: Colors.cyanAccent)),
+                          borderRadius: BorderRadius.circular(30.0), side: BorderSide(color: Colors.cyanAccent)),
                     ),
                   ),
-                  child: Text('Entrar',
-                      style: TextStyle(color: Colors.white, fontSize: 20.0)
-                  ),
+                  child: Text('Entrar', style: TextStyle(color: Colors.white, fontSize: 20.0)),
                 ),
               ),
               SizedBox(
@@ -155,7 +155,7 @@ class _LoginState extends State<Login> {
                     child: Text(
                       'Esqueceu a senha?',
                       style: TextStyle(
-                        color: Colors.black87, 
+                        color: Colors.black87,
                         fontSize: 16.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -165,12 +165,12 @@ class _LoginState extends State<Login> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignIn()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => SignIn()));
                       },
-                      child: Text('Inscreva-se',
+                      child: Text(
+                        'Inscreva-se',
                         style: TextStyle(
-                          color: Colors.cyanAccent, 
+                          color: Colors.cyanAccent,
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -185,5 +185,35 @@ class _LoginState extends State<Login> {
         ),
       ),
     );
+  }
+
+  void logInToFb() {
+    FirebaseAuth.instance
+        .signInWithEmailAndPassword(email: emailController.text, password: passwordController.text)
+        .then((result) {
+      isLoading = false;
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => Profile()),
+      );
+    }).catchError((err) {
+      print(err.message);
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text("Error"),
+              content: Text('User Inválido'),
+              actions: [
+                ElevatedButton(
+                  child: Text("Ok"),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                )
+              ],
+            );
+          });
+    });
   }
 }

@@ -1,67 +1,81 @@
-import 'package:doar_app/widgets/dashboard_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatefulWidget {
-  @override
-  _ProfileState createState() => _ProfileState();
-}
+import 'package:doar_app/widgets/login_page.dart';
+import 'package:doar_app/widgets/dashboard_page.dart';
 
-class _ProfileState extends State<Profile> {
+class Profile extends StatelessWidget {
+  Profile({this.uid = 'none'});
+  final String uid;
+  final String title = "Profile";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.exit_to_app,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              FirebaseAuth auth = FirebaseAuth.instance;
+              auth.signOut().then((res) {
+                Navigator.pushAndRemoveUntil(
+                    context, MaterialPageRoute(builder: (context) => Login()), (Route<dynamic> route) => false);
+              });
+            },
+          )
+        ],
+      ),
       body: Column(
         children: <Widget>[
           Container(
-            // Barra na parte superior
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.center,
-                end: Alignment.bottomCenter,
-                colors: [Colors.cyanAccent, Colors.tealAccent]
+              // Barra na parte superior
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.center,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.cyanAccent, Colors.tealAccent]),
               ),
-            ),
-            child: Container(
-              width: double.infinity,
-              height: 200.0,
-              child: Center(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    CircleAvatar(
-                      backgroundImage: NetworkImage("https://"), // Caminho da foto
-                      radius: 50.0,
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      'Ana Maria', // Nome do usuario
-                      style: TextStyle(color: Colors.white, fontSize: 22.0),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                  ],
+              child: Container(
+                width: double.infinity,
+                height: 200.0,
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      CircleAvatar(
+                        backgroundImage: NetworkImage("https://"), // Caminho da foto
+                        radius: 50.0,
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Ana Maria', // Nome do usuario
+                        style: TextStyle(color: Colors.white, fontSize: 22.0),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            )
-          ),
+              )),
           Container(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 30.0,horizontal: 16.0),
+              padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 16.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                      "Quem é você?",
-                    style: TextStyle(
-                      color: Colors.cyanAccent,
-                      fontStyle: FontStyle.normal,
-                      fontSize: 18.0
-                    ),
+                    "Quem é você?",
+                    style: TextStyle(color: Colors.cyanAccent, fontStyle: FontStyle.normal, fontSize: 18.0),
                   ),
                   SizedBox(
                     height: 10.0,
@@ -88,27 +102,24 @@ class _ProfileState extends State<Profile> {
           Container(
             width: 300.00,
             child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
-                },
-                style: ButtonStyle(
-                  elevation: MaterialStateProperty.all<double>(0.0),
-                  padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                    EdgeInsets.all(0.0)
-                  ),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(80.0),
-                    ),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+              },
+              style: ButtonStyle(
+                elevation: MaterialStateProperty.all<double>(0.0),
+                padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.all(0.0)),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(80.0),
                   ),
                 ),
-                child: Ink(
+              ),
+              child: Ink(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    begin: Alignment.centerRight,
-                    end: Alignment.centerLeft,
-                    colors: [Colors.cyanAccent, Colors.tealAccent]
-                  ),
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
+                      colors: [Colors.cyanAccent, Colors.tealAccent]),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
                 child: Container(
@@ -117,9 +128,9 @@ class _ProfileState extends State<Profile> {
                   child: Text(
                     'Fazer ou Buscar Doação',
                     style: TextStyle(
-                    color: Colors.white, 
-                    fontSize: 20.0, 
-                    fontWeight:FontWeight.w300,
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w300,
                     ),
                   ),
                 ),
