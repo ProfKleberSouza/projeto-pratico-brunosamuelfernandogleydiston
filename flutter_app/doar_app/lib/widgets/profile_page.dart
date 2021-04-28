@@ -1,13 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import 'package:doar_app/widgets/login_page.dart';
 import 'package:doar_app/widgets/dashboard_page.dart';
 
 class Profile extends StatelessWidget {
-  Profile({this.uid = 'none'});
+  Profile({this.uid = 'Nome'});
   final String uid;
-  final String title = "Profile";
+  final String title = 'Perfil';
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,7 @@ class Profile extends StatelessWidget {
                     (Route<dynamic> route) => false);
               });
             },
-          )
+          ),
         ],
       ),
       backgroundColor: Colors.white,
