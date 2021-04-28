@@ -11,248 +11,130 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: ListView(
-        children: <Widget>[
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
-                child: Container(
-                  height: 80.0,
-                  width: 80.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25.0),
-                    image: DecorationImage(
-                      image: ExactAssetImage('assets/images/user.png'),
-                      fit: BoxFit.cover
-                    )
+
+
+              Container(
+                width: double.infinity,
+                height: 200.0,
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: CircleAvatar(
+                          radius: 50.0,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: ExactAssetImage('assets/images/user.png'),
+                                fit: BoxFit.cover
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text('Bruno Kelsen',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17.0
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text('Belo Horizonte, MG',
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 15.0
+                          ),
+                        ),
+                      ), 
+                      SizedBox(
+                        height: 10.0
+                      ),
+                    ],
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 90.0, right: 100.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    CircleAvatar(
-                      backgroundColor: const Color(0xff63dadb),
-                      radius: 25.0,
-                      child: Icon(
-                        Icons.camera_alt,
-                        color: Colors.white,
+
+
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                          "Quem eu sou?",
+                        style: TextStyle(
+                          color: const Color(0xff63dadb),
+                          fontStyle: FontStyle.normal,
+                          fontSize: 18.0
+                        ),
                       ),
-                    )
-                  ],
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.black,
+                          letterSpacing: 2.0,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Padding(
-                 padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
-                 child: Text('Carson Arias',
-                 style: TextStyle(
-                   fontFamily: 'Montserrat',
-                   fontWeight: FontWeight.bold,
-                   fontSize: 17.0
-                 ),
-                 ),
-               ),
-               Padding(
-                 padding: const EdgeInsets.only(left:20.0),
-                 child: Text('San Francisco, CA',
-                 style: TextStyle(
-                   fontFamily: 'Montserrat',
-                   color: Colors.grey,
-                   fontSize: 15.0
-                 ),
-                 ),
-               ),
-               Padding(
-                 padding: const EdgeInsets.only(left:20.0, top: 20.0, right: 20.0),
-                 child: Text('Hello, I am Carson. I love making cool photos, beautiful architecture and icecream.',
-                 style: TextStyle(
-                   fontFamily: 'Montserrat',
-                   fontWeight: FontWeight.w300,
-                   fontSize: 15.0
-                 ),
-                 ),
-               ),
-               Padding(
-                 padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 25.0),
-                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                   children: <Widget>[
-                     Column(
-                       crossAxisAlignment: CrossAxisAlignment.start,
-                       children: <Widget>[
-                         Text('1789',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.red,
-                           fontSize: 17.0
-                         ),
-                         ),
-                         Text('Followers',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.grey,
-                         ),
-                         )
-                       ],
-                     ),
-                     Column(
-                       crossAxisAlignment: CrossAxisAlignment.start,
-                       children: <Widget>[
-                         Text('236',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.blue,
-                           fontSize: 17.0
-                         ),
-                         ),
-                         Text('Following',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.grey,
-                         ),
-                         )
-                       ],
-                     ),
-                     Column(
-                       crossAxisAlignment: CrossAxisAlignment.start,
-                       children: <Widget>[
-                         Text('990',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.red,
-                           fontSize: 17.0
-                         ),
-                         ),
-                         Text('Likes',
-                         style: TextStyle(
-                           fontFamily: 'Montserrat',
-                           color: Colors.grey,
-                         ),
-                         )
-                       ],
-                     )
-                   ],
-                 ),
-               ),
-               SizedBox(height: 25.0),
-               Container(
-                 padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                 height: 200.0,
-                 child: ListView(
-                   scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/picone.jpeg'),
-                            fit: BoxFit.cover
-                          )
-                        ),
+
+
+              SizedBox(height: 15.0),
+              ConstrainedBox(
+                constraints: BoxConstraints.tightFor(width: 100, height: 50),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Dashboard()));
+                  },
+                  style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        const Color(0xff63dadb)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                        side: BorderSide(color: const Color(0xff63dadb)),
                       ),
-                      SizedBox(width: 10.0),
-                     Container(
-                       height: 200.0,
-                       width: 200.0,
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(10.0),
-                         image: DecorationImage(
-                           image: AssetImage('assets/pictwo.jpeg'),
-                           fit: BoxFit.cover
-                         )
-                       ),
-                     )
-                    ],
-                 ),
-               ),
-               SizedBox(height: 10.0),
-               Container(
-                 padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                 height: 100.0,
-                 child: ListView(
-                   scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      Container(
-                        height: 100.0,
-                        width: 100.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: DecorationImage(
-                            image: AssetImage('assets/picthree.jpeg'),
-                            fit: BoxFit.cover
-                          )
-                        ),
-                      ),
-                      SizedBox(width: 10.0),
-                     Container(
-                       height: 100.0,
-                       width: 100.0,
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(10.0),
-                         image: DecorationImage(
-                           image: AssetImage('assets/picfour.jpeg'),
-                           fit: BoxFit.cover
-                         )
-                       ),
-                     ),
-                     SizedBox(width: 10.0),
-                     Container(
-                       height: 100.0,
-                       width: 100.0,
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(10.0),
-                         image: DecorationImage(
-                           image: AssetImage('assets/picfive.jpeg'),
-                           fit: BoxFit.cover
-                         )
-                       ),
-                     )
-                    ],
-                 ),
-               ),
-               SizedBox(height: 10.0),
-               Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                 children: <Widget>[
-                   Container(
-                     height: 40.0,
-                     width: 100.0,
-                     decoration: BoxDecoration(
-                       borderRadius: BorderRadius.circular(30.0),
-                       color: Colors.grey.withOpacity(0.2)
-                     ),
-                     child: Center(
-                       child: Icon(Icons.arrow_back),
-                     ),
-                   ),
-                   Container(
-                     height: 40.0,
-                     width: 200.0,
-                     decoration: BoxDecoration(
-                       borderRadius: BorderRadius.circular(30.0),
-                       color: Colors.black.withOpacity(0.7),
-                     ),
-                     child: Center(
-                       child: Text('FOLLOW',
-                       style: TextStyle(
-                         color: Colors.white,
-                         fontFamily: 'Montserrat',
-                         fontSize: 15.0
-                       ),
-                       )
-                     ),
-                   )
-                 ],
-               )
+                    ),
+                  ),
+                  child: Text('Doações',
+                      style: TextStyle(color: Colors.white, fontSize: 22.0)),
+                ),
+              ),
+              SizedBox(height: 30.0),
+
+              
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

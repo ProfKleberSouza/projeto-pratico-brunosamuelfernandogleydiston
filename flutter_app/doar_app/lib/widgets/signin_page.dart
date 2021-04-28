@@ -22,12 +22,10 @@ class _SignInState extends State<SignIn> {
         padding: const EdgeInsets.all(10.0),
         child: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              SizedBox(
-                height: 30.0,
-              ),
+              SizedBox(height: 30.0),
               Text(
                 'Inscreva-se',
                 style: TextStyle(
@@ -37,9 +35,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 textAlign: TextAlign.left,
               ),
-              SizedBox(
-                height: 30.0,
-              ),
+              SizedBox(height: 30.0),
               TextField(
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
@@ -49,9 +45,7 @@ class _SignInState extends State<SignIn> {
                   labelStyle: TextStyle(color: const Color(0xff63dadb)),
                 ),
               ),
-              SizedBox(
-                height: 15.0,
-              ),
+              SizedBox(height: 15.0),
               TextField(
                 autofocus: true,
                 obscureText: true,
@@ -62,8 +56,7 @@ class _SignInState extends State<SignIn> {
                     labelStyle: TextStyle(color: const Color(0xff63dadb))),
               ),
               // Botão de entrada
-              SizedBox(height: 15.0 // Separar os campos
-                  ),
+              SizedBox(height: 15.0),
               Row(
                 children: <Widget>[
                   Material(
@@ -89,9 +82,7 @@ class _SignInState extends State<SignIn> {
                                   fontSize: 16.0),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // TO DO:
-                                  // Colocar o link para lançar os termos de serviço aqui
-                                  // launch('https://');
+                                  // TO DO: launch('https://');
                                 }),
                           TextSpan(
                               text: ' a e ',
@@ -104,21 +95,19 @@ class _SignInState extends State<SignIn> {
                                   fontSize: 16.0),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // TO DO:
-                                  // Colocar o link para lançar a política de privacidade aqui
-                                  // launch('https://');
+                                  // TO DO: launch('https://');
                                 }),
                         ],
                       ),
+                      textAlign: TextAlign.justify,
                       overflow: TextOverflow.ellipsis, // FIXME: Possivel bug
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 30.0 // Separar os campos
-                  ),
+              SizedBox(height: 30.0),
               ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 180, height: 80),
+                constraints: BoxConstraints.tightFor(width: 150, height: 50),
                 child: ElevatedButton(
                   onPressed: agree ? gotoProfile : null,
                   style: ButtonStyle(
@@ -136,9 +125,7 @@ class _SignInState extends State<SignIn> {
                       style: TextStyle(color: Colors.white, fontSize: 22.0)),
                 ),
               ),
-              SizedBox(
-                height: 30.0,
-              ),
+              SizedBox(height: 30.0),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -152,9 +139,7 @@ class _SignInState extends State<SignIn> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  SizedBox(
-                    width: 5.0,
-                  ),
+                  SizedBox(width: 5.0),
                   Expanded(
                     child: TextButton(
                       onPressed: () {
