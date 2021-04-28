@@ -205,7 +205,7 @@ class _LoginState extends State<Login> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => Profile()),
-          ),
+          );
         },
       ).catchError(
       (error) {
@@ -224,9 +224,9 @@ class _LoginState extends State<Login> {
                   },
                 )
               ],
-            ),
+            );
           },
-        ),
+        );
       },
     );
   }

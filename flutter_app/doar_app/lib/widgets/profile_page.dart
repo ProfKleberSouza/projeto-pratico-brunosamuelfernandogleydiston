@@ -79,11 +79,6 @@ class Profile extends StatelessWidget {
                           'Belo Horizonte, MG',
                           style: TextStyle(color: Colors.grey, fontSize: 15.0),
                         ),
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                            color: const Color(0xff63dadb),
-                            fontStyle: FontStyle.normal,
-                            fontSize: 18.0),
                       ),
                       SizedBox(
                         height: 10.0,
