@@ -42,8 +42,8 @@ class _LoginState extends State<Login> {
               Text(
                 'Entrar',
                 style: TextStyle(
-                  color: Colors.black87, 
-                  fontSize: 28.0, 
+                  color: Colors.black87,
+                  fontSize: 28.0,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
@@ -54,8 +54,8 @@ class _LoginState extends State<Login> {
               Text(
                 'Olá! Prazer em ver você de novo.',
                 style: TextStyle(
-                  color: Colors.black54, 
-                  fontSize: 18.0, 
+                  color: Colors.black54,
+                  fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
@@ -65,7 +65,7 @@ class _LoginState extends State<Login> {
               ),
               TextField(
                 autofocus: true,
-                keyboardType: TextInputType.emailAddress, 
+                keyboardType: TextInputType.emailAddress,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
                   labelText: 'E-mail',
@@ -81,13 +81,11 @@ class _LoginState extends State<Login> {
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
-                    labelText: 'Senha',
-                    labelStyle: TextStyle(color: const Color(0xff63dadb)),
+                  labelText: 'Senha',
+                  labelStyle: TextStyle(color: const Color(0xff63dadb)),
                 ),
               ),
-              SizedBox(
-                height: 15.0
-              ),
+              SizedBox(height: 15.0),
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 180, height: 80),
                 child: ElevatedButton(
@@ -98,18 +96,17 @@ class _LoginState extends State<Login> {
                   style: ButtonStyle(
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(const Color(0xff63dadb)),
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        const Color(0xff63dadb)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
-                          side: BorderSide(color: const Color(0xff63dadb)),
+                        borderRadius: BorderRadius.circular(30.0),
+                        side: BorderSide(color: const Color(0xff63dadb)),
                       ),
                     ),
                   ),
                   child: Text('Entrar',
-                      style: TextStyle(color: Colors.white, fontSize: 22.0)
-                  ),
+                      style: TextStyle(color: Colors.white, fontSize: 22.0)),
                 ),
               ),
               SizedBox(
@@ -153,7 +150,7 @@ class _LoginState extends State<Login> {
                     child: Text(
                       'Esqueceu a senha?',
                       style: TextStyle(
-                        color: Colors.black87, 
+                        color: Colors.black87,
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -172,7 +169,7 @@ class _LoginState extends State<Login> {
                       child: Text(
                         'Inscreva-se',
                         style: TextStyle(
-                          color: const Color(0xff63dadb), 
+                          color: const Color(0xff63dadb),
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
                         ),
