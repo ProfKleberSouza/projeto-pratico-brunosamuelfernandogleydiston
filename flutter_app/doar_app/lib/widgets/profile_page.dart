@@ -85,7 +85,8 @@ class _ProfileState extends State<Profile> {
                       Flexible(
                         child: TextField(
                           decoration: const InputDecoration(
-                            hintText: 'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
+                            hintText:
+                                'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
                           ),
                           textAlign: TextAlign.justify,
                           style: TextStyle(
