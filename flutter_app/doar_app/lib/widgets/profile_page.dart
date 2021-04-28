@@ -60,15 +60,12 @@ class _ProfileState extends State<Profile> {
                             fontSize: 15.0
                           ),
                         ),
-                      ), 
-                      SizedBox(
-                        height: 10.0
                       ),
                     ],
                   ),
                 ),
               ),
-
+              SizedBox(height: 10.0),
 
               Container(
                 child: Padding(
@@ -85,9 +82,7 @@ class _ProfileState extends State<Profile> {
                           fontSize: 18.0
                         ),
                       ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
+                      SizedBox(height: 10.0),
                       Text(
                         'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
                         textAlign: TextAlign.justify,
@@ -105,37 +100,43 @@ class _ProfileState extends State<Profile> {
               ),
 
 
-              SizedBox(height: 15.0),
-              ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 100, height: 50),
-                child: ElevatedButton(
-                  onPressed: () {
+              Container(
+              width: 300.00,
+              child: ElevatedButton(
+                onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Dashboard()));
-                  },
-                  style: ButtonStyle(
-                    foregroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color(0xff63dadb)),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                        side: BorderSide(color: const Color(0xff63dadb)),
-                      ),
+                },
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.white),
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      const Color(0xff63dadb)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                      side: BorderSide(color: const Color(0xff63dadb)),
                     ),
                   ),
-                  child: Text('Doações',
-                      style: TextStyle(color: Colors.white, fontSize: 22.0)),
+                  elevation: 0.0,
+                  padding: EdgeInsets.all(0.0),
+                  child: Ink(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.centerRight,
+                        end: Alignment.centerLeft,
+                        colors: [Colors.redAccent,Colors.pinkAccent]
+                      ),
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
                 ),
               ),
-              SizedBox(height: 30.0),
-
-              
-            ],
-          ),
+            ),
+          ],
         ),
       ),
+    ),
     );
   }
 }
