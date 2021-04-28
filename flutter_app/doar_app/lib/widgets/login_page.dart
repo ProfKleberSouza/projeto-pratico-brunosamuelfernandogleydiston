@@ -20,7 +20,9 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              SizedBox(height: 30.0),
+              SizedBox(
+                height: 30.0,
+              ),
               ClipRRect(
                 borderRadius: BorderRadius.zero,
                 child: Container(
@@ -34,7 +36,9 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
-              SizedBox(height: 15.0),
+              SizedBox(
+                height: 15.0,
+              ),
               Text(
                 'Entrar',
                 style: TextStyle(
@@ -44,7 +48,9 @@ class _LoginState extends State<Login> {
                 ),
                 textAlign: TextAlign.left,
               ),
-              SizedBox(height: 15.0),
+              SizedBox(
+                height: 15.0,
+              ),
               Text(
                 'Olá! Prazer em ver você de novo.',
                 style: TextStyle(
@@ -54,7 +60,9 @@ class _LoginState extends State<Login> {
                 ),
                 textAlign: TextAlign.left,
               ),
-              SizedBox(height: 30.0),
+              SizedBox(
+                height: 30.0,
+              ),
               TextField(
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
@@ -64,7 +72,9 @@ class _LoginState extends State<Login> {
                   labelStyle: TextStyle(color: const Color(0xff63dadb)),
                 ),
               ),
-              SizedBox(height: 15.0),
+              SizedBox(
+                height: 15.0,
+              ),
               TextField(
                 autofocus: true,
                 obscureText: true,
@@ -75,7 +85,9 @@ class _LoginState extends State<Login> {
                   labelStyle: TextStyle(color: const Color(0xff63dadb)),
                 ),
               ),
-              SizedBox(height: 15.0),
+              SizedBox(
+                height: 15.0,
+              ),
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 100, height: 50),
                 child: ElevatedButton(
@@ -99,13 +111,17 @@ class _LoginState extends State<Login> {
                       style: TextStyle(color: Colors.white, fontSize: 22.0)),
                 ),
               ),
-              SizedBox(height: 30.0),
+              SizedBox(
+                height: 30.0,
+              ),
               Text(
                 'ou use um de seus perfis sociais',
                 style: TextStyle(color: Colors.black87, fontSize: 16.0),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20.0),
+              SizedBox(
+                height: 20.0,
+              ),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -115,7 +131,9 @@ class _LoginState extends State<Login> {
                       onPressed: () {},
                     ),
                   ),
-                  SizedBox(width: 10.0),
+                  SizedBox(
+                    width: 10.0,
+                  ),
                   Expanded(
                     child: SignInButton(
                       Buttons.Facebook,
@@ -125,7 +143,9 @@ class _LoginState extends State<Login> {
                   ),
                 ],
               ),
-              SizedBox(height: 15.0),
+              SizedBox(
+                height: 15.0,
+              ),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -139,7 +159,9 @@ class _LoginState extends State<Login> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  SizedBox(width: 5.0),
+                  SizedBox(
+                    width: 5.0,
+                  ),
                   Expanded(
                     child: TextButton(
                       onPressed: () {

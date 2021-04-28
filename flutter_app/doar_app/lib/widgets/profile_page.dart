@@ -18,8 +18,6 @@ class _ProfileState extends State<Profile> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-
-
               Container(
                 width: double.infinity,
                 height: 200.0,
@@ -36,107 +34,107 @@ class _ProfileState extends State<Profile> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: ExactAssetImage('assets/images/user.png'),
-                                fit: BoxFit.cover
-                              ),
+                                  image:
+                                      ExactAssetImage('assets/images/user.png'),
+                                  fit: BoxFit.cover),
                             ),
                           ),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: Text('Bruno Kelsen',
+                        child: Text(
+                          'Bruno Kelsen',
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17.0
-                          ),
+                              fontWeight: FontWeight.bold, fontSize: 17.0),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: Text('Belo Horizonte, MG',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 15.0
-                          ),
+                        child: Text(
+                          'Belo Horizonte, MG',
+                          style: TextStyle(color: Colors.grey, fontSize: 15.0),
                         ),
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
-
+              SizedBox(
+                height: 10.0,
+              ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 30.0, horizontal: 15.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                          "Quem eu sou?",
+                        "Quem eu sou?",
+                        textAlign: TextAlign.left,
                         style: TextStyle(
-                          color: const Color(0xff63dadb),
-                          fontStyle: FontStyle.normal,
-                          fontSize: 18.0
-                        ),
+                            color: const Color(0xff63dadb),
+                            fontStyle: FontStyle.normal,
+                            fontSize: 18.0),
                       ),
-                      SizedBox(height: 10.0),
-                      Text(
-                        'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
-                        textAlign: TextAlign.justify,
-                        style: TextStyle(
-                          fontSize: 16.0,
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.black,
-                          letterSpacing: 2.0,
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Flexible(
+                        child: TextField(
+                          decoration: const InputDecoration(
+                            hintText: 'Sou assistente social e o ato de doar para mim é contribuir efetivamente com a transformação para o melhor da sociedade, das instituições e, principalmente das pessoas.',
+                          ),
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            fontSize: 16.0,
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black87,
+                            letterSpacing: 2.0,
+                          ),
                         ),
+                        flex: 2,
                       ),
                     ],
                   ),
                 ),
               ),
-
-
+              SizedBox(
+                height: 10.0,
+              ),
               Container(
-              width: 300.00,
-              child: ElevatedButton(
-                onPressed: () {
+                width: 300.00,
+                child: ElevatedButton(
+                  onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Dashboard()));
-                },
-                style: ButtonStyle(
-                  foregroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                      const Color(0xff63dadb)),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
-                      side: BorderSide(color: const Color(0xff63dadb)),
-                    ),
-                  ),
-                  elevation: 0.0,
-                  padding: EdgeInsets.all(0.0),
-                  child: Ink(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.centerRight,
-                        end: Alignment.centerLeft,
-                        colors: [Colors.redAccent,Colors.pinkAccent]
+                  },
+                  style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        const Color(0xff63dadb)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                        side: BorderSide(color: const Color(0xff63dadb)),
                       ),
-                      borderRadius: BorderRadius.circular(30.0),
                     ),
+                    elevation: MaterialStateProperty.all<double>(0.0),
+                    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                        EdgeInsets.all(0.0)),
                   ),
+                  child: Text('Entrar',
+                      style: TextStyle(color: Colors.white, fontSize: 22.0)),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
-    ),
     );
   }
 }
