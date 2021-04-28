@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:doar_app/widgets/profile_page.dart';
 import 'package:doar_app/widgets/signin_page.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,12 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  // final _formKey = GlobalKey<FormState>();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
+  bool isLoading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,6 +23,7 @@ class _LoginState extends State<Login> {
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Center(
+          //      key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -78,6 +86,7 @@ class _LoginState extends State<Login> {
               TextField(
                 autofocus: true,
                 obscureText: true,
+                controller: passwordController,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
@@ -92,8 +101,7 @@ class _LoginState extends State<Login> {
                 constraints: BoxConstraints.tightFor(width: 100, height: 50),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Profile()));
+                    logInToFb();
                   },
                   style: ButtonStyle(
                     foregroundColor:
@@ -127,7 +135,7 @@ class _LoginState extends State<Login> {
                   Expanded(
                     child: SignInButton(
                       Buttons.Google,
-                      text: "Inscreva-se com Google",
+                      text: 'Inscreva-se com Google',
                       onPressed: () {},
                     ),
                   ),
@@ -137,7 +145,7 @@ class _LoginState extends State<Login> {
                   Expanded(
                     child: SignInButton(
                       Buttons.Facebook,
-                      text: "Inscreva-se com Facebook",
+                      text: 'Inscreva-se com Facebook',
                       onPressed: () {},
                     ),
                   ),
@@ -185,6 +193,41 @@ class _LoginState extends State<Login> {
           ),
         ),
       ),
+    );
+  }
+
+  void logInToFb() {
+    FirebaseAuth.instance
+        .signInWithEmailAndPassword(
+            email: emailController.text, password: passwordController.text)
+        .then((result) {
+          isLoading = false;
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => Profile()),
+          ),
+        },
+      ).catchError(
+      (error) {
+        print(error.message);
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text('Error'),
+              content: Text('Usuário Inválido'),
+              actions: [
+                ElevatedButton(
+                  child: Text('Ok'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                )
+              ],
+            ),
+          },
+        ),
+      },
     );
   }
 }
