@@ -28,15 +28,16 @@ class Dashboard extends StatelessWidget {
               });
             },
           ),
-
-
-
-
-
-          
         ],
       ),
-      
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+
+
+
+        
+      ),
 
 
 
