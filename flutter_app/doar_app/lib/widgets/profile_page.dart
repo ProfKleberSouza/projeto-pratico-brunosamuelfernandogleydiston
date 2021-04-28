@@ -28,7 +28,7 @@ class Profile extends StatelessWidget {
                     (Route<dynamic> route) => false);
               });
             },
-          )
+          ),
         ],
       ),
       backgroundColor: Colors.white,
