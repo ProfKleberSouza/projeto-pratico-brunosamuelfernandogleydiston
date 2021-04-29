@@ -111,7 +111,7 @@
     },
     {
       "name": "firebase_database",
-      "rootUri": "file:///C:/DevCore/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-6.1.2",
+      "rootUri": "file:///C:/DevCore/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-7.0.0-dev.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -356,7 +356,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-04-29T03:02:58.676574Z",
+  "generated": "2021-04-29T03:18:45.566308Z",
   "generator": "pub",
   "generatorVersion": "2.13.0-211.6.beta"
 }

@@ -77,7 +77,7 @@ class _ChatState extends State<Chat> {
                 )
               : Container(
                   child: null,
-              ),
+                ),
         ],
       );
     } else {
@@ -200,22 +200,21 @@ class _ChatState extends State<Chat> {
                     fontWeight: FontWeight.w400,
                   )),
               TextSpan(text: '\n'),
-              widget.user.isOnline ?
-              TextSpan(
-                text: 'Online',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w400,
-                ),
-              )
-              :
-              TextSpan(
-                text: 'Offline',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w400,
-                ),
-              )
+              widget.user.isOnline
+                  ? TextSpan(
+                      text: 'Online',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
+                  : TextSpan(
+                      text: 'Offline',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
             ],
           ),
         ),
