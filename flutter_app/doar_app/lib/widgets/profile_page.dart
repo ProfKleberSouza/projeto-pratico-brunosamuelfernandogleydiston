@@ -31,6 +31,17 @@ class Profile extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person), title: Text("Minha conta")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_basket), title: Text("Meus pedidos")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), title: Text("Favoritos")),
+        ],
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(10.0),
