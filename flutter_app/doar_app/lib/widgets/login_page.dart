@@ -13,7 +13,7 @@ class _LoginState extends State<Login> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   bool isLoading = false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -229,5 +229,12 @@ class _LoginState extends State<Login> {
         );
       },
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
   }
 }
