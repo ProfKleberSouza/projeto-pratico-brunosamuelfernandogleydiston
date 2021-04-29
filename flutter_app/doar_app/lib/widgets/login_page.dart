@@ -10,7 +10,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  // final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -73,6 +72,7 @@ class _LoginState extends State<Login> {
               ),
               TextField(
                 autofocus: true,
+                controller: emailController,
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
@@ -200,14 +200,15 @@ class _LoginState extends State<Login> {
     FirebaseAuth.instance
         .signInWithEmailAndPassword(
             email: emailController.text, password: passwordController.text)
-        .then((result) {
-          isLoading = false;
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => Profile()),
-          );
-        },
-      ).catchError(
+        .then(
+      (result) {
+        isLoading = false;
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Profile()),
+        );
+      },
+    ).catchError(
       (error) {
         print(error.message);
         showDialog(

@@ -14,13 +14,12 @@ dependencies:
     sdk: flutter
   sqflite: ^2.0.0+3
   path_provider: ^2.0.1
-  flutter_signin_button: ^1.0.0
+  flutter_signin_button: ^2.0.0
   cupertino_icons: ^1.0.2
   firebase_auth: ^1.1.2
   firebase_core: ^1.1.0
-  firebase_database: 6.1.2
-  splashscreen: ^1.2.0
-
+  firebase_database: ^6.1.2
+  flutter_native_splash: ^1.1.8+4
 
 dev_dependencies:
   flutter_test:

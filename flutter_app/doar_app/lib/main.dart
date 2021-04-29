@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:splashscreen/splashscreen.dart';
 import 'package:doar_app/widgets/login_page.dart';
 import 'package:doar_app/widgets/profile_page.dart';
 //import 'package:doar_app/database/persistdata_core.dart';
@@ -22,36 +21,58 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  // Dados persistidos (Persitent Data) com SQLite
-  // final dbUser = MyDatabase.instance;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Main', // O título da aplicação
-      theme: ThemeData(primaryColor: const Color(0xff63dadb)),
-      home: IntroScreen(),
+    User? result = FirebaseAuth.instance.currentUser;
+    return FutureBuilder(
+      future: Future.delayed(Duration(seconds: 4)),
+      builder: (context, AsyncSnapshot snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return MaterialApp(home: Splash());
+        } else {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Doar app',
+            theme: ThemeData(primaryColor: const Color(0xff63dadb)),
+            home: result != null ? Profile(uid: result.uid) : Login(),
+          );
+        }
+      },
     );
   }
 }
 
-class IntroScreen extends StatelessWidget {
+class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    User? result = FirebaseAuth.instance.currentUser;
-    return SplashScreen(
-        navigateAfterSeconds:
-            result != null ? Profile(uid: result.uid) : Login(),
-        seconds: 5,
-        title: Text(
-          'Welcome To Meet up!',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            ClipRRect(
+              borderRadius: BorderRadius.zero,
+              child: Container(
+                alignment: Alignment.center,
+                height: 150.0,
+                width: 150.0,
+                color: Colors.white,
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+            Text('Seja bem vindo!',
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ))
+          ],
         ),
-        image: Image.asset('assets/images/dart.png', fit: BoxFit.scaleDown),
-        backgroundColor: Colors.white,
-        styleTextUnderTheLoader: TextStyle(),
-        photoSize: 100.0,
-        onClick: () => print("Flutter"),
-        loaderColor: const Color(0xff63dadb));
+      ),
+    );
   }
 }
