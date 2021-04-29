@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:doar_app/widgets/login_page.dart';
-import 'package:doar_app/widgets/dashboard_page.dart';
+import 'package:doar_app/widgets/chathome_page.dart';
 
 class Profile extends StatelessWidget {
   Profile({this.uid = 'Nome'});
@@ -111,7 +111,7 @@ class Profile extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Dashboard()));
+                        MaterialPageRoute(builder: (context) => ChatHome()));
                   },
                   style: ButtonStyle(
                     foregroundColor:
@@ -128,7 +128,7 @@ class Profile extends StatelessWidget {
                     padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
                         EdgeInsets.all(0.0)),
                   ),
-                  child: Text('Entrar',
+                  child: Text('Chat',
                       style: TextStyle(color: Colors.white, fontSize: 22.0)),
                 ),
               ),

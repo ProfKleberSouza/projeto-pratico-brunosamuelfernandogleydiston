@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:doar_app/widgets/login_page.dart';
 import 'package:doar_app/widgets/profile_page.dart';
+//import './screens/home_screen.dart';
 //import 'package:doar_app/database/persistdata_core.dart';
 
 // Chrome emulate: flutter run -d chrome
@@ -28,12 +29,16 @@ class MyApp extends StatelessWidget {
       future: Future.delayed(Duration(seconds: 4)),
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return MaterialApp(home: Splash());
+          return MaterialApp(
+            home: Splash(),
+          );
         } else {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Doar app',
-            theme: ThemeData(primaryColor: const Color(0xff63dadb)),
+            theme: ThemeData(
+              primaryColor: const Color(0xff63dadb)
+            ),
             home: result != null ? Profile(uid: result.uid) : Login(),
           );
         }
@@ -64,7 +69,8 @@ class Splash extends StatelessWidget {
                 ),
               ),
             ),
-            Text('Seja bem vindo!',
+            Text(
+              'Seja bem vindo!',
                 style: TextStyle(
                   color: Colors.black87,
                   fontSize: 20.0,
