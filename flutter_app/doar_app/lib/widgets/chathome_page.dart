@@ -1,27 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:doar_app/database/user_data.dart';
 import 'package:doar_app/database/message_data.dart';
-import 'package:doar_app/widgets/chathome_page.dart';
+import 'package:doar_app/widgets/chat_page.dart';
 
-class Chat extends StatefulWidget {
+class ChatHome extends StatefulWidget {
   @override
-  _ChatState createState() => _ChatState();
+  _ChatHomeState createState() => _ChatHomeState();
 }
 
-class _ChatState extends State<Chat> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
-}
-
-
-
-
-
-class HomeScreen extends StatelessWidget {
+class _ChatHomeState extends State<ChatHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +42,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => ChatScreen(
+                builder: (_) => Chat(
                   user: chat.sender,
                 ),
               ),

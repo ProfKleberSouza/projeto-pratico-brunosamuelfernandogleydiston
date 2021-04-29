@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:doar_app/database/user_data.dart';
 import 'package:doar_app/database/message_data.dart';
-import 'package:doar_app/widgets/chat_page.dart';
 
-class ChatScreen extends StatefulWidget {
+class Chat extends StatefulWidget {
   final User user;
 
-  ChatScreen({required this.user});
+  Chat({required this.user});
 
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  _ChatState createState() => _ChatState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _ChatState extends State<Chat> {
   _chatBubble(Message message, bool isMe, bool isSameUser) {
     if (isMe) {
       return Column(
@@ -78,7 +77,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 )
               : Container(
                   child: null,
-                ),
+              ),
         ],
       );
     } else {
