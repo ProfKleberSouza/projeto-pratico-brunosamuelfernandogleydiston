@@ -4,8 +4,8 @@ import 'package:doar_app/widgets/login_page.dart';
 import 'package:doar_app/widgets/dashboard_page.dart';
 
 class Profile extends StatelessWidget {
-  Profile({this.uid = 'Nome'});
-  final String uid;
+  Profile({this.uid});
+  final String? uid;
   final String title = 'Perfil';
 
   @override

@@ -18,7 +18,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^1.1.2
   firebase_core: ^1.1.0
-  firebase_database: ^6.1.2
+  firebase_database: ^7.0.0-dev.0
   flutter_native_splash: ^1.1.8+4
 
 dev_dependencies:

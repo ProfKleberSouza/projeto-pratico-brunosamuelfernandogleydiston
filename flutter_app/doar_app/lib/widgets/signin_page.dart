@@ -1,4 +1,6 @@
 import 'package:doar_app/widgets/profile_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,13 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   bool agree = false;
-  // Esta função é ativada quando o botão e clicado
+  bool isLoading = false;
+  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  DatabaseReference dbRef =
+      FirebaseDatabase.instance.reference().child("Users");
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
   void gotoProfile() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
   }
@@ -42,6 +50,7 @@ class _SignInState extends State<SignIn> {
               ),
               TextField(
                 autofocus: true,
+                controller: emailController,
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
                 decoration: InputDecoration(
@@ -54,6 +63,7 @@ class _SignInState extends State<SignIn> {
               ),
               TextField(
                 autofocus: true,
+                controller: passwordController,
                 obscureText: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.black87, fontSize: 18.0),
@@ -119,7 +129,11 @@ class _SignInState extends State<SignIn> {
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 150, height: 50),
                 child: ElevatedButton(
-                  onPressed: agree ? gotoProfile : null,
+                  onPressed: () {
+                    if (agree) {
+                      registerToFb();
+                    }
+                  },
                   style: ButtonStyle(
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),
@@ -177,5 +191,51 @@ class _SignInState extends State<SignIn> {
         ),
       ),
     );
+  }
+
+  void registerToFb() {
+    firebaseAuth
+        .createUserWithEmailAndPassword(
+            email: emailController.text, password: passwordController.text)
+        .then((UserCredential result) {
+      User? user = result.user;
+      if (user != null) {
+        dbRef.child(user.uid).set({
+          "email": emailController.text,
+          "age": "vazio",
+          "name": "vazio"
+        }).then((res) {
+          isLoading = false;
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => Profile(uid: user.uid)),
+          );
+        });
+      }
+    }).catchError((err) {
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: Text("Error"),
+              content: Text(err.message),
+              actions: [
+                TextButton(
+                  child: Text("Ok"),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                )
+              ],
+            );
+          });
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
   }
 }
