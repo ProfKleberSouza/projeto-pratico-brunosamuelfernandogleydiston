@@ -21,7 +21,7 @@ class _ChatHomeState extends State<ChatHome> {
           onPressed: () {},
         ),
         title: Text(
-          'Inbox',
+          'Caixa de Mensagem',
           style: TextStyle(
             color: Colors.white,
           ),
