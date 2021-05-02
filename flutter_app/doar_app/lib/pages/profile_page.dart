@@ -128,7 +128,7 @@ class ProfileScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ChatHomeScreen()));
+                        MaterialPageRoute(builder: (context) => ChatHomeScreen(currentUserId: '',)));
                   },
                   style: ButtonStyle(
                     foregroundColor:
