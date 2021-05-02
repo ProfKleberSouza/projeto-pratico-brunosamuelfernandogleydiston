@@ -1,20 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:doar_app/widgets/login_page.dart';
-import 'package:doar_app/widgets/profile_page.dart';
+import 'package:doar_app/pages/login_page.dart';
+import 'package:doar_app/pages/profile_page.dart';
+import 'package:doar_app/mixin/palette_colors.dart';
 
 //import './screens/home_screen.dart';
-//import 'package:doar_app/database/persistdata_core.dart';
+//import 'package:doar_app/database/sqlite_persistdata.dart';
 
 // Chrome emulate: flutter run -d chrome
-// Theme colors:
-// const Color(0xff63dadb)
-// const Color(0xfff1ceaf)
-// const Color(0xff2f2d2a)
-// const Color(0xffaa8a6f)
-// const Color(0xff767a76)
-// const Color(0xff637e90)
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +31,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Doar app',
-            theme: ThemeData(primaryColor: const Color(0xff63dadb)),
+            theme: ThemeData(primaryColor: cyanThemeColor),
             home: result != null ? Profile(uid: result.uid) : Login(),
           );
         }
@@ -61,7 +55,7 @@ class Splash extends StatelessWidget {
                 alignment: Alignment.center,
                 height: 150.0,
                 width: 150.0,
-                color: Colors.white,
+                color: whiteBackgroundColor,
                 child: Image.asset(
                   'assets/images/logo.png',
                   alignment: Alignment.center,
@@ -70,7 +64,7 @@ class Splash extends StatelessWidget {
             ),
             Text('Seja bem vindo!',
                 style: TextStyle(
-                  color: Colors.black87,
+                  color: blackTextColor,
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ))
