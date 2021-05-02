@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:async';
 import 'package:doar_app/mixin/palette_colors.dart';
 import 'package:doar_app/pages/profile_page.dart';
+import 'package:firebase/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';

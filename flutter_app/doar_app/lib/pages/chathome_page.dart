@@ -3,8 +3,9 @@ import 'package:doar_app/mixin/palette_colors.dart';
 import 'package:doar_app/pages/chatusers_page.dart';
 import 'package:doar_app/persistdata/user_db.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase/firebase.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();

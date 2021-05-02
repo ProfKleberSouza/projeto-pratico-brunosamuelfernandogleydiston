@@ -1,3 +1,4 @@
+import 'package:firebase/firebase.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Message {
