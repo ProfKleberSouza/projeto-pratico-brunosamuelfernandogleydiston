@@ -1,13 +1,12 @@
 import 'dart:io';
-
-import 'package:chat_app/full_screen_image.dart';
-import 'package:chat_app/models/message.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
-import 'package:image_picker/image_picker.dart';
+import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:doar_app/persistdata/message_db.dart';
+import 'package:image_picker/image_picker.dart';
 
 class ChatScreen extends StatefulWidget {
   String name;
@@ -111,7 +110,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     ChatMessagesListWidget(),
                     Divider(
                       height: 20.0,
-                      color: Colors.black,
+                      color: blackUserTextColor,
                     ),
                     ChatInputWidget(),
                     SizedBox(
@@ -119,7 +118,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     )
                   ],
                 ),
-        ));
+        ),
+    );
   }
 
   Widget ChatInputWidget() {
@@ -131,10 +131,10 @@ class _ChatScreenState extends State<ChatScreen> {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 4.0),
             child: IconButton(
-              splashColor: Colors.white,
+              splashColor: whiteBackgroundColor,
               icon: Icon(
                 Icons.camera_alt,
-                color: Colors.black,
+                color: blackFixedTextColor
               ),
               onPressed: () {
                 pickImage();
@@ -162,10 +162,10 @@ class _ChatScreenState extends State<ChatScreen> {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 4.0),
             child: IconButton(
-              splashColor: Colors.white,
+              splashColor: whiteBackgroundColor,
               icon: Icon(
                 Icons.send,
-                color: Colors.black,
+                color: blackUserTextColor,
               ),
               onPressed: () {
                 if (_formKey.currentState.validate()) {
@@ -330,21 +330,21 @@ class _ChatScreenState extends State<ChatScreen> {
                       ? new Text(
                           senderName == null ? "" : senderName,
                           style: TextStyle(
-                              color: Colors.black,
+                              color: blackFixedTextColor,
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold),
                         )
                       : new Text(
                           receiverName == null ? "" : receiverName,
                           style: TextStyle(
-                              color: Colors.black,
+                              color: blackFixedTextColor,
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold),
                         ),
                   snapshot['type'] == 'text'
                       ? new Text(
                           snapshot['message'],
-                          style: TextStyle(color: Colors.black, fontSize: 14.0),
+                          style: TextStyle(color: blackFixedTextColor, fontSize: 14.0,),
                         )
                       : InkWell(
                           onTap: (() {

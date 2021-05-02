@@ -1,13 +1,14 @@
-import 'dart:async';
 import 'dart:io';
-import 'package:chat_app/chat_screen.dart';
-import 'package:chat_app/home_page.dart';
-import 'package:chat_app/main.dart';
-import 'package:chat_app/models/user_details.dart';
+import 'dart:async';
+import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/pages/profile_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+import 'package:doar_app/persistdata/message_db.dart';
+import 'package:doar_app/persistdata/user_db.dart';
+import 'package:doar_app/pages/chathome_page.dart';
+import 'package:doar_app/pages/chat_page.dart';
 
 class AllUsersScreen extends StatefulWidget {
   _AllUsersScreenState createState() => _AllUsersScreenState();
@@ -52,7 +53,7 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
                 await googleSignIn.signOut();
                 print("Signed Out");
                 Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => MyApp()),
+                    MaterialPageRoute(builder: (context) => ProfileScreen()),
                     (Route<dynamic> route) => false);
               },
             )
@@ -70,12 +71,12 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
                       ),
                       title: Text(usersList[index].data['name'],
                           style: TextStyle(
-                            color: Colors.black,
+                            color: blackFixedTextColor,
                             fontWeight: FontWeight.bold,
                           )),
                       subtitle: Text(usersList[index].data['emailId'],
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: lightgreyBackgroundColor,
                           )),
                       onTap: (() {
                         Navigator.push(
@@ -85,7 +86,7 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
                                     name: usersList[index].data['name'],
                                     photoUrl: usersList[index].data['photoUrl'],
                                     receiverUid:
-                                        usersList[index].data['uid'])));
+                                        usersList[index].data['uid']),),);
                       }),
                     );
                   }),

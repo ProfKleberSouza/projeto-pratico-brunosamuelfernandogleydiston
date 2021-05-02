@@ -1,10 +1,10 @@
-import 'package:chat_app/all_users_screen.dart';
-import 'package:chat_app/models/user_details.dart';
+import 'dart:async';
+import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/pages/chatusers_page.dart';
+import 'package:doar_app/persistdata/user_db.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'dart:async';
 
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
@@ -58,7 +58,8 @@ class _HomePageState extends State<HomePage> {
       }
     });
   }
-
+}
+/*
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +75,7 @@ class _HomePageState extends State<HomePage> {
               'Welcome to Chat App',
               style: TextStyle(
                   fontSize: 24.0,
-                  color: Colors.black,
+                  color: blackFixedTextColor,
                   fontWeight: FontWeight.bold),
             ),
             Padding(
@@ -84,7 +85,7 @@ class _HomePageState extends State<HomePage> {
               elevation: 8.0,
               padding: EdgeInsets.all(8.0),
               shape: StadiumBorder(),
-              textColor: Colors.black,
+              textColor: blackFixedTextColor,
               color: Colors.lime,
               child: Text('Sign In'),
               splashColor: Colors.red,
@@ -100,3 +101,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+*/
