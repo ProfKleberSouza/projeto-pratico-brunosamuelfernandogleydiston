@@ -4,8 +4,8 @@ import 'package:doar_app/pages/login_page.dart';
 import 'package:doar_app/pages/chathome_page.dart';
 import 'package:doar_app/mixin/palette_colors.dart';
 
-class Profile extends StatelessWidget {
-  Profile({this.uid});
+class ProfileScreen extends StatelessWidget {
+  ProfileScreen({this.uid});
   final String? uid;
   final String title = 'Perfil';
 
@@ -25,7 +25,7 @@ class Profile extends StatelessWidget {
               auth.signOut().then((res) {
                 Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (context) => Login()),
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
                     (Route<dynamic> route) => false);
               });
             },
@@ -91,7 +91,7 @@ class Profile extends StatelessWidget {
                         child: Text(
                           'Belo Horizonte, MG',
                           style: TextStyle(
-                            color: greyBackgroundColor,
+                            color: lightgreyBackgroundColor,
                             fontSize: 15.0,
                           ),
                         ),
@@ -128,7 +128,7 @@ class Profile extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ChatHome()));
+                        MaterialPageRoute(builder: (context) => ChatHomeScreen()));
                   },
                   style: ButtonStyle(
                     foregroundColor:

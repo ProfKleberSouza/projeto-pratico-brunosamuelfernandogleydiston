@@ -1,15 +1,14 @@
 import 'dart:async';
 import 'dart:io';
-
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doar_app/mixin/palette_colors.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chat_demo/const.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:firebase/firebase.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:doar_app/mixin/palette_colors.dart';
 
 class ChatSettings extends StatelessWidget {
   @override
@@ -17,8 +16,11 @@ class ChatSettings extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'SETTINGS',
-          style: TextStyle(color: primaryColor, fontWeight: FontWeight.bold),
+          'Configurações',
+          style: TextStyle(
+            color: whiteBackgroundColor, 
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -33,10 +35,10 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class SettingsScreenState extends State<SettingsScreen> {
-  TextEditingController controllerNickname;
-  TextEditingController controllerAboutMe;
+  late TextEditingController controllerNickname;
+  late TextEditingController controllerAboutMe;
 
-  SharedPreferences prefs;
+  late SharedPreferences prefs;
 
   String id = '';
   String nickname = '';
@@ -44,7 +46,7 @@ class SettingsScreenState extends State<SettingsScreen> {
   String photoUrl = '';
 
   bool isLoading = false;
-  File avatarImageFile;
+  late File avatarImageFile;
 
   final FocusNode focusNodeNickname = FocusNode();
   final FocusNode focusNodeAboutMe = FocusNode();
@@ -71,11 +73,11 @@ class SettingsScreenState extends State<SettingsScreen> {
 
   Future getImage() async {
     ImagePicker imagePicker = ImagePicker();
-    PickedFile pickedFile;
+    PickedFile? pickedFile;
 
     pickedFile = await imagePicker.getImage(source: ImageSource.gallery);
 
-    File image = File(pickedFile.path);
+    File image = File(pickedFile!.path);
 
     if (image != null) {
       setState(() {
@@ -184,7 +186,7 @@ class SettingsScreenState extends State<SettingsScreen> {
                                         strokeWidth: 2.0,
                                         valueColor:
                                             AlwaysStoppedAnimation<Color>(
-                                                themeColor),
+                                                cyanThemeColor),
                                       ),
                                       width: 90.0,
                                       height: 90.0,
@@ -202,7 +204,7 @@ class SettingsScreenState extends State<SettingsScreen> {
                               : Icon(
                                   Icons.account_circle,
                                   size: 90.0,
-                                  color: greyColor,
+                                  color: whiteBackgroundColor,
                                 ))
                           : Material(
                               child: Image.file(
@@ -218,12 +220,12 @@ class SettingsScreenState extends State<SettingsScreen> {
                       IconButton(
                         icon: Icon(
                           Icons.camera_alt,
-                          color: primaryColor.withOpacity(0.5),
+                          color: cyanThemeColor.withOpacity(0.5),
                         ),
                         onPressed: getImage,
                         padding: EdgeInsets.all(30.0),
                         splashColor: Colors.transparent,
-                        highlightColor: greyColor,
+                        highlightColor: whiteBackgroundColor,
                         iconSize: 30.0,
                       ),
                     ],
@@ -239,23 +241,23 @@ class SettingsScreenState extends State<SettingsScreen> {
                   // Username
                   Container(
                     child: Text(
-                      'Nickname',
+                      'Nome',
                       style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold,
-                          color: primaryColor),
+                          color: cyanThemeColor),
                     ),
                     margin: EdgeInsets.only(left: 10.0, bottom: 5.0, top: 10.0),
                   ),
                   Container(
                     child: Theme(
                       data: Theme.of(context)
-                          .copyWith(primaryColor: primaryColor),
+                          .copyWith(primaryColor: blackUserTextColor),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: 'Sweetie',
+                          hintText: 'Escreva aqui seu nome.',
                           contentPadding: EdgeInsets.all(5.0),
-                          hintStyle: TextStyle(color: greyColor),
+                          hintStyle: TextStyle(color: blackFixedTextColor),
                         ),
                         controller: controllerNickname,
                         onChanged: (value) {
@@ -270,23 +272,23 @@ class SettingsScreenState extends State<SettingsScreen> {
                   // About me
                   Container(
                     child: Text(
-                      'About me',
+                      'Status',
                       style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold,
-                          color: primaryColor),
+                          color: cyanThemeColor),
                     ),
                     margin: EdgeInsets.only(left: 10.0, top: 30.0, bottom: 5.0),
                   ),
                   Container(
                     child: Theme(
                       data: Theme.of(context)
-                          .copyWith(primaryColor: primaryColor),
+                          .copyWith(primaryColor: blackUserTextColor),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: 'Fun, like travel and play PES...',
+                          hintText: 'Escreva aqui seu status.',
                           contentPadding: EdgeInsets.all(5.0),
-                          hintStyle: TextStyle(color: greyColor),
+                          hintStyle: TextStyle(color: blackFixedTextColor),
                         ),
                         controller: controllerAboutMe,
                         onChanged: (value) {
@@ -303,17 +305,28 @@ class SettingsScreenState extends State<SettingsScreen> {
 
               // Button
               Container(
-                child: FlatButton(
+                child: ElevatedButton(
                   onPressed: handleUpdateData,
-                  child: Text(
-                    'UPDATE',
-                    style: TextStyle(fontSize: 16.0),
+                  style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(whiteBackgroundColor),
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(cyanThemeColor),
+                    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                      EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                          side: BorderSide(color: cyanThemeColor)),
+                    ),
                   ),
-                  color: primaryColor,
-                  highlightColor: Color(0xff8d93a0),
-                  splashColor: Colors.transparent,
-                  textColor: Colors.white,
-                  padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
+                  child: Text(
+                    'Atualizar',
+                    style: TextStyle(
+                      color: whiteBackgroundColor,
+                      fontSize: 22.0,
+                    ),
+                  ),
                 ),
                 margin: EdgeInsets.only(top: 50.0, bottom: 50.0),
               ),

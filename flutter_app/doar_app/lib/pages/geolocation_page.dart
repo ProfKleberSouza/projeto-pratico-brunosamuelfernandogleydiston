@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Geolocation extends StatefulWidget {
+class GeolocationScreen extends StatefulWidget {
   @override
-  _GeolocationState createState() => _GeolocationState();
+  _GeolocationScreenState createState() => _GeolocationScreenState();
 }
 
-class _GeolocationState extends State<Geolocation> {
+class _GeolocationScreenState extends State<GeolocationScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(

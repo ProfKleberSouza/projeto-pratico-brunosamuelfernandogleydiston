@@ -1,8 +1,9 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:firebase/firebase.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:doar_app/widgets/loading_widgets.dart';
 import 'package:doar_app/widgets/fullphoto_widgets.dart';
@@ -298,7 +299,7 @@ class ChatScreenState extends State<ChatScreen> {
                         clipBehavior: Clip.hardEdge,
                       )
                     : Container(width: 35.0),
-                document.data()['type'] == 0
+                document.data()!['type'] == 0
                     ? Container(
                         child: Text(
                           document.data()!['content'],

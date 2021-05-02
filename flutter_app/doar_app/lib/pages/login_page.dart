@@ -5,12 +5,12 @@ import 'package:doar_app/pages/profile_page.dart';
 import 'package:doar_app/pages/signin_page.dart';
 import 'package:doar_app/mixin/palette_colors.dart';
 
-class Login extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginScreenState extends State<LoginScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   bool isLoading = false;
@@ -186,7 +186,7 @@ class _LoginState extends State<Login> {
                     child: TextButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignIn()));
+                            MaterialPageRoute(builder: (context) => SignInScreen()));
                       },
                       child: Text(
                         'Inscreva-se',
@@ -217,7 +217,7 @@ class _LoginState extends State<Login> {
         isLoading = false;
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => Profile()),
+          MaterialPageRoute(builder: (context) => ProfileScreen()),
         );
       },
     ).catchError(

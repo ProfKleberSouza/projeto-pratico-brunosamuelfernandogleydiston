@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:doar_app/mixin/palette_colors.dart';
 import 'package:doar_app/pages/profile_page.dart';
 
-class SignIn extends StatefulWidget {
+class SignInScreen extends StatefulWidget {
   @override
-  _SignInState createState() => _SignInState();
+  _SignInScreenState createState() => _SignInScreenState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignInScreenState extends State<SignInScreen> {
   bool agree = false;
   bool isLoading = false;
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
@@ -20,7 +20,7 @@ class _SignInState extends State<SignIn> {
   TextEditingController passwordController = TextEditingController();
 
   void gotoProfile() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
   }
 
   @override
@@ -217,7 +217,7 @@ class _SignInState extends State<SignIn> {
           isLoading = false;
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => Profile(uid: user.uid)),
+            MaterialPageRoute(builder: (context) => ProfileScreen(uid: user.uid)),
           );
         });
       }

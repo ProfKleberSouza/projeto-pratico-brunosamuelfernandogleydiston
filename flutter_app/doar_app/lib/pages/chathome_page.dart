@@ -10,22 +10,22 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doar_app/pages/chat_page.dart';
-import 'package:doar_app/pages/settings_page.dart';
+import 'package:doar_app/pages/chatsettings_page.dart';
 import 'package:doar_app/widgets/loading_widgets.dart';
 import 'package:doar_app/mixin/palette_colors.dart';
 //import 'package:google_sign_in/google_sign_in.dart';
 
-class ChatHome extends StatefulWidget {
+class ChatHomeScreen extends StatefulWidget {
   final String currentUserId;
 
-  ChatHome({Key? key, required this.currentUserId}) : super(key: key);
+  ChatHomeScreen({Key? key, required this.currentUserId}) : super(key: key);
 
   @override
-  _ChatHomeState createState() => _ChatHomeState(currentUserId: currentUserId);
+  _ChatHomeScreenState createState() => _ChatHomeScreenState(currentUserId: currentUserId);
 }
 
-class _ChatHomeState extends State<ChatHome> {
-  _ChatHomeState({Key? key, required this.currentUserId});
+class _ChatHomeScreenState extends State<ChatHomeScreen> {
+  _ChatHomeScreenState({Key? key, required this.currentUserId});
 
   final String currentUserId;
   final FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
@@ -115,8 +115,8 @@ class _ChatHomeState extends State<ChatHome> {
       'your channel description',
       playSound: true,
       enableVibration: true,
-      importance: Importance.Max,
-      priority: Priority.High,
+      importance: Importance.max,
+      priority: Priority.high,
     );
     var platformChannelSpecifics =
         new NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -245,7 +245,7 @@ class _ChatHomeState extends State<ChatHome> {
     });
 
     Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => Profile()),
+        MaterialPageRoute(builder: (context) => ProfileScreen()),
         (Route<dynamic> route) => false);
   }
 
@@ -395,7 +395,7 @@ class _ChatHomeState extends State<ChatHome> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => Chat(
+                    builder: (context) => ChatScreen(
                           peerId: document.id,
                           peerAvatar: document.data()!['photoUrl'],
                         )));

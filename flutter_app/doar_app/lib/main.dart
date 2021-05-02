@@ -25,14 +25,14 @@ class MyApp extends StatelessWidget {
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return MaterialApp(
-            home: Splash(),
+            home: SplashScreen(),
           );
         } else {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Doar app',
             theme: ThemeData(primaryColor: cyanThemeColor),
-            home: result != null ? Profile(uid: result.uid) : Login(),
+            home: result != null ? ProfileScreen(uid: result.uid) : LoginScreen(),
           );
         }
       },
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Splash extends StatelessWidget {
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +64,7 @@ class Splash extends StatelessWidget {
             ),
             Text('Seja bem vindo!',
                 style: TextStyle(
-                  color: blackTextColor,
+                  color: blackUserTextColor,
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ))
