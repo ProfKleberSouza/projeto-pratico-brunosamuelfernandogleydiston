@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:doar_app/pages/login_page.dart';
 import 'package:doar_app/pages/profile_page.dart';
-import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/design/palette_colors.dart';
 
 //import './screens/home_screen.dart';
 //import 'package:doar_app/database/sqlite_persistdata.dart';

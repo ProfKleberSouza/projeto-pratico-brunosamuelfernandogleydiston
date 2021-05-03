@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:doar_app/pages/profile_page.dart';
 import 'package:doar_app/pages/signin_page.dart';
-import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/design/palette_colors.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

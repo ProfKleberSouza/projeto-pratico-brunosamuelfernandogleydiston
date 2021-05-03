@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:async';
-import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/design/palette_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -146,15 +146,17 @@ class _ChatScreenState extends State<ChatScreen> {
             child: TextFormField(
               validator: (String input) {
                 if (input.isEmpty) {
-                  return "Please enter message";
+                  return "Envie uma mensagem";
                 }
               },
               controller: _messageController,
               decoration: InputDecoration(
-                  hintText: "Enter message...",
-                  labelText: "Message",
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0))),
+                hintText: "Digite uma mensagem...",
+                labelText: "Mensagem",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+              ),
               onFieldSubmitted: (value) {
                 _messageController.text = value;
               },
@@ -311,13 +313,13 @@ class _ChatScreenState extends State<ChatScreen> {
               snapshot['senderUid'] == _senderuid
                   ? CircleAvatar(
                       backgroundImage: senderPhotoUrl == null
-                          ? AssetImage('assets/blankimage.png')
+                          ? AssetImage('assets/images/blankimage.png')
                           : NetworkImage(senderPhotoUrl),
                       radius: 20.0,
                     )
                   : CircleAvatar(
                       backgroundImage: receiverPhotoUrl == null
-                          ? AssetImage('assets/blankimage.png')
+                          ? AssetImage('assets/images/blankimage.png')
                           : NetworkImage(receiverPhotoUrl),
                       radius: 20.0,
                     ),
@@ -350,20 +352,22 @@ class _ChatScreenState extends State<ChatScreen> {
                       : InkWell(
                           onTap: (() {
                             Navigator.push(
-                                context,
-                                new MaterialPageRoute(
-                                    builder: (context) => FullScreenImage(photoUrl: snapshot['photoUrl'],)));
+                              context,
+                              new MaterialPageRoute(
+                                builder: (context) => FullScreenImage(photoUrl: snapshot['photoUrl']),
+                              ),
+                            );
                           }),
                           child: Hero(
                             tag: snapshot['photoUrl'],
                             child: FadeInImage(
                               image: NetworkImage(snapshot['photoUrl']),
-                              placeholder: AssetImage('assets/blankimage.png'),
+                              placeholder: AssetImage('assets/images/blankimage.png'),
                               width: 200.0,
                               height: 200.0,
                             ),
                           ),
-                        )
+                      )
                 ],
               )
             ],

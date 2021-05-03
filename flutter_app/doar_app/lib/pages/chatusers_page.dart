@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:async';
-import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/design/palette_colors.dart';
 import 'package:doar_app/pages/profile_page.dart';
 import 'package:firebase/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -16,12 +16,11 @@ class AllUsersScreen extends StatefulWidget {
 }
 
 class _AllUsersScreenState extends State<AllUsersScreen> {
-  final GoogleSignIn googleSignIn = GoogleSignIn();
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   StreamSubscription<QuerySnapshot> _subscription;
   List<DocumentSnapshot> usersList;
   final CollectionReference _collectionReference =
-      Firestore.instance.collection("users");
+      Firestore.instance.collection('users');
 
   @override
   void initState() {
@@ -29,7 +28,7 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
     _subscription = _collectionReference.snapshots().listen((datasnapshot) {
       setState(() {
         usersList = datasnapshot.documents;
-        print("Users List ${usersList.length}");
+        print('Lista de contatos ${usersList.length}');
       });
     });
   }
@@ -44,20 +43,18 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("All Users"),
+          title: Text('Todos Contatos'),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.close),
               onPressed: () async {
                 await firebaseAuth.signOut();
-                await googleSignIn.disconnect();
-                await googleSignIn.signOut();
-                print("Signed Out");
+                print('Sair');
                 Navigator.of(context).pushAndRemoveUntil(
                     MaterialPageRoute(builder: (context) => ProfileScreen()),
                     (Route<dynamic> route) => false);
               },
-            )
+            ),
           ],
         ),
         body: usersList != null
@@ -71,30 +68,35 @@ class _AllUsersScreenState extends State<AllUsersScreen> {
                             NetworkImage(usersList[index].data['photoUrl']),
                       ),
                       title: Text(usersList[index].data['name'],
-                          style: TextStyle(
-                            color: blackFixedTextColor,
-                            fontWeight: FontWeight.bold,
-                          )),
+                        style: TextStyle(
+                          color: blackFixedTextColor,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       subtitle: Text(usersList[index].data['emailId'],
-                          style: TextStyle(
-                            color: lightgreyBackgroundColor,
-                          )),
+                        style: TextStyle(
+                          color: lightgreyBackgroundColor,
+                        ),
+                      ),
                       onTap: (() {
                         Navigator.push(
-                            context,
-                            new MaterialPageRoute(
-                                builder: (context) => ChatScreen(
-                                    name: usersList[index].data['name'],
-                                    photoUrl: usersList[index].data['photoUrl'],
-                                    receiverUid:
-                                        usersList[index].data['uid']),),);
+                          context,
+                          new MaterialPageRoute(
+                            builder: (context) => ChatScreen(
+                              name: usersList[index].data['name'],
+                              photoUrl: usersList[index].data['photoUrl'],
+                              receiverUid: usersList[index].data['uid'],
+                            ),
+                          ),
+                        );
                       }),
                     );
                   }),
                 ),
-              )
+            )
             : Center(
-                child: CircularProgressIndicator(),
-              ));
+              child: CircularProgressIndicator(),
+            ),
+    );
   }
 }

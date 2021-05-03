@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:doar_app/mixin/palette_colors.dart';
+import 'package:doar_app/design/palette_colors.dart';
 import 'package:doar_app/pages/chatusers_page.dart';
 import 'package:doar_app/persistdata/user_db.dart';
 import 'package:flutter/material.dart';
@@ -13,21 +13,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
   DocumentReference _documentReference;
   UserDetails _userDetails = UserDetails();
   var mapData = Map<String, String>();
   String uid;
 
   Future<FirebaseUser> signIn() async {
-    GoogleSignInAccount _signInAccount = await _googleSignIn.signIn();
-    GoogleSignInAuthentication _signInAuthentication =
-        await _signInAccount.authentication;
-
-    AuthCredential authCredential = GoogleAuthProvider.getCredential(
-        idToken: _signInAuthentication.idToken,
-        accessToken: _signInAuthentication.accessToken);
-
     FirebaseUser user =
         await _firebaseAuth.signInWithCredential(authCredential);
     return user;
@@ -50,56 +41,13 @@ class _HomePageState extends State<HomePage> {
             new MaterialPageRoute(builder: (context) => AllUsersScreen()));
       } else {
         _documentReference.setData(mapData).whenComplete(() {
-          print("Users Colelction added to Database");
+          print('Users collection added to Database');
           Navigator.pushReplacement(context,
               new MaterialPageRoute(builder: (context) => AllUsersScreen()));
         }).catchError((e) {
-          print("Error adding collection to Database $e");
+          print('Error adding collection to Database $e');
         });
       }
     });
   }
 }
-/*
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('ChatApp'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Welcome to Chat App',
-              style: TextStyle(
-                  fontSize: 24.0,
-                  color: blackFixedTextColor,
-                  fontWeight: FontWeight.bold),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 18.0),
-            ),
-            RaisedButton(
-              elevation: 8.0,
-              padding: EdgeInsets.all(8.0),
-              shape: StadiumBorder(),
-              textColor: blackFixedTextColor,
-              color: Colors.lime,
-              child: Text('Sign In'),
-              splashColor: Colors.red,
-              onPressed: () {
-                signIn().then((FirebaseUser user) {
-                  addDataToDb(user);
-                });
-              },
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}
-*/
