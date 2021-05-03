@@ -11,11 +11,11 @@ import 'package:doar_app/persistdata/user_db.dart';
 import 'package:doar_app/pages/chathome_page.dart';
 import 'package:doar_app/pages/chat_page.dart';
 
-class AllUsersScreen extends StatefulWidget {
-  _AllUsersScreenState createState() => _AllUsersScreenState();
+class UsersScreen extends StatefulWidget {
+  _UsersScreenState createState() => _UsersScreenState();
 }
 
-class _AllUsersScreenState extends State<AllUsersScreen> {
+class _UsersScreenState extends State<UsersScreen> {
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   StreamSubscription<QuerySnapshot> _subscription;
   List<DocumentSnapshot> usersList;
