@@ -1,9 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:doar_app/screens/profilescreen.dart';
-import 'package:doar_app/screens/signinscreen.dart';
-import 'package:doar_app/design/palette.dart';
+import "package:firebase_auth/firebase_auth.dart";
+import "package:flutter/material.dart";
+import "package:flutter_signin_button/flutter_signin_button.dart";
+import "package:doar_app/screens/profilescreen.dart";
+import "package:doar_app/screens/signinscreen.dart";
+import "package:doar_app/design/layoutcolors.dart";
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   width: 150.0,
                   color: whiteBackgroundColor,
                   child: Image.asset(
-                    'assets/images/logo.png',
+                    "assets/images/logo.png",
                     alignment: Alignment.center,
                   ),
                 ),
@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 15.0,
               ),
               Text(
-                'Entrar',
+                "Entrar",
                 style: TextStyle(
                   color: blackUserTextColor,
                   fontSize: 28.0,
@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 15.0,
               ),
               Text(
-                'Olá! Prazer em ver você de novo.',
+                "Olá! Prazer em ver você de novo.",
                 style: TextStyle(
                   color: blackFixedTextColor,
                   fontSize: 18.0,
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   fontSize: 18.0,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'E-mail',
+                  labelText: "E-mail",
                   labelStyle: TextStyle(color: cyanThemeColor),
                 ),
               ),
@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   fontSize: 18.0,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'Senha',
+                  labelText: "Senha",
                   labelStyle: TextStyle(color: cyanThemeColor),
                 ),
               ),
@@ -121,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                   ),
-                  child: Text('Entrar',
+                  child: Text("Entrar",
                       style: TextStyle(
                         color: whiteBackgroundColor,
                         fontSize: 22.0,
@@ -132,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 30.0,
               ),
               Text(
-                'ou use um de seus perfis sociais',
+                "ou use um de seus perfis sociais",
                 style: TextStyle(
                   color: blackFixedTextColor,
                   fontSize: 16.0,
@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Expanded(
                     child: SignInButton(
                       Buttons.Google,
-                      text: 'Inscreva-se com Google',
+                      text: "Inscreva-se com Google",
                       onPressed: () {},
                     ),
                   ),
@@ -157,7 +157,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Expanded(
                     child: SignInButton(
                       Buttons.Facebook,
-                      text: 'Inscreva-se com Facebook',
+                      text: "Inscreva-se com Facebook",
                       onPressed: () {},
                     ),
                   ),
@@ -170,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      'Esqueceu a senha?',
+                      "Esqueceu a senha?",
                       style: TextStyle(
                         color: blackUserTextColor,
                         fontSize: 18.0,
@@ -189,7 +189,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             MaterialPageRoute(builder: (context) => SignInScreen()));
                       },
                       child: Text(
-                        'Inscreva-se',
+                        "Inscreva-se",
                         style: TextStyle(
                           color: cyanThemeColor,
                           fontSize: 18.0,
@@ -227,11 +227,11 @@ class _LoginScreenState extends State<LoginScreen> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text('Error'),
-              content: Text('Usuário Inválido'),
+              title: Text("Error"),
+              content: Text("Usuário Inválido"),
               actions: [
                 ElevatedButton(
-                  child: Text('Ok'),
+                  child: Text("Ok"),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },

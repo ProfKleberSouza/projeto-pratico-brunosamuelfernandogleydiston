@@ -1,9 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:doar_app/screens/profilescreen.dart';
-import 'package:doar_app/design/palette.dart';
+import "package:firebase_auth/firebase_auth.dart";
+import "package:firebase_database/firebase_database.dart";
+import "package:flutter/gestures.dart";
+import "package:flutter/material.dart";
+import "package:doar_app/screens/profilescreen.dart";
+import "package:doar_app/design/layoutcolors.dart";
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -15,7 +15,7 @@ class _SignInScreenState extends State<SignInScreen> {
   bool isLoading = false;
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   DatabaseReference dbRef =
-      FirebaseDatabase.instance.reference().child('Users');
+      FirebaseDatabase.instance.reference().child("Users");
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -38,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 height: 30.0,
               ),
               Text(
-                'Inscreva-se',
+                "Inscreva-se",
                 style: TextStyle(
                   color: blackUserTextColor,
                   fontSize: 28.0,
@@ -58,7 +58,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   fontSize: 18.0,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'E-mail',
+                  labelText: "E-mail",
                   labelStyle: TextStyle(color: cyanThemeColor),
                 ),
               ),
@@ -75,7 +75,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   fontSize: 18.0,
                 ),
                 decoration: InputDecoration(
-                    labelText: 'Senha',
+                    labelText: "Senha",
                     labelStyle: TextStyle(color: cyanThemeColor)),
               ),
               // Botão de entrada
@@ -97,29 +97,29 @@ class _SignInScreenState extends State<SignInScreen> {
                   Container(
                     child: Text.rich(
                       TextSpan(
-                        text: 'Eu concordo com os Termos de ',
+                        text: "Eu concordo com os Termos de ",
                         style: TextStyle(
                             color: blackFixedTextColor, fontSize: 16.0),
                         children: <TextSpan>[
                           TextSpan(
-                              text: 'Termos de Serviço',
+                              text: "Termos de Serviço",
                               style: TextStyle(
                                   color: cyanThemeColor, fontSize: 16.0),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // TO DO: launch('https://');
+                                  // TO DO: launch("https://");
                                 }),
                           TextSpan(
-                              text: ' a e ',
+                              text: " a e ",
                               style: TextStyle(
                                   color: blackFixedTextColor, fontSize: 16.0)),
                           TextSpan(
-                              text: 'Política de Privacidade',
+                              text: "Política de Privacidade",
                               style: TextStyle(
                                   color: cyanThemeColor, fontSize: 16.0),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // TO DO: launch('https://');
+                                  // TO DO: launch("https://");
                                 }),
                         ],
                       ),
@@ -151,7 +151,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           side: BorderSide(color: cyanThemeColor)),
                     ),
                   ),
-                  child: Text('Continue',
+                  child: Text("Continue",
                       style: TextStyle(
                         color: whiteBackgroundColor,
                         fontSize: 22.0,
@@ -165,7 +165,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      'Tem uma Conta?',
+                      "Tem uma Conta?",
                       style: TextStyle(
                         color: blackUserTextColor,
                         fontSize: 18.0,
@@ -183,7 +183,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         Navigator.pop(context);
                       },
                       child: Text(
-                        'Entrar',
+                        "Entrar",
                         style: TextStyle(
                           color: cyanThemeColor,
                           fontSize: 18.0,
@@ -210,9 +210,9 @@ class _SignInScreenState extends State<SignInScreen> {
       User? user = result.user;
       if (user != null) {
         dbRef.child(user.uid).set({
-          'email': emailController.text,
-          'age': 'vazio',
-          'name': 'vazio'
+          "email": emailController.text,
+          "age": "vazio",
+          "name": "vazio"
         }).then((result) {
           isLoading = false;
           Navigator.pushReplacement(
@@ -226,11 +226,11 @@ class _SignInScreenState extends State<SignInScreen> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text('Error'),
+              title: Text("Error"),
               content: Text(error.message),
               actions: [
                 TextButton(
-                  child: Text('Ok'),
+                  child: Text("Ok"),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import '../design/palette.dart';
+import "package:flutter/material.dart";
+import "package:doar_app/design/layoutcolors.dart";
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -23,13 +23,13 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: 150.0,
                 color: whiteBackgroundColor,
                 child: Image.asset(
-                  'assets/images/logo.png',
+                  "assets/images/logo.png",
                   alignment: Alignment.center,
                 ),
               ),
             ),
             Text(
-              'Seja bem vindo!',
+              "Seja bem vindo!",
               style: TextStyle(
                 color: blackUserTextColor,
                 fontSize: 20.0,

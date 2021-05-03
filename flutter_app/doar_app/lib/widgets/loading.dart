@@ -1,4 +1,4 @@
-import 'package:doar_app/design/palette.dart';
+import 'package:doar_app/design/layoutcolors.dart';
 import 'package:flutter/material.dart';
 
 class Loading extends StatelessWidget {

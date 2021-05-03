@@ -380,6 +380,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "random_string",
+      "rootUri": "file:///C:/DevCore/flutter/.pub-cache/hosted/pub.dartlang.org/random_string-2.2.0-nullsafety",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "rxdart",
       "rootUri": "file:///C:/DevCore/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.26.0",
       "packageUri": "lib/",
@@ -524,7 +530,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-05-03T21:03:30.745186Z",
+  "generated": "2021-05-03T23:13:28.237751Z",
   "generator": "pub",
   "generatorVersion": "2.13.0-211.6.beta"
 }

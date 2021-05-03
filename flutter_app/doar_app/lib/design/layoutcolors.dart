@@ -1,4 +1,4 @@
-import 'dart:ui';
+import "dart:ui";
 
 // App theme colors:
 final cyanThemeColor = const Color(0xff63dadb);

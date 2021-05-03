@@ -1,12 +1,13 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:doar_app/screens/loginscreen.dart';
-import 'package:doar_app/design/palette.dart';
+import "package:firebase_auth/firebase_auth.dart";
+import "package:flutter/material.dart";
+import "package:doar_app/screens/loginscreen.dart";
+import "package:doar_app/screens/chathomescreen.dart";
+import "package:doar_app/design/layoutcolors.dart";
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({this.uid});
   final String? uid;
-  final String title = 'Perfil';
+  final String title = "Perfil";
 
   @override
   Widget build(BuildContext context) {
@@ -35,11 +36,11 @@ class ProfileScreen extends StatelessWidget {
         currentIndex: 0,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Minha conta')),
+              icon: Icon(Icons.person), title: Text("Minha conta")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_basket), title: Text('Meus pedidos')),
+              icon: Icon(Icons.shopping_basket), title: Text("Meus pedidos")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), title: Text('Favoritos')),
+              icon: Icon(Icons.favorite), title: Text("Favoritos")),
         ],
       ),
       backgroundColor: whiteBackgroundColor,
@@ -67,7 +68,7 @@ class ProfileScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                 image: ExactAssetImage(
-                                  'assets/images/user.png',
+                                  "assets/images/user.png",
                                 ),
                                 fit: BoxFit.cover,
                               ),
@@ -78,7 +79,7 @@ class ProfileScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Text(
-                          'Bruno Kelsen',
+                          "Bruno Kelsen",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 17.0,
@@ -88,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Text(
-                          'Belo Horizonte, MG',
+                          "Belo Horizonte, MG",
                           style: TextStyle(
                             color: lightgreyBackgroundColor,
                             fontSize: 15.0,
@@ -102,7 +103,7 @@ class ProfileScreen extends StatelessWidget {
                         child: TextField(
                           decoration: const InputDecoration(
                             hintText:
-                                'Sou assistente social e o ato de doar para mim é \n contribuir efetivamente com a transformação para o \n melhor da sociedade, das instituições e, \n principalmente das pessoas.',
+                                "Sou assistente social e o ato de doar para mim é \n contribuir efetivamente com a transformação para o \n melhor da sociedade, das instituições e, \n principalmente das pessoas.",
                           ),
                           textAlign: TextAlign.justify,
                           style: TextStyle(
@@ -144,7 +145,7 @@ class ProfileScreen extends StatelessWidget {
                     padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
                         EdgeInsets.all(0.0)),
                   ),
-                  child: Text('Chat',
+                  child: Text("Chat",
                       style: TextStyle(
                           color: whiteBackgroundColor, fontSize: 22.0)),
                 ),
