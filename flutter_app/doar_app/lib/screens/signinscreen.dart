@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:doar_app/screens/profile_page.dart';
+import 'package:doar_app/screens/profilescreen.dart';
 import 'package:doar_app/design/palette.dart';
 
 class SignInScreen extends StatefulWidget {

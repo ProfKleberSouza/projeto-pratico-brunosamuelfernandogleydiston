@@ -1,5 +1,5 @@
-import 'package:doar_app/screens/login_page.dart';
-import 'package:doar_app/screens/profile_page.dart';
+import 'package:doar_app/screens/loginscreen.dart';
+import 'package:doar_app/screens/profilescreen.dart';
 import 'package:doar_app/splashscreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

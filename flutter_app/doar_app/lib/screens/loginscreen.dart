@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:doar_app/screens/profile_page.dart';
-import 'package:doar_app/screens/signin_page.dart';
+import 'package:doar_app/screens/profilescreen.dart';
+import 'package:doar_app/screens/signinscreen.dart';
 import 'package:doar_app/design/palette.dart';
 
 class LoginScreen extends StatefulWidget {
