@@ -1,15 +1,16 @@
 import 'dart:io';
+import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
-import 'dart:async';
-/*
+
 class MyDatabase {  
   static final databaseName = "DoarDB.db";
   static final databaseVersion = 1;
   static final table = 'profile';  
   static final columnId = '_id';
   static final columnNome = 'nome';
+  static final columnBio = 'bio';
 
   // Torna esta classe singleton
   MyDatabase.privateConstructor();
@@ -18,7 +19,6 @@ class MyDatabase {
   static Database database;
 
   Future<Database> get database async {
-    if (database != null) return database;
     // Instancia o db na primeira vez que for acessado
     database = await initDatabase();
     return database;
@@ -37,6 +37,7 @@ class MyDatabase {
           CREATE TABLE $table (
             $columnId INTEGER PRIMARY KEY,
             $columnNome TEXT NOT NULL,
+            $columnBio TEXT NOT NULL,
           )
           ''');
   }  
@@ -75,4 +76,4 @@ class MyDatabase {
     Database db = await instance.database;
     return await db.delete(table, where: '$columnId = ?', whereArgs: [id]);
   }
-}*/
+}

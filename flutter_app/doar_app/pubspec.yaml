@@ -12,7 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: ^2.0.0+3
+  path: ^1.8.0
   path_provider: ^2.0.1
+  shared_preferences: ^2.0.5
   cupertino_icons: ^1.0.2
   firebase: ^9.0.1
   flutter_signin_button: ^2.0.0
