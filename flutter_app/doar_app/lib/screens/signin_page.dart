@@ -1,19 +1,27 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:doar_app/pages/profile_page.dart';
-import 'package:doar_app/pages/signin_page.dart';
-import 'package:doar_app/design/palette_colors.dart';
+import 'package:doar_app/screens/profile_page.dart';
+import 'package:doar_app/design/palette.dart';
 
-class LoginScreen extends StatefulWidget {
+class SignInScreen extends StatefulWidget {
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _SignInScreenState createState() => _SignInScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignInScreenState extends State<SignInScreen> {
+  bool agree = false;
+  bool isLoading = false;
+  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  DatabaseReference dbRef =
+      FirebaseDatabase.instance.reference().child('Users');
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  bool isLoading = false;
+
+  void gotoProfile() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,47 +30,18 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Center(
-          //      key: _formKey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               SizedBox(
                 height: 30.0,
               ),
-              ClipRRect(
-                borderRadius: BorderRadius.zero,
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 150.0,
-                  width: 150.0,
-                  color: whiteBackgroundColor,
-                  child: Image.asset(
-                    'assets/images/logo.png',
-                    alignment: Alignment.center,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 15.0,
-              ),
               Text(
-                'Entrar',
+                'Inscreva-se',
                 style: TextStyle(
                   color: blackUserTextColor,
                   fontSize: 28.0,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.left,
-              ),
-              SizedBox(
-                height: 15.0,
-              ),
-              Text(
-                'Olá! Prazer em ver você de novo.',
-                style: TextStyle(
-                  color: blackFixedTextColor,
-                  fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,
@@ -88,26 +67,78 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextField(
                 autofocus: true,
-                obscureText: true,
                 controller: passwordController,
+                obscureText: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(
                   color: blackUserTextColor,
                   fontSize: 18.0,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'Senha',
-                  labelStyle: TextStyle(color: cyanThemeColor),
-                ),
+                    labelText: 'Senha',
+                    labelStyle: TextStyle(color: cyanThemeColor)),
               ),
+              // Botão de entrada
               SizedBox(
                 height: 15.0,
               ),
+              Row(
+                children: <Widget>[
+                  Material(
+                    child: Checkbox(
+                      value: agree,
+                      onChanged: (value) {
+                        setState(() {
+                          agree = value!;
+                        });
+                      },
+                    ),
+                  ),
+                  Container(
+                    child: Text.rich(
+                      TextSpan(
+                        text: 'Eu concordo com os Termos de ',
+                        style: TextStyle(
+                            color: blackFixedTextColor, fontSize: 16.0),
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: 'Termos de Serviço',
+                              style: TextStyle(
+                                  color: cyanThemeColor, fontSize: 16.0),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                  // TO DO: launch('https://');
+                                }),
+                          TextSpan(
+                              text: ' a e ',
+                              style: TextStyle(
+                                  color: blackFixedTextColor, fontSize: 16.0)),
+                          TextSpan(
+                              text: 'Política de Privacidade',
+                              style: TextStyle(
+                                  color: cyanThemeColor, fontSize: 16.0),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                  // TO DO: launch('https://');
+                                }),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                      overflow: TextOverflow.ellipsis, // FIXME: Possivel bug
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 30.0,
+              ),
               ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 100, height: 50),
+                constraints: BoxConstraints.tightFor(width: 150, height: 50),
                 child: ElevatedButton(
                   onPressed: () {
-                    logInToFb();
+                    if (agree) {
+                      registerToFb();
+                    }
                   },
                   style: ButtonStyle(
                     foregroundColor:
@@ -116,12 +147,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         MaterialStateProperty.all<Color>(cyanThemeColor),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30.0),
-                        side: BorderSide(color: cyanThemeColor),
-                      ),
+                          borderRadius: BorderRadius.circular(30.0),
+                          side: BorderSide(color: cyanThemeColor)),
                     ),
                   ),
-                  child: Text('Entrar',
+                  child: Text('Continue',
                       style: TextStyle(
                         color: whiteBackgroundColor,
                         fontSize: 22.0,
@@ -131,46 +161,11 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 30.0,
               ),
-              Text(
-                'ou use um de seus perfis sociais',
-                style: TextStyle(
-                  color: blackFixedTextColor,
-                  fontSize: 16.0,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: 20.0,
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: SignInButton(
-                      Buttons.Google,
-                      text: 'Inscreva-se com Google',
-                      onPressed: () {},
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Expanded(
-                    child: SignInButton(
-                      Buttons.Facebook,
-                      text: 'Inscreva-se com Facebook',
-                      onPressed: () {},
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 15.0,
-              ),
               Row(
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      'Esqueceu a senha?',
+                      'Tem uma Conta?',
                       style: TextStyle(
                         color: blackUserTextColor,
                         fontSize: 18.0,
@@ -185,11 +180,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Expanded(
                     child: TextButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignInScreen()));
+                        Navigator.pop(context);
                       },
                       child: Text(
-                        'Inscreva-se',
+                        'Entrar',
                         style: TextStyle(
                           color: cyanThemeColor,
                           fontSize: 18.0,
@@ -208,29 +202,34 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  void logInToFb() {
-    FirebaseAuth.instance
-        .signInWithEmailAndPassword(
+  void registerToFb() {
+    firebaseAuth
+        .createUserWithEmailAndPassword(
             email: emailController.text, password: passwordController.text)
-        .then(
-      (result) {
-        isLoading = false;
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => ProfileScreen()),
-        );
-      },
-    ).catchError(
-      (error) {
-        print(error.message);
-        showDialog(
+        .then((UserCredential result) {
+      User? user = result.user;
+      if (user != null) {
+        dbRef.child(user.uid).set({
+          'email': emailController.text,
+          'age': 'vazio',
+          'name': 'vazio'
+        }).then((result) {
+          isLoading = false;
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => ProfileScreen(uid: user.uid)),
+          );
+        });
+      }
+    }).catchError((error) {
+      showDialog(
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
               title: Text('Error'),
-              content: Text('Usuário Inválido'),
+              content: Text(error.message),
               actions: [
-                ElevatedButton(
+                TextButton(
                   child: Text('Ok'),
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -238,10 +237,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 )
               ],
             );
-          },
-        );
-      },
-    );
+          });
+    });
   }
 
   @override

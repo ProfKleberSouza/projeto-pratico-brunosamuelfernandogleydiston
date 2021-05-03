@@ -1,8 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:doar_app/pages/login_page.dart';
-import 'package:doar_app/pages/chatusers_page.dart';
-import 'package:doar_app/design/palette_colors.dart';
+import 'package:doar_app/screens/login_page.dart';
+import 'package:doar_app/design/palette.dart';
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({this.uid});
@@ -128,7 +127,7 @@ class ProfileScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => UsersScreen()));
+                        MaterialPageRoute(builder: (context) => ChatHomeScreen()));
                   },
                   style: ButtonStyle(
                     foregroundColor:
@@ -156,7 +155,4 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-class ChatHomeScreen {
 }

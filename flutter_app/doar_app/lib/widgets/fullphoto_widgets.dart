@@ -1,7 +1,7 @@
+import 'package:doar_app/design/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:doar_app/mixin/palette_colors.dart';
 
 class FullPhoto extends StatelessWidget {
   final String url;
@@ -13,7 +13,7 @@ class FullPhoto extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'FULL PHOTO',
+          'Ampliar Foto',
           style: TextStyle(
             color: cyanThemeColor,
             fontWeight: FontWeight.bold,
@@ -48,9 +48,7 @@ class FullPhotoScreenState extends State<FullPhotoScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: PhotoView(
-        imageProvider: CachedNetworkImageProvider(url)
-      ),
+      child: PhotoView(imageProvider: CachedNetworkImageProvider(url)),
     );
   }
 }

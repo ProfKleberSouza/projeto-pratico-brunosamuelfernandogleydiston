@@ -1,5 +1,5 @@
+import 'package:doar_app/design/palette.dart';
 import 'package:flutter/material.dart';
-import 'package:doar_app/mixin/palette_colors.dart';
 
 class Loading extends StatelessWidget {
   const Loading();

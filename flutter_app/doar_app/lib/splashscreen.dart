@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'design/palette_colors.dart';
+import 'design/palette.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
