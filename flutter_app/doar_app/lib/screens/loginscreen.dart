@@ -1,5 +1,5 @@
-import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
+import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter_signin_button/flutter_signin_button.dart";
 import "package:doar_app/screens/profilescreen.dart";
 import "package:doar_app/screens/signinscreen.dart";
@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 15.0,
               ),
               ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 100, height: 50),
+                constraints: BoxConstraints.tightFor(width: 80, height: 50),
                 child: ElevatedButton(
                   onPressed: () {
                     logInToFb();

@@ -1,7 +1,7 @@
+import "package:flutter/material.dart";
+import "package:flutter/gestures.dart";
 import "package:firebase_auth/firebase_auth.dart";
 import "package:firebase_database/firebase_database.dart";
-import "package:flutter/gestures.dart";
-import "package:flutter/material.dart";
 import "package:doar_app/screens/profilescreen.dart";
 import "package:doar_app/design/layoutcolors.dart";
 
@@ -94,7 +94,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       },
                     ),
                   ),
-                  Container(
+                  Expanded(
                     child: Text.rich(
                       TextSpan(
                         text: "Eu concordo com os Termos de ",
@@ -133,7 +133,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 height: 30.0,
               ),
               ConstrainedBox(
-                constraints: BoxConstraints.tightFor(width: 150, height: 50),
+                constraints: BoxConstraints.tightFor(width: 80, height: 50),
                 child: ElevatedButton(
                   onPressed: () {
                     if (agree) {

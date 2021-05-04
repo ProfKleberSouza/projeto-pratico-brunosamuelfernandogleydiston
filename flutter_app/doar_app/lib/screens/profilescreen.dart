@@ -1,7 +1,7 @@
-import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
+import "package:firebase_auth/firebase_auth.dart";
+import 'package:doar_app/screens/chatscreen.dart';
 import "package:doar_app/screens/loginscreen.dart";
-import "package:doar_app/screens/chathomescreen.dart";
 import "package:doar_app/design/layoutcolors.dart";
 
 class ProfileScreen extends StatelessWidget {
@@ -128,7 +128,7 @@ class ProfileScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ChatHomeScreen()));
+                        MaterialPageRoute(builder: (context) => ChatScreen()));
                   },
                   style: ButtonStyle(
                     foregroundColor:
@@ -145,7 +145,7 @@ class ProfileScreen extends StatelessWidget {
                     padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
                         EdgeInsets.all(0.0)),
                   ),
-                  child: Text("Chat",
+                  child: Text("Abrir Chat",
                       style: TextStyle(
                           color: whiteBackgroundColor, fontSize: 22.0)),
                 ),
