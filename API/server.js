@@ -1,7 +1,10 @@
-const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
 const express = require("express");
 const cors = require("cors");
+
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const csrf = require("csurf");
+
 const admin = require("firebase-admin");
 const { getServiceAccount } = require("./getCredentials.js");
 
