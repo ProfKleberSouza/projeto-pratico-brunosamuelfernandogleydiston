@@ -18,8 +18,8 @@ function MyStack() {
       <NavigationContainer theme={customTheme}>
         <Stack.Navigator
           initialRouteName="Home">
-          <Stack.Screen name="Login" component={Login}  options={{headerShown:false}}/>
-          <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}} />
+          <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+          <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
