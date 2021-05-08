@@ -19,9 +19,11 @@ const customTheme = {
     ...NavigationDefaultTheme.colors,
     primary: '#63dadb',
     accent: '#2f2d2a',
-    background: '#fff',
-    backdrop: '#fff',
-    titleColor: '#44444C',
+    background: '#ffffff',
+    backdrop: '#ffffff',
+    titleColor: '#0A0708',
+    subtitleColor: '#444444',
+    textColor: '#747474',
   },
 };
 
@@ -33,8 +35,8 @@ function MyStack() {
       <NavigationContainer theme={customTheme}>
         <Stack.Navigator
           initialRouteName="Home">
-          <Stack.Screen name="Login" component={Login}  options={{headerShown:false}}/>
-          <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}} />
+          <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+          <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>

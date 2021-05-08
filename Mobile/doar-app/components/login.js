@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, View, Alert } from 'react-native';
 
-import { Colors, Button, Avatar, Text, TextInput, ActivityIndicator } from 'react-native-paper';
+import { Text, TextInput, Button, ActivityIndicator } from 'react-native-paper';
 import firebase from '../database/firebase';
 
-
 export default class Login extends Component {
-
   constructor() {
     super();
     this.state = {
@@ -15,7 +13,6 @@ export default class Login extends Component {
       isLoading: false
     }
   }
-
 
   updateInputVal = (val, prop) => {
     const state = this.state;
@@ -56,40 +53,52 @@ export default class Login extends Component {
       )
     }
     return (
-      <View style={[styles.container, { backgroundColor: Colors.background }]}>
+      <View style={styles.container}>
         <View style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Image style={styles.avatarStyle} source={require('../assets/images/doar_login.png')} />
         </View>
-        <Text style={[styles.Entrar, { color: Colors.titleColor }]}>
+        <Text style={[styles.title, { color: '#0a0708' }]}>
           Entrar
         </Text>
-
+        <Text style={[styles.subtitle, { color: '#747474' }]}>
+          Olá! Prazer em ver você de novo.
+        </Text>
         <TextInput
-          style={styles.inputStyle}
-          label="E-mail"
-          placeholder="Digite seu email"
+          mode='flat'
+          style={styles.inputText}
+          label='E-mail'
+          placeholder='Digite seu e-mail'
           value={this.state.email}
           onChangeText={(val) => this.updateInputVal(val, 'email')}
         />
         <TextInput
-          style={styles.inputStyle}
-          label="Senha"
-          placeholder="Digite sua senha"
+          mode='flat'
+          style={styles.inputText}
+          label='Senha'
+          placeholder='Digite sua senha'
           value={this.state.password}
-          onChangeText={(val) => this.updateInputVal(val, 'password')}
           maxLength={15}
           secureTextEntry={true}
+          onChangeText={(val) => this.updateInputVal(val, 'password')}
         />
         <Button
-          icon="login" mode="contained"
-          onPress={() => this.userLogin()} >
+          mode='contained'
+          color='#63dadb'
+          title='Entrar'
+          uppercase={false}
+          style={styles.button}
+          labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '500', }}
+          onPress={() => this.userLogin()}>
           Entrar
         </Button>
-
         <Text
-          style={styles.loginText}
-          onPress={() => this.props.navigation.navigate('Signup')}>
-          Don't have account? Click here to signup
+          style={[styles.loginText, { color: '#444444' }]}>
+          Não tem uma conta?&nbsp;&nbsp;&nbsp;
+          <Text
+            style={{ ...styles.loginText, ...{ color: '#63dadb' } }}
+            onPress={() => this.props.navigation.navigate('Signup')}>
+            Inscreva-se
+          </Text>
         </Text>
       </View>
     );
@@ -98,19 +107,12 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'top',
     padding: 35,
-    paddingTop: 0
-  },
-  inputStyle: {
-    width: '100%',
-    marginBottom: 15,
-    alignSelf: "center",
-    backgroundColor: '#fff'
-  },
-  loginText: {
-    // color: '#3740FE',
-    marginTop: 25,
-    textAlign: 'center'
+    paddingTop: 0,
+    backgroundColor: '#ffffff',
   },
   preloader: {
     left: 0,
@@ -120,16 +122,36 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center',
-    // backgroundColor: '#fff'
-  },
-  Entrar: {
-    fontSize: 20,
-    fontStyle: 'bold'
   },
   avatarStyle: {
+    marginTop: 25,
+    marginBottom: 25,
     display: 'block',
-    width: 180,
-    height: 180,
+    width: 150,
+    height: 150,
     resizeMode: 'contain',
-  }
+  },
+  title: {
+    marginBottom: 10,
+    fontSize: 22,
+    fontWeight: '200',
+  },
+  subtitle: {
+    fontSize: 12,
+  },
+  inputText: {
+    width: '100%',
+    alignSelf: 'center',
+    textAlign: 'left',
+    backgroundColor: '#ffffff',
+    backdropColor: '#63dadb',
+  },
+  button: {
+    color: '#63dadb',
+    marginTop: 30,
+  },
+  loginText: {
+    marginTop: 30,
+    textAlign: 'center',
+  },
 });
