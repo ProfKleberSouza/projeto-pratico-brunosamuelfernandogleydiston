@@ -3,11 +3,6 @@ import { StyleSheet, Image, View, Alert } from 'react-native';
 
 import { Colors, Button, Avatar, Text, TextInput, ActivityIndicator } from 'react-native-paper';
 import firebase from '../database/firebase';
-import {
-  NavigationContainer,
-  DarkTheme as NavigationDarkTheme,
-  DefaultTheme as NavigationDefaultTheme,
-} from '@react-navigation/native';
 
 
 export default class Login extends Component {
