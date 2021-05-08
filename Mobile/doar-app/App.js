@@ -7,23 +7,8 @@ import Dashboard from './components/dashboard';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import customTheme from './component/themes';
+import customTheme from './components/themes';
 
-
-const customTheme = {
-  ...PaperDefaultTheme,
-  ...NavigationDefaultTheme,
-  colors: {
-    ...PaperDefaultTheme.colors,
-    ...NavigationDefaultTheme.colors,
-    primary: '#63dadb',
-    accent: '#2f2d2a',
-    background: '#fff',
-    backdrop: '#fff',
-    titleColor: '#44444C',
-  },
-};
 
 const Stack = createStackNavigator();
 
