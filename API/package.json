@@ -4,6 +4,7 @@
   "description": "app",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,12 +14,17 @@
   "author": "Grupo",
   "license": "ISC",
   "dependencies": {
+    "a1-database": "^1.5.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "csurf": "^1.11.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "firebase-admin": "^8.10.0"
+    "firebase-admin": "^8.10.0",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
