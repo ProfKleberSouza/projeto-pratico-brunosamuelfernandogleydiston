@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Alert, ActivityIndicator } from 'react-native';
-import firebase from '../database/firebase';
+import { StyleSheet, View, Alert } from 'react-native';
 
+import { Text, TextInput, Button, ActivityIndicator } from 'react-native-paper';
+import firebase from '../database/firebase';
 
 export default class Signup extends Component {
   
@@ -58,36 +59,53 @@ export default class Signup extends Component {
     }    
     return (
       <View style={styles.container}>  
+        <Text style={[styles.title, { color: '#0a0708' }]}>
+          Inscreva-se
+        </Text>
         <TextInput
-          style={styles.inputStyle}
-          placeholder="Name"
+          mode='flat'
+          style={styles.inputText}
+          label='Nome'
+          placeholder='Digite seu nome'
           value={this.state.displayName}
           onChangeText={(val) => this.updateInputVal(val, 'displayName')}
         />      
         <TextInput
-          style={styles.inputStyle}
-          placeholder="Email"
+          mode='flat'
+          style={styles.inputText}
+          label='E-mail'
+          placeholder='Digite seu e-mail'
           value={this.state.email}
           onChangeText={(val) => this.updateInputVal(val, 'email')}
         />
         <TextInput
-          style={styles.inputStyle}
-          placeholder="Password"
+          mode='flat'
+          style={styles.inputText}
+          label='Senha'
+          placeholder='Digite sua senha'
           value={this.state.password}
-          onChangeText={(val) => this.updateInputVal(val, 'password')}
           maxLength={15}
           secureTextEntry={true}
+          onChangeText={(val) => this.updateInputVal(val, 'password')}
         />   
         <Button
-          color="#3740FE"
-          title="Signup"
-          onPress={() => this.registerUser()}
-        />
-
-        <Text 
-          style={styles.loginText}
-          onPress={() => this.props.navigation.navigate('Login')}>
-          Already Registered? Click here to login
+          mode='contained'
+          color='#63dadb'
+          title='Entrar'
+          uppercase={false}
+          style={styles.button}
+          labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '500', }}
+          onPress={() => this.registerUser()}>
+          Continue
+        </Button>
+        <Text
+          style={[styles.loginText, { color: '#444444' }]}>
+          Tem uma conta?&nbsp;&nbsp;&nbsp;
+          <Text
+            style={{ ...styles.loginText, ...{ color: '#63dadb' } }}
+            onPress={() => this.props.navigation.navigate('Login')}>
+            Entrar
+          </Text>
         </Text>                          
       </View>
     );
@@ -97,9 +115,9 @@ export default class Signup extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'top',
     padding: 35,
     backgroundColor: '#fff'
   },
@@ -107,8 +125,8 @@ const styles = StyleSheet.create({
     width: '100%',
     marginBottom: 15,
     paddingBottom: 15,
-    alignSelf: "center",
-    borderColor: "#ccc",
+    alignSelf: 'center',
+    borderColor: '#ccc',
     borderBottomWidth: 1
   },
   loginText: {
@@ -125,5 +143,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff'
-  }
+  },
+  title: {
+    marginTop: 25,
+    marginBottom: 25,
+    fontSize: 22,
+    fontWeight: '200',
+  },
+  inputText: {
+    width: '100%',
+    alignSelf: 'center',
+    textAlign: 'left',
+    backgroundColor: '#ffffff',
+    backdropColor: '#63dadb',
+  },
+  button: {
+    color: '#63dadb',
+    marginTop: 30,
+  },
+  loginText: {
+    marginTop: 30,
+    textAlign: 'center',
+  },
 });
