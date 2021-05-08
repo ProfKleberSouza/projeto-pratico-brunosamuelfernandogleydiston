@@ -22,10 +22,10 @@ const Chat = () => {
                     onChangeText={text => setText(text)}
                     onKeyPress={key => console.log(key)}
                 />
-                <Button icon='send'
+                <Button icon='send' 
                     style={[styles.sendButton,
                     { backgroundColor: Colors.background }]}
-                    onClick={() => { console.log() }} />
+                    onPress={() => { console.log() }} />
             </View>
         </View>
     );
