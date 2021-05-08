@@ -54,3 +54,4 @@ buck-out/
 web-build/
 google-services.json
 firebase.js
+package-lock.json
