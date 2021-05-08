@@ -1,0 +1,12 @@
+{
+  "name": "doar-app",
+  "displayName": "doar-app",
+  "expo": {
+    "name": "doar-app",
+    "slug": "doar-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
