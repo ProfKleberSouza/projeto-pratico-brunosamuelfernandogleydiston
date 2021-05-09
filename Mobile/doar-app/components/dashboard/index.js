@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Button } from 'react-native';
-import firebase from '../database/firebase';
+import { View, Text, Button } from 'react-native';
+import firebase from '../../database/firebase';
+
+import { styles } from './styles';
+
 
 export default class Dashboard extends Component {
   constructor() {
@@ -41,18 +44,3 @@ export default class Dashboard extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    display: "flex",
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 35,
-    backgroundColor: '#fff'
-  },
-  textStyle: {
-    fontSize: 15,
-    marginBottom: 20
-  }
-});

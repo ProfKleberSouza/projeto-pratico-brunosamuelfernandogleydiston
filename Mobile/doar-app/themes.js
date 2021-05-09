@@ -1,6 +1,6 @@
 import { DefaultTheme as NavigationDefaultTheme } from '@react-navigation/native';
 import { DefaultTheme as PaperDefaultTheme } from 'react-native-paper';
-import Colors from '../styles'
+import Colors from './styles'
 
 export default {
     ...PaperDefaultTheme,

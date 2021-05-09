@@ -1,8 +1,9 @@
 
-import * as React from 'react';
+import firebase from '../../database/firebase';
+
+import React from 'react';
 import { Text, View } from 'react-native';
 import { Avatar, IconButton, Button } from 'react-native-paper';
-
 import { styles } from './styles';
 
 export default function Profile(props) {
@@ -10,18 +11,18 @@ export default function Profile(props) {
   return (
     <View>
       <View style={styles.header}>
-        <Avatar.Image
-          size={70}
+          <Avatar.Image
+            size={70}
           source={require('../../assets/images/avatar.png')} />
         <Text style={styles.text}>Ana Maria</Text>
-        <IconButton
+          <IconButton
           icon="menu"
-          color='black'
-          size={30}
-          style={styles.menuButton}
-          onPress={() => console.log('Pressed')}
-        />
-      </View>
+            color='black'
+            size={30}
+            style={styles.menuButton}
+            onPress={() => console.log('Pressed')}
+          />
+        </View>
       <View style={styles.aboutContainer}>
         <Text style={{ fontSize: 20 }}>Quem é você?</Text>
         <Text style={{

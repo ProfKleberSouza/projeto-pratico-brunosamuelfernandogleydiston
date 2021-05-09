@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
         padding: 20
     },
     header: {
-        flex: 1,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
