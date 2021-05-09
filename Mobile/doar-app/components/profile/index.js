@@ -40,7 +40,7 @@ export default function Profile(props) {
         uppercase={false}
         style={styles.button}
         labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '600', }}
-        onPress={() => props.navigation.navigate('Dashboard')}>
+        onPress={() => props.navigation.navigate('Lista')}>
         Fazer ou Buscar Doação
         </Button>
     </View>

@@ -9,6 +9,7 @@ import Profile from './components/profile';
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import customTheme from './components/themes';
+import Lista from './components/list';
 
 
 const Stack = createStackNavigator();
@@ -23,6 +24,7 @@ function MyStack() {
           <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
           <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
+          <Stack.Screen name="Lista" component={Lista} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
