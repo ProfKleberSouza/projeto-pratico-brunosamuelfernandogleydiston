@@ -8,21 +8,35 @@ import { styles } from './styles';
 
 export default function Profile(props) {
 
+  const { displayName = 'Ana Maria', uid = '' } = firebase.auth().currentUser;
+
   return (
     <View>
       <View style={styles.header}>
+        <View style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'center'
+        }}>
           <Avatar.Image
             size={70}
-          source={require('../../assets/images/avatar.png')} />
-        <Text style={styles.text}>Ana Maria</Text>
+            color='black'
+            source='https://cdn.pixabay.com/photo/2017/12/18/03/01/black-avatar-3025348_960_720.png' />
+          <Text style={styles.text}>{displayName}</Text>
+        </View>
+        <View >
+
           <IconButton
-          icon="menu"
+            icon="logout"
             color='black'
             size={30}
             style={styles.menuButton}
             onPress={() => console.log('Pressed')}
           />
         </View>
+
+      </View>
       <View style={styles.aboutContainer}>
         <Text style={{ fontSize: 20 }}>Quem é você?</Text>
         <Text style={{
