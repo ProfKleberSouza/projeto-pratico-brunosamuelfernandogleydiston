@@ -117,7 +117,6 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'top',
     padding: 35,
     paddingTop: 0,
     backgroundColor: '#ffffff',

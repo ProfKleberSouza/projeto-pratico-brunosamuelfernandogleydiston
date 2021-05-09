@@ -111,7 +111,6 @@ const styles = StyleSheet.create({
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'top',
     padding: 35,
     backgroundColor: '#fff'
   },
