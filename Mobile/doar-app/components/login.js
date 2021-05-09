@@ -82,7 +82,7 @@ export default class Login extends Component {
           title='Entrar'
           uppercase={false}
           style={styles.button}
-          labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '500', }}
+          labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '600', }}
           onPress={() => this.userLogin()}>
           Entrar
         </Button>
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   avatarStyle: {
-    marginTop: 25,
+    marginTop: 50,
     marginBottom: 25,
     display: 'block',
     width: 150,
