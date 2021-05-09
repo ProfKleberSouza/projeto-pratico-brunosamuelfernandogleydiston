@@ -1,11 +1,8 @@
 
-import * as React from 'react';
-import { FlatList, Text, View } from 'react-native';
-import { Avatar, IconButton, Button, TextInput } from 'react-native-paper';
-import { Component } from 'react';
-import { Overlay, Card } from 'react-native-elements';
-import ListGroup from 'react-bootstrap/ListGroup'
-import { ListGroupItem } from 'react-bootstrap';
+import  React, { Component }  from 'react';
+import { FlatList, View } from 'react-native';
+import { Avatar  } from 'react-native-paper';
+import { ListGroup } from 'react-bootstrap'
 
 //type Props = {};
 export default class Lista extends Component{
