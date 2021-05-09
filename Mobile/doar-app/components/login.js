@@ -64,7 +64,7 @@ export default class Login extends Component {
     return (
       <View style={styles.container}>
         <View style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Image style={styles.avatarStyle} source={require('../assets/images/doar_login.png')} />
+          <Image style={styles.logoStyle} source={require('../assets/images/doar_login.png')} />
         </View>
         <Text style={[styles.title, { color: '#0a0708' }]}>
           Entrar
@@ -130,10 +130,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  avatarStyle: {
+  logoStyle: {
     marginTop: 50,
     marginBottom: 25,
-    display: 'block',
     width: 150,
     height: 150,
     resizeMode: 'contain',
@@ -151,7 +150,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     textAlign: 'left',
     backgroundColor: '#ffffff',
-    backdropColor: '#63dadb',
   },
   button: {
     color: '#63dadb',

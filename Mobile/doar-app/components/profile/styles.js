@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'between',
+        justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: 'white',
         paddingTop: 20,
@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     },
     menuButton: {
         flex: 4,
-        justifyContent: 'middle-end'
+        justifyContent: 'flex-end'
     },
     button: {
         color: '#63dadb',
