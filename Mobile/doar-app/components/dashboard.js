@@ -33,6 +33,10 @@ export default class Dashboard extends Component {
           title="Logout"
           onPress={() => this.signOut()}
         />
+        <Button
+          color="#3740FE"
+          title="Perfil"
+          onPress={() => this.props.navigation.navigate('Profile')}/>
       </View>
     );
   }
