@@ -5,11 +5,11 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import Profile from './components/profile';
+import Lista from './components/list';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import customTheme from './components/themes';
-import Lista from './components/list';
 
 
 const Stack = createStackNavigator();

@@ -19,7 +19,6 @@
     "expo-updates": "~0.5.4",
     "firebase": "^8.5.0",
     "react": "16.13.1",
-    "react-bootstrap": "^1.5.2",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
     "react-native-gesture-handler": "~1.10.2",
