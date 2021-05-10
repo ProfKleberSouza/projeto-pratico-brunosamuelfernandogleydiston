@@ -3,7 +3,7 @@ import React from 'react';
 import { FlatList, View, Image, TouchableOpacity, } from 'react-native';
 import { Avatar, Text } from 'react-native-paper';
 import { styles } from './styles';
-
+import { useNavigation } from '@react-navigation/native';
 const avatar = require("../../assets/images/avatar.png")
 const description = `There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..`
 const mock_data = [
@@ -12,15 +12,23 @@ const mock_data = [
     { key: 3, title: "PC gamer", desc: description, user: "Bruno", don: false, img: avatar, type: "wallet-giftcard" },
     { key: 4, title: "Abrigo temporário", desc: description, user: "Samuel", don: false, img: avatar, type: "laptop" },
     { key: 5, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
-    { key: 6, title: "Frauda geriátrica", desc: description, user: "Cirílo", don: false, img: avatar, type: "wallet-giftcard" },
+    { key: 6, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 7, title: "Frauda geriátrica", desc: description, user: "Cirílo", don: false, img: avatar, type: "wallet-giftcard" },
+    { key: 8, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 9, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 10, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 11, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 12, title: "Ajuda Psicológica", desc: description, user: "Maria Joaquina", don: false, img: avatar, type: "medical-bag" },
+    { key: 13, title: "Abrigo temporário", desc: description, user: "Samuel", don: false, img: avatar, type: "laptop" },
+
 ]
 
-export default function Lista() {
-
+export default function Lista(props) {
+    const navigation = useNavigation();
     function renderItem({ item }) {
         return (
-            <View style={styles.container}>
-                <TouchableOpacity onPress={() => { }}>
+            <View style={styles.container} >
+                <TouchableOpacity onPress={() => navigation.navigate('Chat') } >
                     <Avatar.Icon size={50} icon={item.type}/>
                 </TouchableOpacity>
                 <View style={styles.content}>
