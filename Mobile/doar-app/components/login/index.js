@@ -30,7 +30,7 @@ export default class Login extends Component {
       }
     });
   }
-  updateInputVal = (val, prop) => {
+  updateLogin = (val, prop) => {
     const state = this.state;
     state[prop] = val;
     this.setState(state);
@@ -83,8 +83,8 @@ export default class Login extends Component {
           label='E-mail'
           placeholder='Digite seu e-mail'
           value={this.state.email}
-          onChangeText={(val) => this.updateInputVal(val, 'email')}
-        />
+          onChangeText={(val) => this.updateLogin(val, 'email')}>
+        </TextInput>
         <TextInput
           mode='flat'
           style={styles.inputText}
@@ -93,8 +93,8 @@ export default class Login extends Component {
           value={this.state.password}
           maxLength={15}
           secureTextEntry={true}
-          onChangeText={(val) => this.updateInputVal(val, 'password')}
-        />
+          onChangeText={(val) => this.updateLogin(val, 'password')}>
+        </TextInput>
         <Button
           mode='contained'
           color='#63dadb'

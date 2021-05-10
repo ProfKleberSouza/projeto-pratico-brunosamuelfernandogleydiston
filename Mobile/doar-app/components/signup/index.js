@@ -16,7 +16,7 @@ export default class Signup extends Component {
       isLoading: false
     }
   }
-  updateInputVal = (val, prop) => {
+  updateSignup = (val, prop) => {
     const state = this.state;
     state[prop] = val;
     this.setState(state);
@@ -37,10 +37,9 @@ export default class Signup extends Component {
           })
           console.log('User registered successfully!')
           this.setState({
-            isLoading: false,
-            displayName: '',
             email: '',
-            password: ''
+            password: '',
+            isLoading: false,
           })
           this.props.navigation.navigate('Login')
         })
@@ -63,19 +62,11 @@ export default class Signup extends Component {
         <TextInput
           mode='flat'
           style={styles.inputText}
-          label='Nome'
-          placeholder='Digite seu nome'
-          value={this.state.displayName}
-          onChangeText={(val) => this.updateInputVal(val, 'displayName')}
-        />
-        <TextInput
-          mode='flat'
-          style={styles.inputText}
           label='E-mail'
           placeholder='Digite seu e-mail'
           value={this.state.email}
-          onChangeText={(val) => this.updateInputVal(val, 'email')}
-        />
+          onChangeText={(val) => this.updateSignup(val, 'email')}>
+        </TextInput>
         <TextInput
           mode='flat'
           style={styles.inputText}
@@ -84,8 +75,8 @@ export default class Signup extends Component {
           value={this.state.password}
           maxLength={15}
           secureTextEntry={true}
-          onChangeText={(val) => this.updateInputVal(val, 'password')}
-        />
+          onChangeText={(val) => this.updateSignup(val, 'password')}>
+        </TextInput>
         <Button
           mode='contained'
           color='#63dadb'
