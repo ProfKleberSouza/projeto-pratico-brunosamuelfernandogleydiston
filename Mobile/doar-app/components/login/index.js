@@ -18,16 +18,9 @@ export default class Login extends Component {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         console.log('User logged-in successfully!', user)
-        this.setState({
-          isLoading: false,
-          email: '',
-          password: ''
-        })
-        this.setState({
-          isLoading: false,
-        })
         this.props.navigation.navigate('Dashboard')
-      }
+      } 
+     this.setState({isLoading: false});
     });
   }
   updateLogin = (val, prop) => {
