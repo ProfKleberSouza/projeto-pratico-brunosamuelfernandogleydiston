@@ -6,6 +6,8 @@ import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import Profile from './components/profile';
 import Lista from './components/list';
+import Chat from './components/chat';
+import DashBoardNavBar from './components/dashboard/navbar';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
@@ -22,9 +24,11 @@ function MyStack() {
           initialRouteName="Home">
           <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
           <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
-          <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="Dashboard" component={Dashboard}
+            options={{ headerTitle: props => <DashBoardNavBar {...props}/> }} />
           <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
           <Stack.Screen name="Lista" component={Lista} />
+          <Stack.Screen name="Chat" component={Chat} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
