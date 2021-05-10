@@ -11,7 +11,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import customTheme from './themes';
 
-
 const Stack = createStackNavigator();
 
 function MyStack() {
@@ -22,8 +21,19 @@ function MyStack() {
           initialRouteName="Home">
           <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
           <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
-          <Stack.Screen name="Dashboard" component={Dashboard} />
-          <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
+          <Stack.Screen name="Dashboard" component={Dashboard} options={{
+            headerShown: true,
+            headerTitle: 'Sair',
+            headerTintColor: '#ffffff',
+            headerStyle: { backgroundColor: '#63dadb' }
+          }} />
+          <Stack.Screen name="Profile" component={Profile} options={{
+            headerShown: true,
+            headerTitle: 'Menu',
+            headerTransparent: true,
+            headerTintColor: '#ffffff',
+            headerStyle: { backgroundColor: '#63dadb' }
+          }} />
           <Stack.Screen name="Lista" component={Lista} />
         </Stack.Navigator>
       </NavigationContainer>

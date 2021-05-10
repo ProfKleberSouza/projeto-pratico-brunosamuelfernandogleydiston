@@ -27,7 +27,6 @@ export default class Login extends Component {
       }
     });
   }
-
   updateInputVal = (val, prop) => {
     const state = this.state;
     state[prop] = val;
