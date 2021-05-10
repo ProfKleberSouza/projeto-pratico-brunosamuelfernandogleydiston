@@ -17,7 +17,7 @@ export default class Profile extends Component {
       number: '',
       isUpdate: false
     }
-    await firebase.auth().currentUser.updateProfile(this.state);
+    //await firebase.auth().currentUser.updateProfile(this.state);
   }
   updateProfile = (val, prop) => {
     const state = this.state;
