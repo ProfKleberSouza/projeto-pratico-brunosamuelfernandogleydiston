@@ -11,7 +11,7 @@ export default class Login extends Component {
     this.state = {
       email: '',
       password: '',
-      isLoading: false
+      isLoading: true
     }
   }
   componentDidMount() {
@@ -22,6 +22,9 @@ export default class Login extends Component {
           isLoading: false,
           email: '',
           password: ''
+        })
+        this.setState({
+          isLoading: false,
         })
         this.props.navigation.navigate('Dashboard')
       }
@@ -36,9 +39,6 @@ export default class Login extends Component {
     if (this.state.email === '' && this.state.password === '') {
       Alert.alert('Enter details to signin!')
     } else {
-      this.setState({
-        isLoading: true,
-      })
       firebase
         .auth()
         .signInWithEmailAndPassword(this.state.email, this.state.password)
@@ -49,6 +49,9 @@ export default class Login extends Component {
             isLoading: false,
             email: '',
             password: ''
+          })
+          this.setState({
+            isLoading: true,
           })
           this.props.navigation.navigate('Dashboard')
         })

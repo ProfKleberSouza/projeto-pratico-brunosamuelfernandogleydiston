@@ -1,36 +1,72 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import { TextInput, Button } from 'react-native-paper';
+import React, { Component } from 'react';
+import {
+  Text,
+  View,
+  TouchableOpacity,
+  Image,
+  TextInput,
+  FlatList
+} from 'react-native';
+import { IconButton } from 'react-native-paper';
 
 import { styles } from './styles';
-import Colors from '../../styles'
 
-const Chat = () => {
+
+const mock_data = [
+    { id: 1, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit amet" },
+    { id: 2, date: "9:50 am", type: 'out', message: "Lorem ipsum dolor sit amet" },
+    { id: 3, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit a met" },
+    { id: 4, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit a met" },
+    { id: 5, date: "9:50 am", type: 'out', message: "Lorem ipsum dolor sit a met" },
+    { id: 6, date: "9:50 am", type: 'out', message: "Lorem ipsum dolor sit a met" },
+    { id: 7, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit a met" },
+    { id: 8, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit a met" },
+    { id: 9, date: "9:50 am", type: 'in', message: "Lorem ipsum dolor sit a met" },
+]
+
+function renderDate(date){
+    return(
+      <Text style={styles.time}>
+        {date}
+      </Text>
+    );
+  }
+export default function Chat() {
 
     const [text, setText] = React.useState('');
     return (
         <View style={styles.container}>
-            <Text style={styles.textStyle}>
-                TO-DO🎉
-      </Text>
-            <View style={styles.messageContainer}>
-                <TextInput
-                    style={styles.messageInput}
-                    mode='outlined'
-                    multiline='true'
-                    placeholder="Digite uma mensagem"
-                    value={text}
-                    onChangeText={text => setText(text)}
-                    onKeyPress={key => console.log(key)}
-                />
-                <Button icon='send' 
-                    style={[styles.sendButton,
-                    { backgroundColor: Colors.background }]}
-                    onPress={() => { console.log() }} />
+          <FlatList style={styles.list}
+            data={mock_data}
+            keyExtractor= {(item) =>  item.id.toString()}
+            renderItem={(message) => {
+              const item = message.item;
+              let inMessage = item.type === 'in';
+              let itemStyle = inMessage ? styles.itemIn : styles.itemOut;
+              return (
+                <View style={[styles.item, itemStyle]}>
+                  {!inMessage && renderDate(item.date)}
+                  <View style={[styles.balloon]}>
+                    <Text>{item.message}</Text>
+                  </View>
+                  {inMessage && renderDate(item.date)}
+                </View>
+              )
+            }}/>
+          <View style={styles.footer}>
+            <View style={styles.inputContainer}>
+              <TextInput style={styles.inputs}
+                  placeholder="Escreva uma Mensagem..."
+                        underlineColorAndroid='transparent'
+                value={text}
+                  onChangeText={(text) => setText(text)}/>
             </View>
+  
+              <TouchableOpacity style={styles.btnSend}>
+                <IconButton icon='send' size={20}  style={styles.iconSend} />
+              </TouchableOpacity>
+          </View>
         </View>
-    );
+      );
 }
 
-
-export default Chat;

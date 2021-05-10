@@ -7,10 +7,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 35,
+        paddingLeft: 2,
+        paddingRight: 2,
         backgroundColor: '#fff'
     },
     textStyle: {
         fontSize: 15,
         marginBottom: 20
+    },
+    navTitle: {
+        fontSize: 25,
+        fontStyle: 'bold',
     }
 });

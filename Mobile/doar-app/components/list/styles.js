@@ -1,33 +1,42 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+    root: {
+        backgroundColor: "#ffffff",
+        marginTop: 10,
+    },
     container: {
-        marginTop: 24,
+        paddingLeft: 19,
+        paddingRight: 16,
+        paddingVertical: 12,
+        flexDirection: 'row',
+        alignItems: 'flex-start'
     },
-    cell: {
-        paddingTop: 20,
-        paddingBottom: 20,
-        backgroundColor: "#E4EBEE",
-        fontSize: 18,
-        marginBottom: 2,
-        marginRight: 10,
-        marginLeft: 10,
+    content: {
+        marginLeft: 16,
+        flex: 1,
+    },
+    contentHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 6
+    },
+    separator: {
+        height: 1,
+        backgroundColor: "#CCCCCC"
+    },
+    image: {
+        width: 45,
+        height: 45,
         borderRadius: 20,
+        marginLeft: 20
     },
-    list: {
-
+    time: {
+        fontSize: 11,
+        color: "#808080",
     },
-    input: {
-        backgroundColor: "white",
-        borderColor: "#CCC",
-        borderWidth: 3,
-        padding: 10,
-        margin: 20,
+    name: {
+        fontSize: 16,
+        fontWeight: "bold",
     },
-    title: {
-        fontSize: 20,
-        marginRight: 10,
-        marginBottom: 2,
-        marginLeft: 10,
-    }
 });
