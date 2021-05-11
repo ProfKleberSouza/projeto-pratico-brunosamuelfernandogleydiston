@@ -1,12 +1,14 @@
 
 import React from 'react';
 import { FlatList, View, Image, TouchableOpacity, } from 'react-native';
-import { Avatar, Text } from 'react-native-paper';
+import { Avatar, Text, TextInput } from 'react-native-paper';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
+
+
 const avatar = require("../../assets/images/avatar.png")
 const description = `There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..`
-const mock_data = [
+export const mock_data = [
     { key: 1, title: "Cesta básica", desc: description, user: "Fernando", don: false, img: avatar, type: "food" },
     { key: 2, title: "Frauda geriátrica", desc: description, user: "Tom", don: false, img: avatar, type: "wallet-giftcard" },
     { key: 3, title: "PC gamer", desc: description, user: "Bruno", don: false, img: avatar, type: "wallet-giftcard" },
@@ -54,6 +56,3 @@ export default function Lista(props) {
     );
 
 };
-
-
-

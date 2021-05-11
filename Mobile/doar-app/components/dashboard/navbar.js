@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import { styles } from './styles';
 import firebase from '../../database/firebase';
 import { useNavigation } from '@react-navigation/native';
+import { newDonation } from '../list';
 
 export default function DashBardNavBar(props) {
     const navigation = useNavigation();
@@ -34,7 +35,7 @@ export default function DashBardNavBar(props) {
                 }}>
                     <IconButton
                         icon='clipboard-plus'
-                        onPress={() => console.log('add new donation')}
+                        onPress={() => navigation.navigate('Donation')}
                     />
                     <IconButton
                         icon='account-edit'

@@ -12,6 +12,7 @@ import DashBoardNavBar from './components/dashboard/navbar';
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import customTheme from './themes';
+import Donation from './components/donation';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +35,7 @@ function MyStack() {
           }} />
           <Stack.Screen name="Lista" component={Lista} />
           <Stack.Screen name="Chat" component={Chat} />
+          <Stack.Screen name="Donation" component={Donation} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
