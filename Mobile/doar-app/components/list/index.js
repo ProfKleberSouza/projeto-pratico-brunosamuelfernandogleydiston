@@ -41,7 +41,7 @@ export default function Lista(props) {
                     <Text rkType='primary3 mediumLine'>{item.desc}</Text>
                 </View>
             </View>
-            
+
         )
     }
 

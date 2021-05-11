@@ -6,6 +6,7 @@ import { styles } from './styles';
 
 
 export default class Login extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -14,6 +15,7 @@ export default class Login extends Component {
       isLoading: true
     }
   }
+
   componentDidMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -23,11 +25,13 @@ export default class Login extends Component {
      this.setState({isLoading: false});
     });
   }
+
   updateLogin = (val, prop) => {
     const state = this.state;
     state[prop] = val;
     this.setState(state);
   }
+
   userLogin = () => {
     if (this.state.email === '' && this.state.password === '') {
       Alert.alert('Enter details to signin!')
@@ -51,6 +55,7 @@ export default class Login extends Component {
         .catch(error => this.setState({ errorMessage: error.message }))
     }
   }
+
   render() {
     if (this.state.isLoading) {
       return (
@@ -110,4 +115,5 @@ export default class Login extends Component {
       </View>
     );
   }
+
 }
