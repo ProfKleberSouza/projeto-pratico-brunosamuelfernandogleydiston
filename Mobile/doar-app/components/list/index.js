@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FlatList, View, Image, TouchableOpacity, } from 'react-native';
+import { FlatList, View, TouchableOpacity } from 'react-native';
 import { Avatar, Text } from 'react-native-paper';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
@@ -39,7 +39,7 @@ export default function Lista(props) {
                     <Text rkType='primary3 mediumLine'>{item.desc}</Text>
                 </View>
             </View>
-            
+
         )
     }
 
