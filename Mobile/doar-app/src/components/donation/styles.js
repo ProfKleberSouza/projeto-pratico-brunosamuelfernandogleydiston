@@ -46,5 +46,13 @@ export const styles = StyleSheet.create({
     },
     chip: {
         flex: 1,
+    },
+    body: {
+        backgroundColor: '#fff',
+        flex: 1,
+        fontSize: 11,
+        fontWeight: "bold",
+        marginLeft: 10,
+        marginHorizontal: 10
     }
 });

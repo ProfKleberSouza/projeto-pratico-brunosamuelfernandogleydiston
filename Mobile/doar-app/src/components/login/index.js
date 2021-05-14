@@ -21,7 +21,7 @@ export default function Login({ navigation }) {
       navigation.navigate('Dashboard');
   }
 
-  useEffect(() => isLogged(onLogin), []);
+  useEffect(() => onLogin(), []);
 
   if (isLoading) {
     return (
