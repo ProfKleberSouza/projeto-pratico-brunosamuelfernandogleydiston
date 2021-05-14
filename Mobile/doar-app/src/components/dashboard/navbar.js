@@ -1,21 +1,18 @@
+import { signOut } from '../../controller';
+
 import React from 'react';
 import { Text, IconButton } from 'react-native-paper';
 import { View } from 'react-native';
 import { styles } from './styles';
-import firebase from '../../database/firebase';
 import { useNavigation } from '@react-navigation/native';
+
 import { newDonation } from '../list';
 
 export default function DashBardNavBar(props) {
     const navigation = useNavigation();
 
-    function signOut() {
-        firebase.auth().signOut().then(() => {
-            console.log('logout successfully')
-            navigation.navigate('Login')
-        })
-            .catch(error => console.log('erro:', error.message))
-    }
+    const onSignOut = () => navigation.navigate('Login')
+
     return (
         <View style={{
             display: 'flex',
@@ -44,7 +41,7 @@ export default function DashBardNavBar(props) {
                     />
                     <IconButton
                         icon='logout'
-                        onPress={() => signOut()}
+                        onPress={() => signOut(onSignOut)}
                     />
                 </View>
             </View>

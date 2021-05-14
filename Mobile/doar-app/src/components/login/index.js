@@ -13,11 +13,12 @@ export default function Login({ navigation }) {
   const [isLoading, setIsLoading] = useState(true);
 
 
-  const onLogin = () => {
+  const onLogin = (isLogged) => {
     setEmail('');
     setPassword('');
     setIsLoading(false);
-    navigation.navigate('Dashboard');
+    if (isLogged)
+      navigation.navigate('Dashboard');
   }
 
   useEffect(() => isLogged(onLogin), []);
