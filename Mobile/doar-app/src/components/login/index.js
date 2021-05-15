@@ -22,7 +22,7 @@ export default function Login({ navigation }) {
     }
   }
 
-  useEffect(() => onLogin(), []);
+  useEffect(() => isLogged(onLogin), []);
 
   if (isLoading) {
     return (
