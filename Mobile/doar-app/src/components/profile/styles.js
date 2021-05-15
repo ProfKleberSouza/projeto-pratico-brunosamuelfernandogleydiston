@@ -46,8 +46,14 @@ export const styles = StyleSheet.create({
     button: {
         color: '#63dadb',
         margin: 20,
-        marginTop: 200,
+        marginTop: 100,
         alignSelf: 'center'
         
+    },
+    userEdit: {
+        width: '100%',
+        alignSelf: 'center',
+        textAlign: 'left',
+        backgroundColor: '#ffffff'
     }
 });
