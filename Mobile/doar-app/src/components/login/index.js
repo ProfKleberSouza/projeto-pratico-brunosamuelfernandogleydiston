@@ -17,11 +17,12 @@ export default function Login({ navigation }) {
     setEmail('');
     setPassword('');
     setIsLoading(false);
-    if (isLogged)
+    if (isLogged) {
       navigation.navigate('Dashboard');
+    }
   }
 
-  useEffect(() => onLogin(), []);
+  useEffect(() => isLogged(onLogin), []);
 
   if (isLoading) {
     return (
