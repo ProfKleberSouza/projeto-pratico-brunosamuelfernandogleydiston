@@ -1,6 +1,6 @@
 ## Dependências do Projeto
 ```
-    - Instalar Node 14
+    -- Instalar Node 14
 ```
 
 ## Executar Projeto
