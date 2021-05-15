@@ -5,23 +5,18 @@ export function userLogin(email, password, callback) {
     if (email === '' && password === '') {
         throw ('Enter details to signin!');
     } else {
-        firebase
+        return firebase
             .auth()
             .signInWithEmailAndPassword(email, password)
-            .then(callback())
-            .catch(error => console.log(error.message))
+            .then(({ user }) => user && callback(true))
+            .catch(error => console.log(error.message));
     }
 }
 
 export function isLogged(callback) {
     return firebase
         .auth()
-        .onAuthStateChanged((user) => {
-            if (user) {
-                return callback(true);
-            }
-            callback(false);
-        });
+        .onAuthStateChanged((user) => callback(user && true))
 }
 
 export function registerUser(email, password, callback, username = 'John Doe') {
