@@ -34,10 +34,10 @@ export function registerUser(email, password, username = 'John Doe', callback) {
 }
 
 export function saveUserProfile(data) {
-    return insert('users', data).then(searchUser(userID));
+    return update('users', data);
 }
 
-export function insert(collection, data, userID) {
+export function update(collection, data, userID) {
     return firebase
         .firestore()
         .collection(collection)
@@ -69,5 +69,13 @@ export async function getUserProfile() {
 
 export async function updateProfile(data) {
     const { currentUser } = await firebase.auth();
-    return await insert('users', { ...data, userID: currentUser?.uid }, currentUser?.uid);
+    return await update('users', { ...data, userID: currentUser?.uid }, currentUser?.uid);
+}
+
+export async function insert(collection, data, callback) {
+    return firebase
+        .firestore()
+        .collection(collection)
+        .add(data)
+        .then(_ => callback());
 }

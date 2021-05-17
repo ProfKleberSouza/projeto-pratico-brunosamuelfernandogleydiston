@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, Image } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
-import { getUserProfile, insert, updateProfile } from '../../controller';
+import { getUserProfile, updateProfile } from '../../controller';
 import { styles } from './styles';
 
 export default function Profile() {
@@ -29,6 +29,7 @@ export default function Profile() {
         setProfile(data);
       })
   }, []);
+
   return isUpdate
     ? (
       <View style={styles.container}>
