@@ -64,7 +64,7 @@ export async function getUserProfile() {
         .collection('users')
         .where("userID", "==", currentUser?.uid)
         .get();
-    return querySnapshot.docs.map(doc => doc?.data())[0]  ?? {};
+    return querySnapshot.docs.map(doc => doc?.data())[0] ?? {};
 }
 
 export async function updateProfile(data) {
@@ -79,3 +79,16 @@ export async function insert(collection, data, callback) {
         .add(data)
         .then(_ => callback());
 }
+
+export async function getAllDonations() {
+
+    const querySnapshot = await firebase
+        .firestore()
+        .collection('donations')
+        .get();
+    return querySnapshot.docs.map((doc, i,) => ({...doc?.data(), key: i}))  ?? [];
+}
+
+//fazer o clique para editar a doação e entrar no chat
+//melhorar a exibição da lista de doações
+//Erro ao deixar titulo em branco.

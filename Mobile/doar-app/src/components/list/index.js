@@ -4,6 +4,9 @@ import { FlatList, View, Image, TouchableOpacity, } from 'react-native';
 import { Avatar, Text, TextInput } from 'react-native-paper';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
+import { useEffect } from 'react';
+import { getAllDonations } from '../../controller';
+import { useState } from 'react';
 
 
 const avatar = require("../../assets/images/avatar.png")
@@ -25,7 +28,15 @@ export const mock_data = [
 
 ]
 
+
+
 export default function Lista(props) {
+    const [_donations, setDonations] = useState(mock_data);
+    useEffect(()=>{
+        getAllDonations().then((donations)=>{
+            setDonations(donations);
+        })
+    }, []);
     const navigation = useNavigation();
     function renderItem({ item }) {
         return (
@@ -48,7 +59,7 @@ export default function Lista(props) {
     return (
         <View style={styles.container}>
             <FlatList style={styles.root}
-                data={mock_data}
+                data={_donations}
                 renderItem={renderItem}
                 keyExtractor={item => item.key.toString()}
             />

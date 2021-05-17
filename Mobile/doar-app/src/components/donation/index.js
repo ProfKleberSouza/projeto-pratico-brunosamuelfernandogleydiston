@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { FlatList, View } from 'react-native';
-import { Avatar, Button, Text, TextInput, Chip } from 'react-native-paper';
+import React from 'react';
+import { View } from 'react-native';
+import { Button, Text, TextInput } from 'react-native-paper';
 import { styles } from './styles';
 import firebase from '../../database/firebase';
 import mock_data from '../list/index'
-import { SafeAreaView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
+import { insert } from '../../controller';
 
 export default function Donation() {
 
@@ -52,19 +52,27 @@ export default function Donation() {
             </View>
         </View>
     );
+
+    function setDonation(title, desc, type) {
+        if (!title) {
+            return;
+        }
+        let data = mock_data;
+    
+        let donation = {
+            user: firebase.auth().currentUser?.uid,
+            title: title,
+            desc: desc,
+            type: type
+        };
+        //Você parou daqui toninho push.(donate);
+        insert('donations', donation, ()=>{
+            console.log('done')
+            setTitle('');
+            setDesc('');
+            //limpar input
+            });
+        //mock_data.push(donation);
+    }
 }
 
-function setDonation(title, desc, type) {
-    let data = mock_data;
-    let key = data.length + 1;
-
-    let donation = {
-        key: key,
-        title: title,
-        desc: desc,
-        type: type
-    };
-    //Você parou daqui toninho
-    console.log(donation);
-    //mock_data.push(donation);
-}
