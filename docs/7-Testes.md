@@ -13,7 +13,10 @@
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
 > de usuários que foi escolhido para participar do teste e as
 > ferramentas utilizadas.
-> 
+
+> Modelo de desenvolvimento e de testes adotado:
+![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/e29c0c27721ffeb95f33aa5947914a14e145454d/docs/img/developer_model.png)
+
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
