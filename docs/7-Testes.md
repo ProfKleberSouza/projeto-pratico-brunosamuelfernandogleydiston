@@ -1,18 +1,20 @@
 # Avaliação da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="6-Implementação.md"> Projeto da Solução</a></span>
-
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
-
 ## Plano de Testes
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
 > de usuários que foi escolhido para participar do teste e as
 > ferramentas utilizadas.
+> 
+> Cenários de testes utilizados durante o desenvolvimento da aplicação. 
+
+|ATIVIDADES|EQUIPE DE DESENVOLVIMENTO                       |
+|----------|------------------------------------------------|
+|Estudo do Projeto|Desenvolve a aplicação|
+|Estudo das Funcionaliades|Executa continua testagem das funcionalidades durante o desenvolvimento|
+|Estudo dos Integrações|Executa continua testagem das integraçoes como o Firebase durante o desenvolvimento|
+|Estudo das Melhorias|Desenvolve soluções para problemas de interface e de design|
 
 > Modelo de desenvolvimento e de testes adotado:
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/e29c0c27721ffeb95f33aa5947914a14e145454d/docs/img/developer_model.png)
