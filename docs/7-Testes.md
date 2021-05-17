@@ -74,7 +74,7 @@
 > 2. Executa o teste da aplicação, como esperado;
 > 3. Corrije o bug;
 > 4. Execute o teste e veja se dessa vez passa.
-## Resultado 
+# Resultado 
 > Com isso, o objetivo para validar que um bug foi corrigido, o objetivo é evita que o mesmo bug ocorra no futuro por conta de outras alterações no código, 
 > portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade da entrega, aumento da previsibilidade, 
 > segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores e usuários. 
