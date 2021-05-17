@@ -9,11 +9,13 @@ export default function Signup({ navigation }) {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [username, setUserName] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const onRegister = () => {
     setEmail('');
     setPassword('');
+    setUserName('');
     setIsLoading(false);
     navigation.navigate('Login');
   }
@@ -30,6 +32,14 @@ export default function Signup({ navigation }) {
       <Text style={[styles.title, { color: '#0a0708' }]}>
         Inscreva-se
         </Text>
+      <TextInput
+        mode='flat'
+        style={styles.inputText}
+        label='Nome'
+        placeholder='Digite seu nome'
+        value={username}
+        onChangeText={(_username) => setUserName(_username)}>
+      </TextInput>
       <TextInput
         mode='flat'
         style={styles.inputText}
@@ -55,7 +65,7 @@ export default function Signup({ navigation }) {
         uppercase={false}
         style={styles.button}
         labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '600', }}
-        onPress={() => registerUser(email, password, onRegister)}>
+        onPress={() => registerUser(email, password, username, onRegister)}>
         Continue
         </Button>
       <Text

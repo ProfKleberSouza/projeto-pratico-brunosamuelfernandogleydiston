@@ -1,6 +1,5 @@
 import firebase from '../database/firebase'
 
-
 export function userLogin(email, password, callback) {
     if (email === '' && password === '') {
         throw ('Enter details to signin!');
@@ -19,7 +18,7 @@ export function isLogged(callback) {
         .onAuthStateChanged((user) => callback(user && true))
 }
 
-export function registerUser(email, password, callback, username = 'John Doe') {
+export function registerUser(email, password, username = 'John Doe', callback) {
     if (email === '' && password === '') {
         throw ('Enter details to signup!');
     } else {
@@ -27,21 +26,14 @@ export function registerUser(email, password, callback, username = 'John Doe') {
             .auth()
             .createUserWithEmailAndPassword(email, password)
             .then(({ user }) => {
-                saveUserProfile(user?.uid, email, username)
+                saveUserProfile({ userID: user?.uid, email, username })
                     .then(callback())
             })
             .catch(error => console.log(error.message))
     }
 }
 
-export function saveUserProfile(userID, email, username) {
-
-    const data = {
-        userID,
-        email,
-        username,
-    };
-
+export function saveUserProfile(data) {
     return insert('users', data).then(searchUser(userID));
 }
 
@@ -54,23 +46,6 @@ export function insert(collection, data, userID) {
         .catch((error) => console.log(error.message));
 }
 
-export function searchUser(userID) {
-    return firebase
-        .firestore()
-        .collection('users')
-        .where("userID", "==", userID)
-        .onSnapshot(
-            querySnapshot => {
-                querySnapshot.forEach(doc => {
-                    console.log(doc.data());
-                })
-            },
-            error => {
-                console.log(error)
-            }
-        )
-}
-
 export function signOut(callback) {
     firebase
         .auth()
@@ -80,4 +55,19 @@ export function signOut(callback) {
             callback()
         })
         .catch(error => console.log('erro:', error.message))
+}
+
+export async function getUserProfile() {
+    const { currentUser } = await firebase.auth();
+    const querySnapshot = await firebase
+        .firestore()
+        .collection('users')
+        .where("userID", "==", currentUser?.uid)
+        .get();
+    return querySnapshot.docs.map(doc => doc?.data())[0]  ?? {};
+}
+
+export async function updateProfile(data) {
+    const { currentUser } = await firebase.auth();
+    return await insert('users', { ...data, userID: currentUser?.uid }, currentUser?.uid);
 }
