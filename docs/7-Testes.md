@@ -9,12 +9,12 @@
 > 
 > Cenários de testes utilizados durante o desenvolvimento da aplicação. 
 
-|ATIVIDADES|EQUIPE DE DESENVOLVIMENTO                       |
-|----------|------------------------------------------------|
-|Estudo do Projeto|Desenvolve a aplicação|
-|Estudo das Funcionaliades|Executa continua testagem das funcionalidades durante o desenvolvimento|
-|Estudo dos Integrações|Executa continua testagem das integraçoes como o Firebase durante o desenvolvimento|
-|Estudo das Melhorias|Desenvolve soluções para problemas de interface e de design|
+|ATIVIDADES  |EQUIPE DE DESENVOLVIMENTO                       |OBJETIVO  |
+|------------|------------------------------------------------|----------|
+|Estudo do Projeto|Desenvolve a aplicação|Implementar telas, elementos e navegação da aplicação|
+|Estudo das Funcionaliades|Executa continua testagem das funcionalidades durante o desenvolvimento|Tornar a aplicação funcional|
+|Estudo dos Integrações|Executa continua testagem das integrações como o Firebase durante o desenvolvimento|Manter a integridade dos dados|
+|Estudo das Melhorias|Desenvolve novas soluções para problemas de interface e de design|Deixar a aplicação mais fluída para o usuário|
 
 > Modelo de desenvolvimento e de testes adotado:
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/e29c0c27721ffeb95f33aa5947914a14e145454d/docs/img/developer_model.png)
