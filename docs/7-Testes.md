@@ -51,7 +51,7 @@
 > Em suma, já no estágio inicial do desenvolvimento foram realizados os Testes Unitários no processo, estes ocorram no "continuous deploy", "integration" e 
 > "delivery" da aplicação.
 > 
-## Os principais tipos de testes aplicados no desenvolvimento:
+## Os principais tipos de testes aplicados no desenvolvimento da aplicação:
 ### Testes unitários
 > Foram os testes de unidades ou componentes individuais de um programa: as menores partes testáveis do software. 
 > Geralmente têm apenas um ou poucos inputs e outputs. Trata-se do primeiro nível de automação de testes e é geralmente feito sob o nível de métodos.
@@ -74,9 +74,7 @@
 > 2. Executa o teste da aplicação, como esperado;
 > 3. Corrije o bug;
 > 4. Execute o teste e veja se dessa vez passa.
-> 
+## Resultado 
 > Com isso, o objetivo para validar que um bug foi corrigido, o objetivo é evita que o mesmo bug ocorra no futuro por conta de outras alterações no código, 
 > portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade da entrega, aumento da previsibilidade, 
 > segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores e usuários. 
->
-
