@@ -16,15 +16,15 @@
 |Estudo dos Integrações|Executa continua testagem das integrações como o Firebase durante o desenvolvimento|Manter a integridade dos dados|
 |Estudo das Melhorias|Desenvolve novas soluções para problemas de interface e de design|Deixar a aplicação mais fluída para o usuário|
 
-> Foi adotado um modelo DevOps baseado no Design Thinking para que desenvolvimento e os testes da aplicação ocorram em paralelo, isso porque as mudanças 
-> no sistema entravam em produção mais rapidamente, o plano foi automatizar todo o pipeline, para atingir o tão desejado “continuous delivery”, o DevOps 
-> visou otimizar e se aplicar a cada etapa do processo de desenvolvimento de software, desde o planejamento até a entrega.
+> Foi adotado um modelo DevOps baseado no Design Thinking para que desenvolvimento e os testes da aplicação ocorram em paralelo, isso porque 
+> as mudanças no sistema entravam em produção mais rapidamente, o plano foi automatizar todo o pipeline, para atingir o tão desejado “continuous 
+> delivery”, o DevOps visou otimizar e se aplicar a cada etapa do processo de desenvolvimento de software, desde o planejamento até a entrega.
 > 
 ## Modelo DevOps
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/e29c0c27721ffeb95f33aa5947914a14e145454d/docs/img/developer_model.png)
 >
->[ 1 ] Essas são as etapas da produção da aplicação. O fluxo mostra desde o planejamento até o monitoramento, passando por todas as que fazem 
->parte do cotidiano dos desenvolvedores e operadores.
+> [ 1 ] Essas são as etapas da produção da aplicação. O fluxo mostra desde o planejamento até o monitoramento, passando por todas as que 
+> fazem parte do cotidiano dos desenvolvedores e operadores.
 >
 ![image](https://github.com/ProfKleberSouza/projeto-pratico-brunosamuelfernandogleydiston/blob/db9be57cedf5777477cfc9b8f42e3733788bedaa/docs/img/1.png)
 >
@@ -48,16 +48,18 @@
 
 # Avaliação Prática
 
-> Em suma, já no estágio inicial do desenvolvimento foram realizados os Testes Unitários no processo, estes ocorram no "continuous deploy", "integration" e 
-> "delivery" da aplicação.
+> Em suma, já no estágio inicial do desenvolvimento foram realizados os Testes Unitários no processo, estes ocorram no "continuous deploy", 
+> "integration" e "delivery" da aplicação.
 > 
 ## Os principais tipos de testes aplicados no desenvolvimento da aplicação:
 ### Testes unitários
-> Foram os testes de unidades ou componentes individuais de um programa: as menores partes testáveis do software. 
-> Geralmente têm apenas um ou poucos inputs e outputs. Trata-se do primeiro nível de automação de testes e é geralmente feito sob o nível de métodos.
+> Foram os testes de unidades ou componentes individuais da aplicação: as menores partes testáveis do software. 
+> Geralmente, eles tiveram apenas um ou poucos inputs e outputs, nesse caso, inicialmente foi do acesso da aplicação feito nas telas de 
+> Entrar e "Inscreva-se" testando a intração e a persistência dos dados com o Firebase. Trata-se do primeiro nível de automação de testes 
+> e é geralmente feito sob o nível de métodos.
 ### Testes funcionais
-> Foram aqueles pelos quais o sistema é testado contra as especificações ou requisitos funcionais. Neles, as funções são testadas por meio da entrada 
-> de inputs e do exame de > outputs. Eles acabam por garantir que os requisitos sejam satisfatoriamente cumpridos. Esses testes são também chamados de 
+> Foram aqueles pelos quais o sistema é testado contra as especificações ou requisitos funcionais. As funções foram testadas por meio da entrada 
+> de inputs e do exame de outputs. Eles acabam por garantir que os requisitos sejam satisfatoriamente cumpridos. Esses testes são também chamados de 
 > end-to-end. 
 ### Testes de interface de usuário (GUI)
 > Graphical User Interface é a interação com o computador por meio de imagens em vez de texto. Testes de interface de usuário são, então, aqueles que 
