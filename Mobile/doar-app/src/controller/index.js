@@ -37,11 +37,11 @@ export function saveUserProfile(data) {
     return update('users', data);
 }
 
-export function update(collection, data, userID) {
+export function update(collection, data, id) {
     return firebase
         .firestore()
         .collection(collection)
-        .doc(userID)
+        .doc(id)
         .set(data)
         .catch((error) => console.log(error.message));
 }
@@ -89,6 +89,6 @@ export async function getAllDonations() {
     return querySnapshot.docs.map((doc, i,) => ({...doc?.data(), key: i}))  ?? [];
 }
 
-//fazer o clique para editar a doação e entrar no chat
-//melhorar a exibição da lista de doações
-//Erro ao deixar titulo em branco.
+export async function editDonationById(id, data) {
+    return await update('donation', data, id)
+}

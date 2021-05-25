@@ -1,11 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Button, Text, TextInput } from 'react-native-paper';
+import { Button, Text, TextInput, RadioButton } from 'react-native-paper';
 import { styles } from './styles';
 import firebase from '../../database/firebase';
 import mock_data from '../list/index'
 import { useNavigation } from '@react-navigation/native';
-import { RadioButton } from 'react-native-paper';
 import { insert } from '../../controller';
 
 export default function Donation() {
@@ -15,7 +14,7 @@ export default function Donation() {
     const [desc, setDesc] = React.useState('');
     const type = [{ key: 1, item: "food" }, { key: 2, item: "wallet-giftcard" }, { key: 3, item: "medical-bag" }]
     let [typeSelected, setValue] = React.useState('food');
-
+    
     return (
         <View style={styles.body}>
             <View>

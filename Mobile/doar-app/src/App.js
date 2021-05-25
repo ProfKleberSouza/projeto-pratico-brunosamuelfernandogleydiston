@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
 import Login from './components/login';
 import Signup from './components/signup';
@@ -8,11 +9,10 @@ import Profile from './components/profile';
 import Lista from './components/list';
 import Chat from './components/chat';
 import DashBoardNavBar from './components/dashboard/navbar';
-
-import { NavigationContainer } from '@react-navigation/native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import customTheme from './themes';
 import Donation from './components/donation';
+import editDonation from './components/editDonation';
 
 const Stack = createStackNavigator();
 
@@ -36,6 +36,7 @@ function MyStack() {
           <Stack.Screen name="Lista" component={Lista} />
           <Stack.Screen name="Chat" component={Chat} />
           <Stack.Screen name="Donation" component={Donation} />
+          <Stack.Screen name="editDonation" component={editDonation} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
