@@ -86,21 +86,22 @@
 > Com isso, o objetivo para validar que um bug foi corrigido, o objetivo é evita que o mesmo bug ocorra no futuro por conta de outras alterações 
 > no código, portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade da entrega, aumento 
 > da previsibilidade, segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores e usuários.
-# Fases de um teste de usabilidade
-## Planejamento do teste
+### Fases de um teste de usabilidade
+>
+### Planejamento do teste
 > 
-## Projeto das atividades de teste
+### Projeto das atividades de teste
 >
-## Recrutamento de participantes
+### Recrutamento de participantes
 >
-## Preparação de materiais necessários
+### Preparação de materiais necessários
 >
-## Configuração do ambiente de teste
+### Configuração do ambiente de teste
 >
-## Condução do teste
+### Condução do teste
 > as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema;
 o número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível;
 as sessões precisam ser padronizadas;
 testes pilotos (dry run) das sessões de teste devem ser realizados para melhorar a clareza da fala do administrador de testes, verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões, ...
-## Compilação e análise dos dados coletados
+### Compilação e análise dos dados coletados
 >
