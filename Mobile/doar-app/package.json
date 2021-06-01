@@ -2,9 +2,8 @@
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "web": "expo start --web",
-    "start": "web",
+    "start": "expo start",
     "expo": "expo start"
   },
   "dependencies": {
@@ -34,5 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "doar-app",
+  "version": "1.0.0"
 }
