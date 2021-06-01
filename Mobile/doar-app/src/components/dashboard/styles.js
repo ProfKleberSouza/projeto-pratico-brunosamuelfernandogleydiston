@@ -17,6 +17,5 @@ export const styles = StyleSheet.create({
     },
     navTitle: {
         fontSize: 25,
-        fontStyle: 'bold',
     }
 });

@@ -1,7 +1,7 @@
 import { userLogin, isLogged } from '../../controller';
 
 import React, { useEffect, useState } from 'react';
-import { Image, View } from 'react-native';
+import { Image, SafeAreaView, View } from 'react-native';
 import { Text, TextInput, Button, ActivityIndicator } from 'react-native-paper';
 import { styles } from './styles';
 
@@ -33,10 +33,12 @@ export default function Login({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View style={{height: 200}}>
       <View style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Image style={styles.logoStyle} source={require('../../assets/images/doar_login.png')} />
       </View>
+    </View>
       <Text style={[styles.title, { color: '#0a0708' }]}>
         Entrar
         </Text>
@@ -80,7 +82,7 @@ export default function Login({ navigation }) {
           Inscreva-se
           </Text>
       </Text>
-    </View>
+    </SafeAreaView>
   );
 
 }

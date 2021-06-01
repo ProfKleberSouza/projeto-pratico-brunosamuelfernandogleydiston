@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     },
     bodyContent: {
         flex: 1,
-        alignItems: 'left',
+        alignItems: 'flex-start',
         padding: 30,
     },
     userName: {
