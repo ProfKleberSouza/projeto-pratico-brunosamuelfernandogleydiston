@@ -14,7 +14,7 @@ export default function Donation() {
     const [desc, setDesc] = React.useState('');
     const type = [{ key: 1, item: "food" }, { key: 2, item: "wallet-giftcard" }, { key: 3, item: "medical-bag" }]
     let [typeSelected, setValue] = React.useState('food');
-    
+
     return (
         <View style={styles.body}>
             <View>
@@ -39,13 +39,16 @@ export default function Donation() {
                 <Text>De qual tipo sua doação se encaixa?</Text>
                 <RadioButton.Group onValueChange={typeSelected => setValue(typeSelected)} value={typeSelected}     >
                     {type.map(v =>
-                    <RadioButton.Item key={v.key} label={ v.item } value={v.item} />
+                        <RadioButton.Item key={v.key} label={v.item} value={v.item} />
 
                     )}
                 </RadioButton.Group>
             </View>
             <View>
-                <Button icon="plus-circle" mode="contained" onPress={() => setDonation(title, desc, typeSelected)}>
+                <Button icon="plus-circle" mode="contained" onPress={() => {
+                    setDonation(title, desc, typeSelected);
+                    alert("done");
+                }}>
                     Adicionar
                 </Button>
             </View>
@@ -56,22 +59,17 @@ export default function Donation() {
         if (!title) {
             return;
         }
-        let data = mock_data;
-    
         let donation = {
             user: firebase.auth().currentUser?.uid,
             title: title,
             desc: desc,
             type: type
         };
-        //Você parou daqui toninho push.(donate);
-        insert('donations', donation, ()=>{
+        insert('donations', donation, () => {
             console.log('done')
             setTitle('');
             setDesc('');
-            //limpar input
-            });
-        //mock_data.push(donation);
+        });
     }
 }
 
