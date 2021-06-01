@@ -21,9 +21,7 @@ export const styles = StyleSheet.create({
         marginTop: 40,
     },
     bodyContent: {
-        flex: 1,
-        alignItems: 'left',
-        padding: 30,
+        padding: 30
     },
     userName: {
         fontSize: 22,
@@ -45,10 +43,7 @@ export const styles = StyleSheet.create({
     },
     button: {
         color: '#63dadb',
-        margin: 20,
-        marginTop: 100,
-        alignSelf: 'center'
-        
+        marginTop: 30
     },
     userEdit: {
         width: '100%',
