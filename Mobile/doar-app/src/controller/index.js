@@ -1,3 +1,4 @@
+import { render } from 'react-dom';
 import firebase from '../database/firebase'
 
 export function userLogin(email, password, callback) {
@@ -82,11 +83,32 @@ export async function insert(collection, data, callback) {
 
 export async function getAllDonations() {
 
-    const querySnapshot = await firebase
+    const queryDonations = await firebase
         .firestore()
         .collection('donations')
         .get();
-    return querySnapshot.docs.map((doc, i,) => ({...doc?.data(), key: i}))  ?? [];
+    const donations = await queryDonations.docs.map((doc, i,) => ({ ...doc?.data(), key: i })) ?? [];
+
+    const renderUser = await donations.map(async (donation, i) => {
+
+        await firebase
+            .firestore()
+            .collection('users')
+            .where("userID", "==", donation.user)
+            .get().then(
+                (result) => {
+                    const user = result.docs.map(doc => doc?.data())[0] ?? {}
+                    donation.userId = donation.user;
+                    donation.user = user.firstName;
+                    donation.key = i;
+                }
+            )
+
+
+        return donation;
+    });
+    return await Promise.all(renderUser);
+
 }
 
 export async function editDonationById(id, data) {

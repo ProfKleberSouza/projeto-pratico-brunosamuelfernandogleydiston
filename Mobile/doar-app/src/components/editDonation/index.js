@@ -40,7 +40,7 @@ export default function editDonation({ route }) {
                 </Card.Content>
                 <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
                 <Card.Actions>
-                    <Button onPress={() => navigation.navigate('Lista')}>Cancel</Button>
+                    <Button onPress={() => navigation.navigate('Dashboard')}>Cancel</Button>
                     <Button onPress={() => navigation.navigate('Chat')}>Chat</Button>
                 </Card.Actions>
             </Card>
