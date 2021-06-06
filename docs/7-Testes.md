@@ -54,26 +54,36 @@
 > ocorram no "continuous deploy", "integration" e "delivery" da aplicação.
 > 
 ## Os principais tipos de testes aplicados no desenvolvimento da aplicação:
+
 ### Testes unitários
+
 > Foram os testes de unidades ou componentes individuais da aplicação: as menores partes testáveis do software. 
 > Geralmente, eles tiveram apenas um ou poucos inputs e outputs, nesse caso, inicialmente feito individualmente 
 > nas telas da aplicação. Trata-se do primeiro nível de automação de testes e é geralmente feito sob o nível de 
 > métodos.
+
 ### Testes funcionais
+
 > Foram aqueles pelos quais o sistema é testado contra as especificações ou requisitos funcionais. Isso se extende 
 > desde o cadastro a ultizacação da aplicação em si. As funções foram testadas por meio da entrada de inputs 
 > realizados pela equipe de desenvolvimento e a análise do resultado foi utilizada para garantir que os requisitos 
 > sejam satisfatoriamente cumpridos. Esses testes são também chamados de end-to-end. 
+
 ### Testes de interface de usuário (GUI)
+
 > Graphical User Interface é a interação com o computador por meio de imagens em vez de texto. Esses foram os 
 > testes de interface de usuário sendo, então, aqueles que envolvem checar as telas com controles, como menus, 
 > botões, ícones etc.
+
 ### Testes integrados
+
 > Foram os testes nos quais se validam a integração de módulos ou sistemas, nesses caso, a intração e a persistência 
 > dos dados com o Firebase. O objetivo foi de garantir que a interface do sistema esteja de acordo com a especificação 
 > e que os sistemas estão se conversando conforme o esperado. São um pouco mais complexos de se executar, uma vez 
 > que dependem de se ter mais de um sistema no ar. É o tipo de teste que utilizou das técnicas de Mocking.
+
 ### Test-Driven Bugfixing (TDB)
+
 > Foram aplicados TDD (Test Driven Development) já no inicio do processo de desenvolvimento para correção de bugs. 
 > Bug é por natureza um cenário do sistema que falha que ocorreram com frequência. Então, identificado um bug no 
 > sistema, foi adotado o seguinte procedimento:
@@ -82,32 +92,42 @@
 > 2. Executa o teste da aplicação (compliação), como esperado;
 > 3. Corrije o bug;
 > 4. Execute o teste e veja se dessa vez passa.
-> 
-### Planejamento do Teste de Usabilidade
-> O teste de usabilidade foi 
-### Projeto das atividades de teste
->
-### Preparação de materiais necessários
->
-### Recrutamento de participantes
+
+### Teste de Usabilidade
+
+> Envolveu o registro do desempenho de usuários típicos, realizando tarefas típicas.
+> Ambiente controlado.
+> Usuários são observados e cronometrados.
+> Os dados são usados para calcular os tempos gastos pelos usuários nas tarefas, bem como para identificar e explicar erros.
+> Satisfação do usuário é avaliada por meio de questionários e entrevistas que são compilados em avaliação POSITIVA e NEGATIVA.
+
+### Recrutamento de Participantes
+
 > O participantes escolidos para realizar os testes da aplicação foram os integrantes da equipe de desenvolvimento da 
 > aplicação assim como participaram tambem membros das familia de cada participante.
+
 ### Condução do teste
-> as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema;
-o número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível;
-as sessões precisam ser padronizadas;
-testes pilotos (dry run) das sessões de teste devem ser realizados para melhorar a clareza da fala do administrador de testes, 
-verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões, ...
->
+
+> As tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
+> O número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível.
+> As sessões foram padronizadas.
+> Os testes pilotos (dry run) das sessões de teste foram realizados para melhorar a clareza da fala do administrador de testes, 
+> verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões.
+
 # Resultados
+
 ## Resutados dos testes durante o desenvolvimento
+
 > O objetivo era validar que um bug foi corrigido e evita que o mesmo bug ocorra no futuro por conta de outras alterações 
 > no código, portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade 
 > da entrega, aumento da previsibilidade, segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores.
-> 
+
 ## Resutados dos testes com usuários 
-> O objetivo era validar a usabilidade da aplicação, os tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema;
+
+> O objetivo era validar a usabilidade da aplicação, os tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
+
 ### Compilação e análise dos dados coletados
+
 > Essa etapa tiveram os testes limitados, pois os objetivos eram de obter resultados claros, concisos e específicos de usabilidade da aplicação por 
 > outros usuários que não fossem os envolvidos no desenvolvimento do projeto:
 > 
