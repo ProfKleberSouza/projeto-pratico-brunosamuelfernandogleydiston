@@ -39,7 +39,6 @@ export default function Chat() {
   return (
     <SafeAreaView style={styles.container}>
 
-      <ScrollView style={{height: 40}}>
 
         <FlatList style={styles.list}
           data={mock_data}
@@ -58,7 +57,6 @@ export default function Chat() {
               </View>
             )
           }} />
-      </ScrollView>
       <View style={styles.footer}>
         <View style={styles.inputContainer}>
           <TextInput style={styles.inputs}
