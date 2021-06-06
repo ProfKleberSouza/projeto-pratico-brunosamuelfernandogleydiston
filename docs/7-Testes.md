@@ -146,6 +146,6 @@
 |POSITIVAS                   |NEGATIVAS                        |
 |----------------------------|---------------------------------|
 |Idéia do projeto|Poderia ter a opção de realizar chamada telefônica automáticas entre os usuários|
-|Design agradável|Poderia ter a geolocalização da localização, ou filtrar as doações com base na localização dos usuários;|
-|Simplicidade da aplicação|Usuário gostaria poder pesquisar/filtrar as doações |
+|Design agradável|Poderia ter a geolocalização da localização, ou filtrar as doações com base na localização dos usuários|
+|Simplicidade da aplicação|Usuário gostaria poder pesquisar/filtrar as doações|
 |Navegação dentro da aplicação|Questão de segurança entre os usuários com relação a entrega da doação|
