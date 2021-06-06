@@ -104,8 +104,8 @@ export default function Profile() {
             </TextInput>
             <TextInput
               mode='flat'
-              multiline='true'
-              numberOfLines='4'
+              multiline
+              numberOfLines={4}
               style={styles.userEdit}
               label='Descrição'
               value={profile.description}
