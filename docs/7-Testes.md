@@ -82,26 +82,52 @@
 > 2. Executa o teste da aplicação (compliação), como esperado;
 > 3. Corrije o bug;
 > 4. Execute o teste e veja se dessa vez passa.
-# Resultado 
-> Com isso, o objetivo para validar que um bug foi corrigido, o objetivo é evita que o mesmo bug ocorra no futuro por conta de outras alterações 
-> no código, portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade da entrega, aumento 
-> da previsibilidade, segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores e usuários.
-### Fases de um teste de usabilidade
->
-### Planejamento do teste
 > 
+### Planejamento do Teste de Usabilidade
+> O teste de usabilidade foi 
 ### Projeto das atividades de teste
->
-### Recrutamento de participantes
 >
 ### Preparação de materiais necessários
 >
-### Configuração do ambiente de teste
->
+### Recrutamento de participantes
+> O participantes escolidos para realizar os testes da aplicação foram os integrantes da equipe de desenvolvimento da 
+> aplicação assim como participaram tambem membros das familia de cada participante.
 ### Condução do teste
 > as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema;
 o número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível;
 as sessões precisam ser padronizadas;
-testes pilotos (dry run) das sessões de teste devem ser realizados para melhorar a clareza da fala do administrador de testes, verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões, ...
-### Compilação e análise dos dados coletados
+testes pilotos (dry run) das sessões de teste devem ser realizados para melhorar a clareza da fala do administrador de testes, 
+verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões, ...
 >
+# Resultados
+## Resutados dos testes durante o desenvolvimento
+> O objetivo era validar que um bug foi corrigido e evita que o mesmo bug ocorra no futuro por conta de outras alterações 
+> no código, portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade 
+> da entrega, aumento da previsibilidade, segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores.
+> 
+## Resutados dos testes com usuários 
+> O objetivo era validar a usabilidade da aplicação, os tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema;
+### Compilação e análise dos dados coletados
+> Essa etapa tiveram os testes limitados, pois os objetivos eram de obter resultados claros, concisos e específicos de usabilidade da aplicação por 
+> outros usuários que não fossem os envolvidos no desenvolvimento do projeto:
+> 
+> 1. Avaliação empírica apoia somente em experiências vividas pelos usuários.
+> 2. Detectar problemas de usabilidade por meio da observação do usuário interagindo com o sistema da aplicação.
+>
+> Dentro dessa etapa foram executados testes de usabilidade em dois níveis:
+> 1. Resultados obtidos no protótipo de baixa fidelidade (representações provisórias da aplicação).
+> 
+|POSITIVAS                   |NEGATIVAS                        |
+|----------------------------|---------------------------------|
+|Idéia do projeto|Instabiliade da aplicação e bugs de navegação|
+|Design agradável| |
+|Simplicidade da aplicação| |
+> 
+> 2. Resultados obtidos no protótipo de alta fidelidade (representados muitos próximos da versão final da aplicação).
+> 
+|POSITIVAS                   |NEGATIVAS                        |
+|----------------------------|---------------------------------|
+|Idéia do projeto|Poderia ter a opção de realizar chamada telefônica automáticas entre os usuários|
+|Design agradável|Poderia ter a geolocalização da localização, ou filtrar as doações com base na localização dos usuários;|
+|Simplicidade da aplicação|Questão de segurança entre os usuários com relação a entrega da doação|
+|Navegação dentro da aplicação.| |
