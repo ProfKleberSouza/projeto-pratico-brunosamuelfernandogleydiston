@@ -55,27 +55,27 @@
 > 
 ## Os principais tipos de testes aplicados no desenvolvimento da aplicação:
 
-### Testes unitários
+### Testes Unitários
 
 > Foram os testes de unidades ou componentes individuais da aplicação: as menores partes testáveis do software. 
 > Geralmente, eles tiveram apenas um ou poucos inputs e outputs, nesse caso, inicialmente feito individualmente 
 > nas telas da aplicação. Trata-se do primeiro nível de automação de testes e é geralmente feito sob o nível de 
 > métodos.
 
-### Testes funcionais
+### Testes Funcionais
 
 > Foram aqueles pelos quais o sistema é testado contra as especificações ou requisitos funcionais. Isso se extende 
 > desde o cadastro a ultizacação da aplicação em si. As funções foram testadas por meio da entrada de inputs 
 > realizados pela equipe de desenvolvimento e a análise do resultado foi utilizada para garantir que os requisitos 
 > sejam satisfatoriamente cumpridos. Esses testes são também chamados de end-to-end. 
 
-### Testes de interface de usuário (GUI)
+### Testes de Interface de Usuário (GUI)
 
 > Graphical User Interface é a interação com o computador por meio de imagens em vez de texto. Esses foram os 
 > testes de interface de usuário sendo, então, aqueles que envolvem checar as telas com controles, como menus, 
 > botões, ícones etc.
 
-### Testes integrados
+### Testes Integrados
 
 > Foram os testes nos quais se validam a integração de módulos ou sistemas, nesses caso, a intração e a persistência 
 > dos dados com o Firebase. O objetivo foi de garantir que a interface do sistema esteja de acordo com a especificação 
@@ -101,12 +101,12 @@
 > Os dados são usados para calcular os tempos gastos pelos usuários nas tarefas, bem como para identificar e explicar erros.
 > Satisfação do usuário é avaliada por meio de questionários e entrevistas que são compilados em avaliação POSITIVA e NEGATIVA.
 
-### Recrutamento de Participantes
+#### Recrutamento de Participantes para o Teste de Usabilidade
 
 > O participantes escolidos para realizar os testes da aplicação foram os integrantes da equipe de desenvolvimento da 
 > aplicação assim como participaram tambem membros das familia de cada participante.
 
-### Condução do teste
+#### Condução do Teste de Usabilidade
 
 > As tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
 > O número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível.
@@ -116,17 +116,18 @@
 
 # Resultados
 
-## Resutados dos testes durante o desenvolvimento
+## Resutados dos Testes Durante o Desenvolvimento
 
 > O objetivo era validar que um bug foi corrigido e evita que o mesmo bug ocorra no futuro por conta de outras alterações 
 > no código, portanto, adotar DevOps, permitiu acelerara a entrega de novas funcionalidades. Isso permitiu aumenta da qualidade 
 > da entrega, aumento da previsibilidade, segurança para refactoring, redução de custos e aumento da satisfação dos desenvolvedores.
 
-## Resutados dos testes com usuários 
+## Resutados dos Testes com Usuários 
 
-> O objetivo era validar a usabilidade da aplicação, os tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
+> O objetivo era validar a usabilidade da aplicação, as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema,
+> onde o usuário faz seu 
 
-### Compilação e análise dos dados coletados
+## Compilação e Análise dos Dados Coletados
 
 > Essa etapa tiveram os testes limitados, pois os objetivos eram de obter resultados claros, concisos e específicos de usabilidade da aplicação por 
 > outros usuários que não fossem os envolvidos no desenvolvimento do projeto:
