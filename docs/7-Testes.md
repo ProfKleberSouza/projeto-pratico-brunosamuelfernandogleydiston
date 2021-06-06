@@ -100,19 +100,15 @@
 > Usuários são observados e cronometrados.
 > Os dados são usados para calcular os tempos gastos pelos usuários nas tarefas, bem como para identificar e explicar erros.
 > Satisfação do usuário é avaliada por meio de questionários e entrevistas que são compilados em avaliação POSITIVA e NEGATIVA.
-
-#### Recrutamento de Participantes para o Teste de Usabilidade
-
-> O participantes escolidos para realizar os testes da aplicação foram os integrantes da equipe de desenvolvimento da 
-> aplicação assim como participaram tambem membros das familia de cada participante.
-
-#### Condução do Teste de Usabilidade
-
-> As tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
-> O número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível.
-> As sessões foram padronizadas.
-> Os testes pilotos (dry run) das sessões de teste foram realizados para melhorar a clareza da fala do administrador de testes, 
-> verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões.
+>> #### Recrutamento de Participantes para o Teste de Usabilidade
+>> O participantes escolidos para realizar os testes da aplicação foram os integrantes da equipe de desenvolvimento da 
+>> aplicação assim como participaram tambem membros das familia de cada participante.
+>> #### Condução do Teste de Usabilidade
+>> As tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema.
+>> O número de variáveis que possam gerar resultados inválidos ou mascarar os resultados obtidos deve ser reduzido o mais possível.
+>> As sessões foram padronizadas.
+>> Os testes pilotos (dry run) das sessões de teste foram realizados para melhorar a clareza da fala do administrador de testes, 
+>> verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões.
 
 # Resultados
 
@@ -125,7 +121,8 @@
 ## Resutados dos Testes com Usuários 
 
 > O objetivo era validar a usabilidade da aplicação, as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema,
-> onde o usuário faz seu 
+> onde o usuário faz seu cadastro na aplicação, atualiza os dados pessoais e realiza a navegação entre as telas e a lista de doações e realiza a 
+> inserção de uma nova doação, assim como seleciona uma doação e inicializa a comunicação com outro usuário.
 
 ## Compilação e Análise dos Dados Coletados
 
