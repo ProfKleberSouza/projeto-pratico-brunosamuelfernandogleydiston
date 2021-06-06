@@ -31,9 +31,27 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.9.0",
+    "@testing-library/jest-native": "^3.4.3",
+    "@testing-library/react-native": "^7.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-handlebarlabs": "^0.0.6",
+    "jest-expo": "^40.0.2",
+    "jest-fetch-mock": "^3.0.3"
   },
   "private": true,
   "name": "doar-app",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  }
 }
