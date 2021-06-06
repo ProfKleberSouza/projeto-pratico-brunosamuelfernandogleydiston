@@ -34,7 +34,7 @@ export function registerUser(email, password, username = 'John Doe', callback) {
 }
 
 export function saveUserProfile(data) {
-    return update('users', data);
+    return update('users', data, data?.userID);
 }
 
 export function update(collection, data, id) {
