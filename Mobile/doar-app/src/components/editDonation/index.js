@@ -33,17 +33,17 @@ export default function editDonation({ route }) {
     if (true || firebase.auth().currentUser.uid == user) {
         return (
             <Card>
-    <Card.Title title={data.title} subtitle={data.user} left={LeftContent} />
-    <Card.Content>
-      <Title>{ data.title }</Title>
-      <Paragraph>{data.desc}</Paragraph>
-    </Card.Content>
-    <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
-    <Card.Actions>
-      <Button onPress={() =>  navigation.navigate('Lista')}>Cancel</Button>
-      <Button onPress={() =>  navigation.navigate('Chat')}>Chat</Button>
-    </Card.Actions>
-  </Card>
+                <Card.Title title={data.title} subtitle={data.user} left={LeftContent} />
+                <Card.Content>
+                    <Title>{data.title}</Title>
+                    <Paragraph>{data.desc}</Paragraph>
+                </Card.Content>
+                <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
+                <Card.Actions>
+                    <Button onPress={() => navigation.navigate('Lista')}>Cancel</Button>
+                    <Button onPress={() => navigation.navigate('Chat')}>Chat</Button>
+                </Card.Actions>
+            </Card>
         )
     } else {
         return (
