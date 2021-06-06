@@ -51,7 +51,8 @@ export default function Login({ navigation }) {
         label='E-mail'
         placeholder='Digite seu e-mail'
         value={email}
-        onChangeText={(_email) => setEmail(_email)}>
+        onChangeText={(_email) => setEmail(_email)}
+        testID="Login.emailInput">
       </TextInput>
       <TextInput
         mode='flat'
@@ -61,7 +62,8 @@ export default function Login({ navigation }) {
         value={password}
         maxLength={15}
         secureTextEntry={true}
-        onChangeText={(_password) => setPassword(_password)}>
+        onChangeText={(_password) => setPassword(_password)}
+        testID="Login.passwordInput">
       </TextInput>
       <Button
         mode='contained'
@@ -70,7 +72,8 @@ export default function Login({ navigation }) {
         uppercase={false}
         style={styles.button}
         labelStyle={{ color: '#ffffff', fontSize: 16, fontWeight: '600', }}
-        onPress={() => userLogin(email, password, onLogin)}>
+        onPress={() => userLogin(email, password, onLogin)}
+        testID="Login.Submit">
         Entrar
         </Button>
       <Text

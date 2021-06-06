@@ -4,7 +4,8 @@
     "android": "react-native run-android",
     "web": "expo start --web",
     "start": "expo start",
-    "expo": "expo start"
+    "expo": "expo start",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-firebase/app": "^11.4.1",
@@ -37,7 +38,8 @@
     "eslint": "^7.20.0",
     "eslint-config-handlebarlabs": "^0.0.6",
     "jest-expo": "^40.0.2",
-    "jest-fetch-mock": "^3.0.3"
+    "jest-fetch-mock": "^3.0.3",
+    "react-test-renderer": "^17.0.2"
   },
   "private": true,
   "name": "doar-app",
@@ -46,12 +48,6 @@
     "preset": "jest-expo",
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
-    ],
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-native/extend-expect"
-    ],
-    "setupFiles": [
-      "./setupJest.js"
     ]
   }
 }
