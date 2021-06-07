@@ -4,6 +4,7 @@
     "android": "react-native run-android",
     "web": "expo start --web",
     "start": "expo start",
+    "build:android": "expo build:android -t apk",
     "expo": "expo start",
     "test": "jest"
   },
