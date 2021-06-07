@@ -5,14 +5,20 @@ import { styles } from './styles';
 import firebase from '../../database/firebase';
 import mock_data from '../list/index'
 import { useNavigation } from '@react-navigation/native';
-import { insert } from '../../controller';
+import { editDonation, insert } from '../../controller';
+import uniqid from 'uniqid'
 
 export default function Donation() {
 
+    const translate = {
+        'Alimento':'food',
+        'Presente': 'wallet-giftcard',
+        'Remédio': 'medical-bag' 
+    }
     const navigation = useNavigation();
     const [title, setTitle] = React.useState('');
     const [desc, setDesc] = React.useState('');
-    const type = [{ key: 1, item: "food" }, { key: 2, item: "wallet-giftcard" }, { key: 3, item: "medical-bag" }]
+    const type = [{ key: 1, item: "Alimento" }, { key: 2, item: "Presente" }, { key: 3, item: "Remédio" }]
     let [typeSelected, setValue] = React.useState('food');
 
     return (
@@ -63,12 +69,17 @@ export default function Donation() {
             user: firebase.auth().currentUser?.uid,
             title: title,
             desc: desc,
-            type: type
+            type: translate[type], 
+            id: uniqid(),
+            img: 'https://picsum.photos/700',
+            createdAt: new Date(),
+            done: false,
+            del: false,
         };
-        insert('donations', donation, () => {
-            console.log('done')
-            setTitle('');
+        editDonation(donation).then(()=>{
             setDesc('');
+            setTitle('');
+            setValue('Alimento');
         });
     }
 }

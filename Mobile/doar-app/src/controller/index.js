@@ -89,6 +89,6 @@ export async function getAllDonations() {
     return querySnapshot.docs.map((doc, i,) => ({...doc?.data(), key: i}))  ?? [];
 }
 
-export async function editDonationById(id, data) {
-    return await update('donation', data, id)
+export async function editDonation(data) {
+    return await update('donations', data, data.id)
 }
