@@ -120,9 +120,13 @@
 
 ## Resutados dos Testes com Usuários 
 
-> O objetivo era validar a usabilidade da aplicação, as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema,
-> onde o usuário faz seu cadastro na aplicação, atualiza os dados pessoais e realiza a navegação entre as telas e a lista de doações e realiza a 
-> inserção de uma nova doação, assim como seleciona uma doação e inicializa a comunicação com outro usuário.
+> O objetivo era validar a usabilidade da aplicação, as tarefas escolhidas para o teste devem corresponder ao uso esperado e natural do sistema:
+> 
+> 1. Onde o usuário faz seu cadastro na aplicação.
+> 2. Atualiza os dados pessoais.
+> 3. Realiza a navegação entre as telas e a lista de doações
+> 4. Realiza a inserção de uma nova doação,
+> 5. Seleciona uma doação e inicializa a comunicação com outro usuário.
 
 ## Compilação e Análise dos Dados Coletados
 
