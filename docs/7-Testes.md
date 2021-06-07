@@ -110,7 +110,8 @@
 >> Os testes pilotos (dry run) das sessões de teste foram realizados para melhorar a clareza da fala do administrador de testes, 
 >> verificar a viabilidade da execução das tarefas, aprimorar as estimativas de duração das sessões.
 >> #### Plano de Testes de Usabilidade
->> 1. Onde o usuário faz seu cadastro na aplicação;
+>> Os teste devem corresponder ao uso esperado e natural do sistema:
+>> 1. O usuário faz seu cadastro na aplicação;
 >> 2. Atualiza os dados pessoais;
 >> 3. Realiza a navegação entre as telas e a lista de doações;
 >> 4. Realiza a inserção de uma nova doação;
