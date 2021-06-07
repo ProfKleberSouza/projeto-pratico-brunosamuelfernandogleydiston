@@ -1,12 +1,15 @@
 {
-  "name": "doar-app",
-  "displayName": "doar-app",
+  "name": "Doar App",
   "expo": {
     "name": "doar-app",
     "slug": "doar-app",
     "version": "1.0.0",
+    "icon": "./src/assets/icon.png",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.grupo1.doarapp"
+    }
   }
 }
