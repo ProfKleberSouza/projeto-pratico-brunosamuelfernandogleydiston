@@ -4,7 +4,7 @@
 
 Curso de Engenharia de Computação
 
-Disciplina de Laborário de Desenvolvimento Mobile
+Disciplina de Laboratório de Desenvolvimento Mobile
 
 Primeiro semestre de 2021
 
