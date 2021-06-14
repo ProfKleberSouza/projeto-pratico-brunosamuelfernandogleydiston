@@ -3,6 +3,10 @@
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
 > no desenvolvimento do trabalho.
 > 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> Moqups - Disponível em: https://moqups.com/
+> 
+> React Native - Disponível em: https://reactnative.dev/
+> 
+> Flutter - Disponível em: https://flutter.dev/
+> 
+> Firebase - Disponível em: https://firebase.google.com/?hl=pt
